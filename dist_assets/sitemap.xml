@@ -64,6 +64,77 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Service Area - City Pages -->
+  <url>
+    <loc>https://longpropc.com/service-area/parma/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/lakewood/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/brooklyn/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/strongsville/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/beachwood/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/euclid/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cleveland Neighborhoods -->
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/old-brooklyn/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/south-hills/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/tremont/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/shaker-square/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/service-area/cleveland/slavic-village/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- General Pest Control Service -->
+  <url>
+    <loc>https://longpropc.com/services/general-pest-control/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://longpropc.com/blog/</loc>
