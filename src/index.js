@@ -14265,7 +14265,38 @@ var App = class _App {
   }
 };
 async function handle(manifest2, app, request, env2, context2) {
-  const { pathname } = new URL(request.url);
+  const url = new URL(request.url);
+  let { pathname } = url;
+  // Strip trailing slash for SSR route matching (asset framework may add it)
+  if (pathname !== "/" && pathname.endsWith("/")) {
+    pathname = pathname.slice(0, -1);
+    const newUrl = new URL(request.url);
+    newUrl.pathname = pathname;
+    request = new Request(newUrl.toString(), request);
+  }
+  // Image proxy for missing service card images
+  const imageProxyMap = {
+    "/images/bed-bug-hero.webp": "https://static.wixstatic.com/media/b7e9b5_15687f45609545908993595c30c0d2d3~mv2.png",
+    "/images/cockroach-hero.webp": "https://static.wixstatic.com/media/b7e9b5_dafd8f2719d244fca3a408b8a8bf36ea~mv2.png",
+    "/images/ant-spider-hero.webp": "https://static.wixstatic.com/media/b7e9b5_45d4f3667a874a3591bc4677889b7897~mv2.png",
+    "/images/flea-hero.webp": "https://static.wixstatic.com/media/b7e9b5_23cb75b30bb44c6c8d088be3a2fc325e~mv2.png"
+  };
+  if (imageProxyMap[pathname]) {
+    try {
+      const imgResponse = await fetch(imageProxyMap[pathname]);
+      if (imgResponse.ok) {
+        const imgBody = await imgResponse.arrayBuffer();
+        return new Response(imgBody, {
+          status: 200,
+          headers: {
+            "Content-Type": "image/png",
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "Access-Control-Allow-Origin": "*"
+          }
+        });
+      }
+    } catch (e) {}
+  }
   const bindingName = "SESSION";
   globalThis.__env__ ??= {};
   globalThis.__env__[bindingName] = env2[bindingName];

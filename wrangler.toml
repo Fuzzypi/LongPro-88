@@ -5,6 +5,9 @@ compatibility_flags = ["nodejs_compat"]
 
 [assets]
 binding = "ASSETS"
+directory = "./dist_assets"
+html_handling = "auto-trailing-slash"
+not_found_handling = "none"
 
 [observability]
 enabled = true
