@@ -2,6 +2,8 @@ name = "longpro-scaffold"
 main = "src/index.js"
 compatibility_date = "2026-03-07"
 compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+preview_urls = false
 
 [assets]
 binding = "ASSETS"
