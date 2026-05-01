@@ -34,6 +34,17 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-Z1EH98YLZ1');
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { event_category: 'engagement', event_label: href });
+    } else if (href === '/contact' || href.indexOf('/contact?') === 0) {
+      gtag('event', 'quote_click', { event_category: 'engagement', event_label: window.location.pathname });
+    }
+  });
     </script>
     
     <script type="application/ld+json">
@@ -54,9 +65,14 @@
         "url": "https://longpropc.com",
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "150"
+            "ratingValue": "5.0",
+            "ratingCount": "17",
+            "reviewCount": "17"
         },
+        "sameAs": [
+            "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
+            "https://share.google/GETw9NeHew2eJ5lB2"
+        ],
         "priceRange": "$$"
     }
     </script>
@@ -322,13 +338,13 @@
     <header class="sticky top-0 z-50 bg-brand-dark border-b border-brand-border">
         <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="/" class="flex-shrink-0">
-                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-14 w-auto">
+                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-14 w-auto">
             </a>
             <div class="hidden md:flex items-center gap-8">
                 <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 <div class="relative group">
-                    <button class="text-brand-text hover:text-brand-gold transition">Services</button>
-                    <div class="hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
+                    <button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition "> Services </button>
+                    <div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
                         <a href="/services/general-pest-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b bg-brand-dark-alt text-brand-gold">General Pest Control</a>
                         <a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
                         <a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
@@ -354,13 +370,7 @@
             <div class="px-4 py-4 flex flex-col gap-4">
                 <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 <span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
-                <div class="flex flex-col gap-2 ml-4">
-                    <a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">General Pest Control</a>
-                    <a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition">Bed Bug Extermination</a>
-                    <a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition">Cockroach Extermination</a>
-                    <a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition">Ant &amp; Spider Control</a>
-                    <a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition">Flea Extermination</a>
-                <a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition "> General Pest Control </a></div>
+                <div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold"> General Pest Control </a><a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition"> Flea Extermination </a></div>
                 <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
                 <a href="/service-area" class="text-brand-text hover:text-brand-gold transition">Service Area</a>
                 <a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
@@ -398,9 +408,33 @@
         </div>
         
         <section class="content-section max-w-7xl mx-auto">
-            <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-6 whitespace-nowrap">General Pest Control in Cleveland, OH</h1>
+            <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-6">General Pest Control in Cleveland, OH</h1>
             <p>Most pest control companies try to lock you into expensive quarterly contracts whether you need them or not. We don't operate that way. At LongPro Pest Control, we assess your specific situation, recommend only the treatments you actually need, and handle them with precision and professionalism.</p>
             <p>Whether you're dealing with ants in your kitchen, spiders in the basement, or the occasional cockroach, we provide honest, effective solutions. We treat the problem — not your wallet. No pressure. No unnecessary contracts. Just straightforward pest control when you need it.</p>
+        </section>
+
+        <section class="content-section max-w-7xl mx-auto">
+            <h2>When General Pest Control Is The Right Fit</h2>
+            <p>General pest control is the best starting point when the issue is real but the species or treatment path is still unclear. It is also the right fit when the problem involves the common Cleveland invaders that do not need a separate bed bug or flea-specific treatment plan.</p>
+
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Mixed Activity In One Home</h3>
+                    <p>If you are seeing more than one kind of pest — for example ants in the kitchen and spiders in the basement — a broad inspection is usually more useful than guessing at individual treatments.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Recurring Seasonal Invaders</h3>
+                    <p>Spring ants, fall stink bugs, and moisture-related basement pests are usually handled best through targeted general pest treatment and entry-point reduction rather than a long contract.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Not Sure Which Service To Choose?</h3>
+                    <p>Start here if you are unsure whether the issue needs a specialty page. If the inspection shows bed bugs, heavy roach activity, or a flea-focused treatment need, we will tell you and route the job correctly.</p>
+                </div>
+                <div class="approach-item">
+                    <h3>Need A Faster Answer?</h3>
+                    <p>Use the phone-first path when the problem is escalating quickly. Our <a href="/blog/emergency-pest-control-cleveland">emergency pest control guide</a> explains what to do while you wait for an inspection.</p>
+                </div>
+            </div>
         </section>
         
         <section class="content-section max-w-7xl mx-auto">
@@ -441,19 +475,19 @@
             
             <div class="approach-grid">
                 <div class="approach-item">
-                    <h4>Honest Assessment</h4>
+                    <h3>Honest Assessment</h3>
                     <p>We inspect your home, identify the specific pest issue, and recommend only the treatments necessary to solve it. If you don't have a problem, we'll tell you.</p>
                 </div>
                 <div class="approach-item">
-                    <h4>Targeted Treatment</h4>
+                    <h3>Targeted Treatment</h3>
                     <p>Rather than broad-spectrum spraying, we use precision methods to eliminate pests at the source. This is more effective and uses fewer chemicals.</p>
                 </div>
                 <div class="approach-item">
-                    <h4>Flexible Options</h4>
+                    <h3>Flexible Options</h3>
                     <p>One-time treatments for immediate problems. Seasonal prevention before spring ants or fall stink bugs. As-needed service when issues arise. No forcing you into contracts.</p>
                 </div>
                 <div class="approach-item">
-                    <h4>Ongoing Support</h4>
+                    <h3>Ongoing Support</h3>
                     <p>For those who prefer ongoing maintenance, we offer it. But it's optional. Most Cleveland homes do fine with seasonal or as-needed service.</p>
                 </div>
             </div>
@@ -465,19 +499,19 @@
             
             <div class="seasonal-grid">
                 <div class="seasonal-item">
-                    <h4>Spring (March–May)</h4>
+                    <h3>Spring (March–May)</h3>
                     <p>Carpenter ants and pavement ants become active as temperatures warm. This is the most common time for ant invasions. Early treatment prevents larger problems.</p>
                 </div>
                 <div class="seasonal-item">
-                    <h4>Summer (June–August)</h4>
+                    <h3>Summer (June–August)</h3>
                     <p>Most pest activity is at baseline. Unless you have an active infestation, summer is usually quiet. Maintenance or prevention treatments are optional.</p>
                 </div>
                 <div class="seasonal-item">
-                    <h4>Fall (September–November)</h4>
+                    <h3>Fall (September–November)</h3>
                     <p>Stink bugs, ladybugs, and other occasional invaders seek warmth. Fall is the second-busiest season for pest control. Perimeter treatment before October helps prevent invasions.</p>
                 </div>
                 <div class="seasonal-item">
-                    <h4>Winter (December–February)</h4>
+                    <h3>Winter (December–February)</h3>
                     <p>Most outdoor pests go dormant. Indoor pest activity drops significantly unless you have an established problem (rodents, cockroaches). Maintenance is generally unnecessary.</p>
                 </div>
             </div>
@@ -490,22 +524,22 @@
             <div class="treatment-steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h4>Inspection</h4>
+                    <h3>Inspection</h3>
                     <p>We thoroughly inspect your home, identify pest entry points, and assess the extent of the problem. This is how we know what you actually need.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h4>Treatment Plan</h4>
+                    <h3>Treatment Plan</h3>
                     <p>We explain what we found, what we recommend, and why. We give you pricing upfront with no hidden fees. You decide whether to proceed.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h4>Treatment Execution</h4>
+                    <h3>Treatment Execution</h3>
                     <p>We apply targeted treatments using safe, pet-friendly, child-friendly products. We follow strict safety protocols and keep you informed throughout.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h4>Follow-Up Support</h4>
+                    <h3>Follow-Up Support</h3>
                     <p>We follow up to ensure the treatment worked. If the problem persists, we return and retreat at no charge. Your satisfaction is guaranteed.</p>
                 </div>
             </div>
@@ -542,13 +576,17 @@
         
         <section class="content-section max-w-7xl mx-auto">
             <h2>Related Services</h2>
-            <p>Need help with a specific pest? Check out our specialized service pages:</p>
+            <p>Need help with a specific pest, a nearby area page, or a safety-focused guide? Start with these next steps:</p>
             
             <div class="related-services">
                 <a href="/services/bed-bug-extermination" class="service-link">Bed Bug Extermination</a>
                 <a href="/services/cockroach-extermination" class="service-link">Cockroach Extermination</a>
                 <a href="/services/ant-and-spider-control" class="service-link">Ant &amp; Spider Control</a>
                 <a href="/services/flea-extermination" class="service-link">Flea Extermination</a>
+                <a href="/service-area/cleveland" class="service-link">Cleveland Service Area</a>
+                <a href="/service-area/lakewood" class="service-link">Lakewood Service Area</a>
+                <a href="/blog/pet-safe-pest-control-cleveland" class="service-link">Pet-Safe Pest Control Guide</a>
+                <a href="/blog/emergency-pest-control-cleveland" class="service-link">Emergency Pest Control Guide</a>
             </div>
         </section>
         
@@ -566,7 +604,7 @@
         <div class="max-w-7xl mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-12 w-auto mb-4">
+                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-12 w-auto mb-4">
                     <p class="text-brand-text-muted text-sm leading-relaxed">Discreet, professional pest control solutions for Cleveland and surrounding areas. We handle your pest problems with expertise and discretion.</p>
                 </div>
                 <nav aria-label="Footer navigation">
@@ -590,7 +628,7 @@
                         <p><a href="tel:+12163004121" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
                         <p><a href="mailto:info@longpropc.com" class="hover:text-brand-gold transition">info@longpropc.com</a></p>
                     </div>
-                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" class="h-20 w-auto mt-4">
+                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" width="200" height="80" class="h-20 w-auto mt-4">
                 </div>
             </div>
             <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
