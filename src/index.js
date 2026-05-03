@@ -14486,7 +14486,9 @@ var _page12 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_co
 var _page13 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_flea_extermination_astro(), flea_extermination_astro_exports)), "_page13");
 var _page14 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_services_astro(), services_astro_exports)), "_page14");
 var _page15 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_index_astro(), index_astro_exports)), "_page15");
-var _page16 = _page14;
+var _page16 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => {
+  throw new Error("services/general-pest-control is prerendered only — SSR render should not be invoked");
+}), "_page16");
 var pageMap = /* @__PURE__ */ new Map([
   ["src/pages/404.astro", _page0],
   ["src/pages/about.astro", _page1],
