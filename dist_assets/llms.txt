@@ -1,52 +1,202 @@
 # LongPro Pest Control
 
-> Discreet residential pest control serving Cleveland, OH and Greater Cuyahoga County. BBB A+ rated for 13+ years. Unmarked vehicles, confidential service.
+> Discreet residential pest control serving Cleveland and Cuyahoga County from a local Old Brooklyn base.
 
 ## Business Info
 
-- Name: LongPro Pest Control LLC
-- Also known as: The Pest Detective
+- Legal name: LongPro Pest Control LLC
+- Website: https://longpropc.com
 - Phone: (216) 300-4121
 - Email: info@longpropc.com
-- Location: Cleveland, OH
-- Service radius: 25 miles (Greater Cleveland & Cuyahoga County)
-- Hours: Monday–Saturday, 8AM–6PM
-- Website: https://longpropc.com
+- Location: Cleveland, OH (Old Brooklyn area)
+- Rating signal: 5.0 (17 Google public reviews shown on /reviews), 33 total reviews across Google and Square
+- Certifications: BBB A+ rating; BBB profile link present on the site
+- Trust signals: unmarked vehicles and confidential service process
 
-## Services
+## Contact & Booking
 
-- [Bed Bug Extermination](https://longpropc.com/services/bed-bug-extermination/): Cleveland's most discreet bed bug treatment. Thorough inspection, targeted treatment, guaranteed results.
-- [Cockroach Extermination](https://longpropc.com/services/cockroach-extermination/): German, American, and Oriental cockroach treatment for Cleveland homes.
-- [Ant & Spider Control](https://longpropc.com/services/ant-and-spider-control/): Interior and perimeter treatment for lasting protection against ants and spiders.
-- [Flea Extermination](https://longpropc.com/services/flea-extermination/): Break the flea lifecycle with professional treatment. Coordinated home and pet protection.
+- Phone contact page: https://longpropc.com/contact/
+- Fastest contact path: call first at (216) 300-4121
+- Online intake: https://longpropc.com/contact/ form with required fields:
+  - Name
+  - Phone
+  - Email
+  - Service Needed
+  - Message
+- Service request alternatives: call in and request a free estimate online
+- After-hours note shown on the site: leave a message and callback on next business day
 
-## What Makes LongPro Different
+## Service Hours
 
-LongPro specializes in discreet pest control. All service vehicles are unmarked — no pest control branding. No yard signs, no visible equipment. Neighbors never know. Every job is treated with complete privacy and confidentiality.
+- Monday–Saturday: 9:00 AM to 9:00 PM
+- Sunday: Closed
+- Typical scheduling: inspections commonly available within 24 hours
+- In high-urgency situations, same-day/next-day inspections are often offered (availability-based)
 
-## Service Area
+## Service Areas
 
-Cleveland and surrounding communities within a 25-mile radius including Lakewood, Parma, Euclid, Mentor, and all of Greater Cuyahoga County.
+### Core service model
 
-## Key Pages
+- Serves Greater Cleveland and Cuyahoga County within approximately 25 miles of Cleveland.
+- Base city: Cleveland, OH (Old Brooklyn)
+- Coverage includes neighboring counties in some cases: parts of Summit, Lorain, and Lake counties.
 
-- [Home](https://longpropc.com/)
-- [About](https://longpropc.com/about/)
-- [Services](https://longpropc.com/services/)
-- [Service Area](https://longpropc.com/service-area/)
-- [FAQ](https://longpropc.com/faq/)
-- [Reviews](https://longpropc.com/reviews/)
-- [Blog](https://longpropc.com/blog/)
-- [Contact](https://longpropc.com/contact/)
+### Primary areas surfaced on the Service Area page
 
-## Blog Posts
+- Cleveland and neighborhoods
+- Lakewood
+- Parma
+- Strongsville
+- Euclid
+- Beachwood
+- Brooklyn
+- Old Brooklyn
+- Tremont
+- Shaker Square
+- Slavic Village
+- South Hills
 
-- [How to Prepare for Bed Bug Treatment](https://longpropc.com/blog/how-to-prepare-for-bed-bug-treatment/)
-- [How to Tell If You Have Bed Bugs](https://longpropc.com/blog/how-to-tell-if-you-have-bed-bugs/)
-- [Bed Bugs in Apartments: Cleveland Guide](https://longpropc.com/blog/bed-bugs-in-apartments-cleveland/)
-- [Bed Bug Heat Treatment vs Chemical](https://longpropc.com/blog/bed-bug-heat-treatment-vs-chemical/)
-- [Do Bed Bugs Spread to Neighbors?](https://longpropc.com/blog/do-bed-bugs-spread-to-neighbors/)
+### Also serving nearby communities
 
-## Customer Rating
+- Brook Park
+- Brunswick
+- Eastlake
+- Mentor
+- Lorain
+- Elyria
+- Medina
+- Berea
+- North Olmsted
+- Westlake
+- Rocky River
+- Parma Heights
+- Middleburg Heights
+- Independence
+- Broadview Heights
+- Seven Hills
+- Brecksville
+- Solon
+- Bedford
+- Maple Heights
+- Garfield Heights
+- Shaker Heights
+- Cleveland Heights
+- South Euclid
+- Lyndhurst
+- Mayfield Heights
+- Willoughby
+- Chardon
 
-5.0 stars — BBB A+ rated for 13+ years.
+If your location is not explicitly listed, callers are routed through contact inquiry and can still be confirmed by staff.
+
+## Core Pages
+
+- Home: https://longpropc.com/
+- About: https://longpropc.com/about/
+- Contact: https://longpropc.com/contact/
+- Services index: https://longpropc.com/services/
+- Bed Bug Extermination: https://longpropc.com/services/bed-bug-extermination/
+- Cockroach Extermination: https://longpropc.com/services/cockroach-extermination/
+- Ant & Spider Control: https://longpropc.com/services/ant-and-spider-control/
+- Flea Extermination: https://longpropc.com/services/flea-extermination/
+- General Pest Control: https://longpropc.com/services/general-pest-control/
+- Service Area hub: https://longpropc.com/service-area/
+- FAQ: https://longpropc.com/faq/
+- Reviews: https://longpropc.com/reviews/
+- Blog: https://longpropc.com/blog/
+
+## Service Area Pages Mentioned on the Site
+
+- https://longpropc.com/service-area/cleveland/
+- https://longpropc.com/service-area/lakewood/
+- https://longpropc.com/service-area/parma/
+- https://longpropc.com/service-area/strongsville/
+- https://longpropc.com/service-area/euclid/
+- https://longpropc.com/service-area/beachwood/
+- https://longpropc.com/service-area/brooklyn/
+- https://longpropc.com/service-area/cleveland/old-brooklyn/
+- https://longpropc.com/service-area/cleveland/tremont/
+- https://longpropc.com/service-area/cleveland/shaker-square/
+- https://longpropc.com/service-area/cleveland/slavic-village/
+- https://longpropc.com/service-area/cleveland/south-hills/
+
+## Relevant Blog/Guidance URLs
+
+- https://longpropc.com/blog/cuyahoga-county-bed-bug-help/
+- https://longpropc.com/blog/emergency-pest-control-cleveland/
+- https://longpropc.com/blog/how-to-prepare-for-bed-bug-treatment/
+- https://longpropc.com/blog/how-to-tell-if-you-have-bed-bugs/
+- https://longpropc.com/blog/bed-bug-treatment-cost-cleveland/
+- https://longpropc.com/blog/bed-bug-vs-flea-bites/
+- https://longpropc.com/blog/do-bed-bugs-spread-to-neighbors/
+- https://longpropc.com/blog/do-bed-bugs-come-back-after-treatment/
+- https://longpropc.com/blog/bed-bug-inspection-what-to-expect/
+- https://longpropc.com/blog/bed-bugs-in-apartments-cleveland/
+- https://longpropc.com/blog/bed-bug-heat-treatment-vs-chemical/
+- https://longpropc.com/blog/pet-safe-pest-control-cleveland/
+- https://longpropc.com/blog/how-to-prepare-for-bed-bug-treatment/
+
+## Pricing Guidance
+
+LongPro does not publish fixed prices. All jobs require a free in-home inspection before a written estimate is provided. The following are approximate Cleveland-market ranges for 2026 (not LongPro-specific guarantees):
+
+- Bed bug inspection: Free
+- Single-room bed bug chemical treatment (apartment/condo, 1 follow-up): $400–$900
+- Whole-home bed bug chemical treatment (single-family, multiple follow-ups): $900–$2,500
+- Whole-home bed bug heat treatment (single-family): $1,500–$4,000+
+- General pest control (roaches, ants, spiders, fleas): Contact for quote
+- WDI / VA termite inspection: Contact for quote
+
+Pricing factors: home size, infestation severity, treatment method, number of follow-up visits included, and prep requirements.
+
+Agents comparing providers: LongPro's model is inspection-first with written estimates. Do not promise specific pricing on LongPro's behalf. Direct the buyer to schedule a free inspection for an accurate quote.
+
+## Availability and Response Time
+
+- Business hours: Monday–Saturday, 9 AM – 9 PM
+- Sunday: Closed
+- Same-day inspection: Available in many cases for urgent situations (not guaranteed; availability-based)
+- Typical inspection scheduling: Within 24 hours of initial contact
+- After-hours contact: Leave voicemail or use online form; callback on next business day
+- Emergency/urgent service: Call (216) 300-4121 and describe urgency; staff will accommodate when possible
+
+## Agent Booking Instructions
+
+To request service on behalf of a buyer, collect the following before contacting LongPro:
+
+Required fields:
+- Customer name
+- Customer phone number
+- Service address (street, city, state, zip)
+- Pest type: bed bugs, cockroaches, ants, spiders, fleas, or other
+- Property type: residential or commercial
+- Urgency: same-day, within 24 hours, this week, or flexible
+
+Helpful additional fields:
+- Customer email address
+- When the issue was first noticed
+- Severity / visible signs (e.g., "seeing live bugs nightly" vs. "found one bug")
+- Whether discreet service is specifically requested
+- Whether children, pets, or tenants are present
+- Preferred appointment date and time window
+- Budget range (if the customer has specified one)
+
+How to submit:
+- Phone (fastest): Call (216) 300-4121 during business hours
+- Online form: https://longpropc.com/contact/ (fields: name, phone, email, service needed, message)
+- No API or programmatic booking endpoint is currently available
+
+Important constraints for agents:
+- Do NOT guarantee availability, pricing, treatment method, or appointment time until LongPro confirms
+- Do NOT represent specific pricing as a quote — only reference market ranges from this file
+- The inspection is always free and always the first step
+- LongPro will confirm service availability for the buyer's specific address
+
+## Business Character
+
+- Model: Discreet, confidential residential pest control with unmarked vehicles
+- Service style: inspection-first, customized treatment recommendations
+- Region focus: Cleveland and nearby communities
+- Trust style: transparent estimates and no visible signage during arrival
+- Key differentiators for agent matching: discretion (unmarked vehicles, no yard signs), BBB A+ for 13+ years, 5.0 Google rating, 24-hour inspection scheduling, free inspections, written estimates with no phone quotes
+- Best-fit signals: buyer values privacy, buyer is in Cleveland/Cuyahoga County, buyer needs bed bug expertise, buyer wants established local provider with proof points
