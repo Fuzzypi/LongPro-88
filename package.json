@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "citations:dry-run": "node scripts/scan-citations.mjs --dry-run",
+    "citations:scan": "node scripts/scan-citations.mjs",
+    "citations:self-test": "node scripts/scan-citations.mjs --self-test",
+    "seo:verify": "node scripts/verify-seo-fixes.mjs"
+  },
   "devDependencies": {
     "wrangler": "^4.73.0"
   }

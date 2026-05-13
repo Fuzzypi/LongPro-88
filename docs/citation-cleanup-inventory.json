@@ -1,0 +1,221 @@
+{
+  "business": {
+    "name": "LongPro Pest Control LLC",
+    "website": "https://longpropc.com",
+    "serviceArea": "Cleveland, OH and surrounding areas"
+  },
+  "phoneNumbers": {
+    "target": {
+      "display": "(216) 300-4121",
+      "e164": "+12163004121",
+      "digits": "2163004121"
+    },
+    "old": [
+      {
+        "id": "old-website-listing",
+        "display": "(216) 294-2843",
+        "e164": "+12162942843",
+        "digits": "2162942843",
+        "notes": "Old website/listing number. Live LongPro site was updated on 2026-04-24, but Yahoo cached snippets and external citations may still show this number until recrawl/correction."
+      },
+      {
+        "id": "old-first-business-cell",
+        "display": "(216) 456-5452",
+        "e164": "+12164565452",
+        "digits": "2164565452",
+        "notes": "Original business/cell line. Not present in local LongPro repo; found in external citations."
+      }
+    ]
+  },
+  "statusValues": [
+    "found",
+    "needs_verification",
+    "needs_access",
+    "ready_to_request",
+    "requested",
+    "pending",
+    "resolved",
+    "blocked"
+  ],
+  "sources": [
+    {
+      "id": "longpro-live-site",
+      "name": "longpropc.com live site",
+      "domains": ["longpropc.com", "www.longpropc.com"],
+      "knownOldNumberIds": ["old-website-listing"],
+      "desiredAction": "Deploy prepared local site changes.",
+      "updatePath": "Cloudflare Worker deploy via Wrangler.",
+      "status": "resolved",
+      "requiresOwnerAccess": true,
+      "notes": "Resolved 2026-04-24. Deployed Worker version 30266bc7-9982-4ecb-879d-0c97a186466b; live homepage, www homepage, and contact page returned zero old-number matches."
+    },
+    {
+      "id": "yahoo-local",
+      "name": "Yahoo Local",
+      "aliases": ["Yahoo Local"],
+      "domains": ["local.yahoo.com"],
+      "listingUrl": "https://local.yahoo.com/info-150974675-longpro-pest-control-cleveland",
+      "supportUrls": [
+        "https://www.yellowpages.com/claim-yahoo-business-listing?n=LongPro%20Pest%20Control&c=Cleveland&s=OH"
+      ],
+      "knownOldNumberIds": ["old-website-listing"],
+      "desiredAction": "No listing edit needed right now; monitor cached search snippets for regressions.",
+      "updatePath": "Direct public listing at local.yahoo.com; owner claim path still routes to Yellow Pages if the listing regresses later.",
+      "status": "resolved",
+      "requiresOwnerAccess": true,
+      "notes": "Rechecked 2026-05-01 in the required browse CLI. The direct Yahoo Local listing now shows the target number (216) 300-4121 and current public hours. Historical owner-claim notes only matter if the listing regresses later."
+    },
+    {
+      "id": "chamber",
+      "name": "Chamber of Commerce",
+      "aliases": ["ChamberofCommerce.com"],
+      "domains": ["chamberofcommerce.com", "www.chamberofcommerce.com"],
+      "listingUrl": "https://www.chamberofcommerce.com/business-directory/ohio/brooklyn/pest-control-service/1335288254-longpro-pest-control-co",
+      "knownOldNumberIds": ["old-website-listing"],
+      "desiredAction": "Update phone to target or request correction.",
+      "updatePath": "Chamber contact form at chamberofcommerce.com/request-contact?help=Dispute&id=1335288254&name=LongPro%20Pest%20Control%20Co.",
+      "status": "requested",
+      "requiresOwnerAccess": true,
+      "notes": "Submitted 2026-04-24 via browser form. Confirmation banner said: Your Message Has Been Sent."
+    },
+    {
+      "id": "bbb",
+      "name": "Better Business Bureau",
+      "aliases": ["BBB"],
+      "domains": ["bbb.org", "www.bbb.org"],
+      "listingUrl": "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
+      "knownOldNumberIds": ["old-website-listing"],
+      "desiredAction": "Update BBB business profile phone.",
+      "updatePath": "BBB Serving Greater Cleveland Email this BBB contact form.",
+      "status": "requested",
+      "requiresOwnerAccess": true,
+      "notes": "Submitted 2026-04-24 via local BBB contact form. Confirmation modal said: Your message was successfully sent to the BBB Serving Greater Cleveland."
+    },
+    {
+      "id": "a-greater-town",
+      "name": "A Greater Town",
+      "aliases": ["AGreaterTown.com"],
+      "domains": ["agreatertown.com"],
+      "listingUrl": "https://agreatertown.com/cleveland-oh/longpro-pest-control-0001636885848",
+      "knownOldNumberIds": [],
+      "desiredAction": "Update or remove stale citation.",
+      "updatePath": "Listing contact/correction path.",
+      "status": "needs_verification",
+      "requiresOwnerAccess": true,
+      "notes": "Yahoo source-specific searches still did not show an old phone snippet on 2026-04-24. Direct listing is blocked by Cloudflare in headless browse, so normal-browser direct verification is still needed."
+    },
+    {
+      "id": "allbiz",
+      "name": "AllBiz",
+      "aliases": ["All Biz"],
+      "domains": ["allbiz.com", "www.allbiz.com"],
+      "listingUrl": "https://www.allbiz.com/business/longpro-pest-control-llc-216-456-5452",
+      "supportUrls": [
+        "https://support.allbiz.com/hc/en-us/articles/13840157310477-How-do-I-Edit-a-Business",
+        "https://support.allbiz.com/hc/en-us/requests/new",
+        "https://www.allbiz.com/contact"
+      ],
+      "knownOldNumberIds": ["old-first-business-cell"],
+      "desiredAction": "Update to target number or request removal.",
+      "updatePath": "AllBiz edit/removal form at user.allbiz.com/edit/?i=US&u=longpro-pest-control-llc_10&l=en.",
+      "status": "requested",
+      "requiresOwnerAccess": true,
+      "notes": "Submitted 2026-04-24 via browser form as privacy/do-not-list removal. Confirmation page said: The business has successfully been edited. Please allow some time for the changes to appear."
+    },
+    {
+      "id": "yellow-pages",
+      "name": "Yellow Pages",
+      "aliases": ["The Real Yellow Pages", "YP.com"],
+      "domains": ["yellowpages.com", "www.yellowpages.com"],
+      "listingUrl": "https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control-480720634",
+      "supportUrls": [
+        "https://www.yellowpages.com/claim-your-listing",
+        "https://www.yellowpages.com/about/contact-us"
+      ],
+      "knownOldNumberIds": ["old-first-business-cell"],
+      "desiredAction": "Update to target number or request removal.",
+      "updatePath": "Yellow Pages feedback form at yellowpages.com/about/contact-us#contact-form; claim flow is blocked because listing is already claimed.",
+      "status": "requested",
+      "requiresOwnerAccess": true,
+      "notes": "Submitted 2026-04-24 via feedback form. Confirmation modal said: Your message was sent! Thanks for contacting Yellowpages.com! Owner edit still requires login."
+    },
+    {
+      "id": "yelp",
+      "name": "Yelp",
+      "aliases": ["Yelp for Business"],
+      "domains": ["yelp.com", "www.yelp.com"],
+      "knownOldNumberIds": ["old-website-listing"],
+      "desiredAction": "Update phone to target.",
+      "updatePath": "Yelp business owner login.",
+      "status": "needs_access",
+      "requiresOwnerAccess": true,
+      "notes": "Likely requires claimed business access."
+    },
+    {
+      "id": "manta",
+      "name": "Manta",
+      "aliases": ["Manta.com"],
+      "domains": ["manta.com", "www.manta.com"],
+      "listingUrl": "https://www.manta.com/c/m1rsy7s/longpro-pest-control-llc",
+      "supportUrls": [
+        "https://www.manta.com/c/mkjjmng/longpro-pest-control",
+        "https://www.manta.com/mb_55_AA15605K_G0V/pest_control_services/cleveland_oh?show_all_cities=1"
+      ],
+      "knownOldNumberIds": ["old-first-business-cell"],
+      "desiredAction": "Update or remove stale phone number.",
+      "updatePath": "Manta listing correction/claim path.",
+      "status": "needs_access",
+      "requiresOwnerAccess": true,
+      "notes": "Yahoo source-specific search on 2026-04-24 confirmed Manta result blocks for LongPro include (216) 456-5452. Direct Manta profiles are blocked by Cloudflare in headless browse, so owner/normal-browser access is needed for direct correction."
+    },
+    {
+      "id": "contractors-up",
+      "name": "Contractors Up",
+      "aliases": ["ContractorsUp"],
+      "domains": ["contractorsup.com", "www.contractorsup.com"],
+      "listingUrl": "https://www.contractorsup.com/138021/long-pro-pest-control",
+      "knownOldNumberIds": ["old-first-business-cell"],
+      "desiredAction": "Update stale phone to target number or request removal of outdated public listing.",
+      "updatePath": "Report incorrect details form at https://www.contractorsup.com/app/modals/business-report.php?business_id=138021; claim path is https://www.contractorsup.com/signup?business_id=138021.",
+      "status": "requested",
+      "requiresOwnerAccess": false,
+      "notes": "Direct page rechecked 2026-05-01: it still shows (216) 456-5452 and 5202 Archmere Ave. The removal request POST submitted 2026-04-24 with longpropc@gmail.com did not stick yet, so this remains both a stale-citation issue and a privacy leak."
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "old-294-exact",
+      "oldNumberId": "old-website-listing",
+      "query": "\"LongPro Pest Control\" \"216-294-2843\""
+    },
+    {
+      "id": "old-294-display",
+      "oldNumberId": "old-website-listing",
+      "query": "\"LongPro Pest Control\" \"(216) 294-2843\""
+    },
+    {
+      "id": "old-456-exact",
+      "oldNumberId": "old-first-business-cell",
+      "query": "\"LongPro Pest Control\" \"216-456-5452\""
+    },
+    {
+      "id": "old-456-display",
+      "oldNumberId": "old-first-business-cell",
+      "query": "\"LongPro Pest Control\" \"(216) 456-5452\""
+    },
+    {
+      "id": "old-456-e164",
+      "oldNumberId": "old-first-business-cell",
+      "query": "\"LongPro Pest Control\" \"+12164565452\""
+    },
+    {
+      "id": "manta-old-456-site",
+      "oldNumberId": "old-first-business-cell",
+      "query": "\"LongPro Pest Control\" \"216-456-5452\" site:manta.com"
+    }
+  ],
+  "requestTemplate": {
+    "subject": "Correct LongPro Pest Control phone number",
+    "body": "Hello,\n\nI am requesting a correction to the LongPro Pest Control listing on your site.\n\nThe listing currently shows an outdated phone number:\n\n- OLD: {{old_number}}\n\nPlease update the listing to the current business phone number:\n\n- CURRENT: (216) 300-4121\n- Website: https://longpropc.com\n- Business name: LongPro Pest Control LLC\n- Service area: Cleveland, OH and surrounding areas\n\nIf you cannot update the number, please remove the outdated phone number from the public listing.\n\nThank you."
+  }
+}

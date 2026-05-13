@@ -9,7 +9,7 @@ The current built site already covers more of the March audit than the older not
 
 - Services live now: `general-pest-control`, `bed-bug-extermination`, `cockroach-extermination`, `ant-and-spider-control`, `flea-extermination`
 - Service-area pages live now: Cleveland hub plus city/neighborhood pages for Beachwood, Brooklyn, Cleveland, Euclid, Lakewood, Parma, Strongsville, Old Brooklyn, Shaker Square, Slavic Village, South Hills, and Tremont
-- Blog posts live now: 12 posts plus the blog hub
+- Blog posts live now: 15 posts plus the blog hub, including the May 2026 non-bed-bug support series for German cockroaches, seasonal pest timing, and professional pest control versus DIY
 
 ## What Changed Since The March Audit
 
@@ -71,7 +71,8 @@ Approximate visible word counts from the built HTML:
    - Reason: these already exist and are usable, but they still trail the bed bug page in authority and supporting detail.
 
 6. **Resume blog expansion only after the service/service-area pass**
-   - Remaining candidates: landlord/tenant guide, seasonal pest guide, broader heat-treatment explainer
+   - Completed May 2026 candidates: German cockroach apartment guide, seasonal pest guide, and professional pest control versus DIY comparison.
+   - Remaining candidates: landlord/tenant guide and broader heat-treatment explainer.
    - Reason: informational coverage is no longer the clearest blocker to conversion or local intent.
 
 ## Recommended First Slice For Task 6.2

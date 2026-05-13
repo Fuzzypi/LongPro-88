@@ -124,6 +124,9 @@ If your location is not explicitly listed, callers are routed through contact in
 
 - https://longpropc.com/blog/cuyahoga-county-bed-bug-help/
 - https://longpropc.com/blog/emergency-pest-control-cleveland/
+- https://longpropc.com/blog/german-cockroaches-cleveland-apartments/
+- https://longpropc.com/blog/cleveland-seasonal-pest-calendar/
+- https://longpropc.com/blog/professional-pest-control-vs-diy/
 - https://longpropc.com/blog/how-to-prepare-for-bed-bug-treatment/
 - https://longpropc.com/blog/how-to-tell-if-you-have-bed-bugs/
 - https://longpropc.com/blog/bed-bug-treatment-cost-cleveland/
@@ -183,8 +186,15 @@ Helpful additional fields:
 
 How to submit:
 - Phone (fastest): Call (216) 300-4121 during business hours
-- Online form: https://longpropc.com/contact/ (fields: name, phone, email, service needed, message)
-- No API or programmatic booking endpoint is currently available
+- Online form (pre-fillable): https://longpropc.com/contact/?name=NAME&phone=PHONE&email=EMAIL&service=SERVICE_KEY&urgency=URGENCY&message=MESSAGE
+  - Service keys: bed-bug, cockroach, ant-spider, flea, general, other
+  - Urgency values: same-day, within-24-hours, this-week, flexible
+- Scheduling API (programmatic): POST https://longpropc.com/api/schedule
+  - Content-Type: application/json
+  - Body: { "name": "...", "phone": "...", "email": "...", "service": "...", "urgency": "same-day|within-24-hours|this-week|flexible", "message": "...", "property_type": "residential|commercial", "address": "...", "preferred_time": "..." }
+  - Required: name + (phone or email)
+  - Returns: { "ok": true, "confirmation_id": "LP-...", "status": "received", "expected_callback": "within 1 hour|within 24 hours", "next_steps": "..." }
+  - CORS enabled for all origins
 
 Important constraints for agents:
 - Do NOT guarantee availability, pricing, treatment method, or appointment time until LongPro confirms

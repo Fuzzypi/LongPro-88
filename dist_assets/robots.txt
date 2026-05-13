@@ -1,24 +1,33 @@
 # LongPro Pest Control — robots.txt
-# Policy: Allow search engines and AI search crawlers. Block AI training-only scrapers.
+# Policy: Allow search engines and answer-engine crawlers. Block training-only crawlers.
 
 User-agent: *
 Allow: /
 Disallow: /component-test/
 
-# AI Search Crawlers — ALLOWED (powers AI search results & citations)
-User-agent: GPTBot
+# AI Search / Retrieval Crawlers — ALLOWED
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
+# AI Training / Model-Improvement Crawlers — BLOCKED
+User-agent: GPTBot
+Disallow: /
 
-# AI Training-Only Scrapers — BLOCKED
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
 User-agent: Bytespider
 Disallow: /
 

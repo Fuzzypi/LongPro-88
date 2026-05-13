@@ -6,6 +6,19 @@
     <title>Pest Control Cleveland OH | Bed Bug Exterminator Cleveland | LongPro Pest Control</title>
     <meta name="description" content="Cleveland's locally owned pest control company. LongPro Pest Control offers bed bug extermination, cockroach control, ant & spider removal in Cleveland OH. BBB A+ rated. Unmarked vehicles. Call (216) 300-4121.">
     <link rel="canonical" href="https://longpropc.com/service-area/cleveland/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pest Control Cleveland OH | Bed Bug Exterminator Cleveland | LongPro Pest Control">
+    <meta property="og:description" content="Cleveland's locally owned pest control company. Bed bug extermination, cockroach control, ant & spider removal, and discreet service across Cleveland, OH.">
+    <meta property="og:url" content="https://longpropc.com/service-area/cleveland/">
+    <meta property="og:site_name" content="LongPro Pest Control">
+    <meta property="og:image" content="https://longpropc.com/images/detective-hero.webp">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pest Control Cleveland OH | Bed Bug Exterminator Cleveland | LongPro Pest Control">
+    <meta name="twitter:description" content="Cleveland's locally owned pest control company. Bed bug extermination, cockroach control, ant & spider removal, and discreet service across Cleveland, OH.">
+    <meta name="twitter:image" content="https://longpropc.com/images/detective-hero.webp">
+    <meta name="geo.region" content="US-OH">
+    <meta name="geo.placename" content="Cleveland">
     <link rel="stylesheet" href="/_astro/about.CRmxRFHV.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1EH98YLZ1"></script>
     <script>
@@ -13,22 +26,32 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-Z1EH98YLZ1');
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { event_category: 'engagement', event_label: href });
+    } else if (href === '/contact' || href.indexOf('/contact?') === 0) {
+      gtag('event', 'quote_click', { event_category: 'engagement', event_label: window.location.pathname });
+    }
+  });
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      "@id": "https://longpropc.com/#business",
       "name": "LongPro Pest Control LLC",
       "image": "https://longpropc.com/images/longpro-logo.webp",
       "description": "Locally owned pest control company in Cleveland, OH offering bed bug extermination, cockroach control, ant & spider removal, flea extermination, and termite inspections.",
-      "telephone": "(216) 300-4121",
+      "telephone": "+12163004121",
       "email": "info@longpropc.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Old Brooklyn",
         "addressLocality": "Cleveland",
         "addressRegion": "OH",
-        "postalCode": "44109",
         "addressCountry": "US"
       },
       "geo": {
@@ -36,18 +59,25 @@
         "latitude": "41.4993",
         "longitude": "-81.6944"
       },
-      "url": "https://longpropc.com/service-area/cleveland/",
-      "sameAs": [],
+      "url": "https://longpropc.com",
+      "sameAs":["https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736","https://share.google/GETw9NeHew2eJ5lB2"],
       "areaServed": {
         "@type": "City",
         "name": "Cleveland",
         "addressRegion": "OH"
       },
       "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "100+"
+        "ratingValue": "5.0",
+        "ratingCount": "17",
+        "reviewCount": "17"
       },
       "knowsAbout": ["Bed Bug Extermination", "Cockroach Control", "Ant & Spider Control", "Flea Extermination", "Termite Inspection"]
     }
@@ -96,7 +126,7 @@
           "name": "Is LongPro Pest Control a local company?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! LongPro Pest Control is 100% locally owned and operated, based in Old Brooklyn, Cleveland. We are not a chain company. We've been serving Cleveland residents and businesses since 2012 with BBB A+ rating."
+            "text": "Yes! LongPro Pest Control is 100% locally owned and operated, based in Old Brooklyn, Cleveland. We are not a chain company. We've been serving Cleveland residents and businesses since 2012 and have been BBB Accredited with an A+ rating since 2015."
           }
         },
         {
@@ -717,22 +747,14 @@
     <header class="sticky top-0 z-50 bg-brand-dark border-b border-brand-border">
         <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="/" class="flex-shrink-0">
-                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-14 w-auto">
+                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-14 w-auto">
             </a>
 
             <div class="hidden md:flex items-center gap-8">
                 <div class="relative group">
                     <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 </div>
-                <div class="relative group">
-                    <button class="text-brand-text hover:text-brand-gold transition">Services</button>
-                    <div class="hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
-                        <a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
-                        <a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
-                        <a href="/services/ant-and-spider-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant &amp; Spider Control</a>
-                        <a href="/services/flea-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a>
-                    </div>
-                </div>
+                <div class="relative group">  <button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition"> Services </button> <div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10"><a href="/services/general-pest-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> General Pest Control </a><a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Flea Extermination </a></div>  </div>
                 <div class="relative group">
                     <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
                 </div>
@@ -766,12 +788,7 @@
             <div class="px-4 py-4 flex flex-col gap-4">
                 <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 <span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
-                <div class="flex flex-col gap-2 ml-4">
-                    <a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition">Bed Bug Extermination</a>
-                    <a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition">Cockroach Extermination</a>
-                    <a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition">Ant &amp; Spider Control</a>
-                    <a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition">Flea Extermination</a>
-                <a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition "> General Pest Control </a></div>
+                <div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition"> General Pest Control </a><a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition"> Flea Extermination </a></div>
                 <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
                 <a href="/service-area" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a>
                 <a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
@@ -795,10 +812,10 @@
         </div>
 
         <section class="max-w-7xl mx-auto px-4 py-16">
-            <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8 whitespace-nowrap">Pest Control &amp; Exterminator Services in Cleveland, OH</h1>
+            <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8">Pest Control &amp; Exterminator Services in Cleveland, OH</h1>
 
             <p class="text-lg text-brand-text-muted mb-6 leading-relaxed">
-                LongPro Pest Control is Cleveland's locally owned and operated pest control company, based right here in Old Brooklyn. We're not a chain — we're your neighbors, and we know the neighborhoods of Cleveland inside and out. Since 2012, we've earned our BBB A+ rating by delivering discreet, professional pest control solutions to residential and commercial customers across the entire Cleveland area.
+                LongPro Pest Control is Cleveland's locally owned and operated pest control company, based right here in Old Brooklyn. We're not a chain — we're your neighbors, and we know the neighborhoods of Cleveland inside and out. Since 2012, we've delivered discreet, professional pest control solutions to residential and commercial customers across the entire Cleveland area.
             </p>
 
             <p class="text-lg text-brand-text-muted leading-relaxed">
@@ -958,7 +975,7 @@
                 <div class="feature-box card">
                     <div class="feature-icon">⭐</div>
                     <h3 class="text-xl font-semibold text-brand-text mb-3">BBB A+ Rated</h3>
-                    <p class="text-brand-text-muted">Trusted since 2012 with a perfect A+ rating from the Better Business Bureau.</p>
+                    <p class="text-brand-text-muted">Serving Cleveland since 2012 — BBB Accredited with an A+ rating since 2015.</p>
                 </div>
 
                 <div class="feature-box card">
@@ -988,7 +1005,7 @@
                             Is LongPro Pest Control a local company?
                         </button>
                         <div class="accordion-content">
-                            Yes! LongPro Pest Control is 100% locally owned and operated, based in Old Brooklyn, Cleveland. We are not a chain company. We've been serving Cleveland residents and businesses since 2012 with a BBB A+ rating.
+                            Yes! LongPro Pest Control is 100% locally owned and operated, based in Old Brooklyn, Cleveland. We are not a chain company. We've been serving Cleveland residents and businesses since 2012 and have been BBB Accredited with an A+ rating since 2015.
                         </div>
                     </div>
 
@@ -1070,7 +1087,7 @@
         <div class="max-w-7xl mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-12 w-auto mb-4">
+                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-12 w-auto mb-4">
                     <p class="text-brand-text-muted text-sm leading-relaxed">Discreet, professional pest control solutions for Cleveland and surrounding areas. We handle your pest problems with expertise and discretion.</p>
                 </div>
 
@@ -1096,7 +1113,7 @@
                         <p><a href="tel:+12163004121" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
                         <p><a href="mailto:info@longpropc.com" class="hover:text-brand-gold transition">info@longpropc.com</a></p>
                     </div>
-                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" class="h-20 w-auto mt-4">
+                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" width="200" height="80" class="h-20 w-auto mt-4">
                 </div>
             </div>
 

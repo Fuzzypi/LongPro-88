@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pest Control South Hills Cleveland OH | LongPro Pest Control - Your Neighbor</title>
-    <meta name="description" content="Professional pest control in South Hills, Cleveland OH. LongPro Pest Control is based right next door in Old Brooklyn. Bed bug extermination, cockroach control, ant & spider removal. Call (216) 300-4121.">
+    <title>Pest Control South Hills Cleveland OH | LongPro Pest Control</title>
+    <meta name="description" content="Professional pest control in South Hills, Cleveland OH from a nearby local team. Bed bug extermination, cockroach control, ant & spider removal. Call (216) 300-4121.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#1a1a1a">
     <link rel="canonical" href="https://longpropc.com/service-area/cleveland/south-hills/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pest Control South Hills Cleveland OH | LongPro Pest Control">
+    <meta property="og:description" content="Professional pest control in South Hills, Cleveland OH. Discreet bed bug extermination, cockroach control, and ant & spider removal from a nearby local team.">
+    <meta property="og:url" content="https://longpropc.com/service-area/cleveland/south-hills/">
+    <meta property="og:site_name" content="LongPro Pest Control">
+    <meta property="og:image" content="https://longpropc.com/images/og/south-hills-preview.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pest Control South Hills Cleveland OH | LongPro Pest Control">
+    <meta name="twitter:description" content="Professional pest control in South Hills, Cleveland OH. Discreet bed bug extermination, cockroach control, and ant & spider removal from a nearby local team.">
+    <meta name="twitter:image" content="https://longpropc.com/images/og/south-hills-preview.png">
+    <meta name="geo.region" content="US-OH">
+    <meta name="geo.placename" content="South Hills, Cleveland">
     <link rel="stylesheet" href="/_astro/about.CRmxRFHV.css">
     
     <!-- JSON-LD Schemas -->
@@ -15,16 +28,18 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "LongPro Pest Control",
-      "image": "https://longpropc.com/images/longpro-logo.webp",
+      "@id": "https://longpropc.com/#business",
+      "name": "LongPro Pest Control LLC",
+      "image": "https://longpropc.com/images/og/south-hills-preview.png",
       "description": "Professional pest control services in South Hills, Cleveland OH. Bed bugs, cockroaches, ants, spiders, and more.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cleveland",
         "addressRegion": "OH",
-        "postalCode": "44109"
+        "postalCode": "44109",
+        "addressCountry": "US"
       },
-      "telephone": "(216) 300-4121",
+      "telephone": "+12163004121",
       "email": "info@longpropc.com",
       "url": "https://longpropc.com",
       "areaServed": [
@@ -34,14 +49,22 @@
         {"@type": "City", "name": "Parma"}
       ],
       "priceRange": "$$",
-      "ratingValue": "5",
-      "ratingCount": "127",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "127"
+        "ratingValue": "5.0",
+        "ratingCount": "17",
+        "reviewCount": "17"
       },
-      "sameAs": "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-llc-0796-90094646"
+      "sameAs": [
+        "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
+        "https://share.google/GETw9NeHew2eJ5lB2"
+      ]
     }
     </script>
 
@@ -92,7 +115,7 @@
         {
           "@type": "Question",
           "name": "Is LongPro Pest Control licensed and insured?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes, LongPro Pest Control is fully licensed, insured, and BBB A+ rated since 2012. We use unmarked vehicles for discreet service and maintain the highest professional standards in the pest control industry."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes, LongPro Pest Control is fully licensed, insured, and BBB Accredited since 2015. We use unmarked vehicles for discreet service and maintain the highest professional standards in the pest control industry."}
         }
       ]
     }
@@ -105,6 +128,17 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-Z1EH98YLZ1');
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { event_category: 'engagement', event_label: href });
+    } else if (href === '/contact' || href.indexOf('/contact?') === 0) {
+      gtag('event', 'quote_click', { event_category: 'engagement', event_label: window.location.pathname });
+    }
+  });
     </script>
 </head>
 <body class="bg-brand-bg text-brand-text">
@@ -113,21 +147,13 @@
     <header class="sticky top-0 z-50 bg-brand-dark border-b border-brand-border">
         <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="/" class="flex-shrink-0">
-                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-14 w-auto">
+                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-14 w-auto">
             </a>
             <div class="hidden md:flex items-center gap-8">
                 <div class="relative group">
                     <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 </div>
-                <div class="relative group">
-                    <button class="text-brand-text hover:text-brand-gold transition">Services</button>
-                    <div class="hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
-                        <a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
-                        <a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
-                        <a href="/services/ant-and-spider-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant & Spider Control</a>
-                        <a href="/services/flea-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a>
-                    </div>
-                </div>
+                <div class="relative group">  <button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition"> Services </button> <div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10"><a href="/services/general-pest-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> General Pest Control </a><a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b"> Flea Extermination </a></div>  </div>
                 <div class="relative group"><a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a></div>
                 <div class="relative group"><a href="/service-area" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a></div>
                 <div class="relative group"><a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a></div>
@@ -146,12 +172,7 @@
             <div class="px-4 py-4 flex flex-col gap-4">
                 <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 <span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
-                <div class="flex flex-col gap-2 ml-4">
-                    <a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition">Bed Bug Extermination</a>
-                    <a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition">Cockroach Extermination</a>
-                    <a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition">Ant & Spider Control</a>
-                    <a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition">Flea Extermination</a>
-                <a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition "> General Pest Control </a></div>
+                <div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition"> General Pest Control </a><a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition"> Flea Extermination </a></div>
                 <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
                 <a href="/service-area" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a>
                 <a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
@@ -204,16 +225,16 @@
             <div class="max-w-7xl mx-auto px-4 py-16 md:py-24">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8 whitespace-nowrap">Pest Control in South Hills, Cleveland OH</h1>
+                        <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8">Pest Control in South Hills, Cleveland OH</h1>
                         <p class="text-lg text-brand-text-muted mb-6">
-                            LongPro Pest Control is <strong>your neighbor</strong>—based right next door in Old Brooklyn. We understand South Hills' historic homes and the unique pest challenges they face.
+                            LongPro Pest Control serves South Hills with a nearby local team based in Cleveland's Old Brooklyn area. We understand South Hills' historic homes and the unique pest challenges they face.
                         </p>
                         <p class="text-base text-brand-text-muted mb-8">
-                            From bed bugs in your Tudor-style home to cockroaches in historic foundations, we handle it all with discreet, professional solutions. Our BBB A+ rated team has been serving Cleveland neighborhoods since 2012.
+                            From bed bugs in your Tudor-style home to cockroaches in historic foundations, we handle it all with discreet, professional solutions. Our team has been serving Cleveland neighborhoods since 2012 and is BBB Accredited with an A+ rating.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="tel:+12163004121" class="bg-brand-red hover:bg-brand-red-light text-white px-8 py-3 rounded font-semibold transition text-center">Call (216) 300-4121</a>
-                            <a href="/contact" class="bg-brand-gold hover:bg-brand-gold-light text-brand-dark px-8 py-3 rounded font-semibold transition text-center">Schedule Free Inspection</a>
+                            <a href="/contact" class="bg-brand-gold hover:bg-brand-gold-light text-brand-dark px-8 py-3 rounded font-semibold transition text-center">Request Free Estimate</a>
                         </div>
                         <div class="mt-8 flex items-center gap-4 text-sm">
                             <span class="flex items-center gap-2">
@@ -248,7 +269,7 @@
                                 </li>
                                 <li class="flex gap-3">
                                     <svg class="w-6 h-6 text-brand-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    <span class="text-brand-text-muted">BBB A+ rated since 2012</span>
+                                    <span class="text-brand-text-muted">BBB Accredited since 2015</span>
                                 </li>
                             </ul>
                         </div>
@@ -396,7 +417,7 @@
                         </div>
                         <h3 class="text-lg font-bold text-brand-gold mb-3">Proven Track Record</h3>
                         <p class="text-brand-text-muted">
-                            BBB A+ rated since 2012 with consistent, excellent reviews from South Hills and Cleveland homeowners. We've built our reputation on results.
+                            BBB Accredited since 2015 with consistent, excellent reviews from South Hills and Cleveland homeowners. We've built our reputation on results.
                         </p>
                     </div>
 
@@ -404,9 +425,9 @@
                         <div class="w-12 h-12 bg-brand-gold rounded-full flex items-center justify-center mb-4">
                             <svg class="w-6 h-6 text-brand-dark" fill="currentColor" viewBox="0 0 20 20"><path d="M10.5 1.5H3.75A2.25 2.25 0 001.5 3.75v12.5A2.25 2.25 0 003.75 18.5h12.5a2.25 2.25 0 002.25-2.25V9.5m-15-4h9m-9 4v9m9-13v4m0 0a2 2 0 110 4 2 2 0 010-4z"/></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-gold mb-3">Your Neighbors</h3>
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Nearby Local Team</h3>
                         <p class="text-brand-text-muted">
-                            Based right next door in Old Brooklyn, we know South Hills' homes, streets, and pest challenges inside and out. We're not a franchise—we're your neighbors.
+                            Based nearby in Cleveland's Old Brooklyn area, we know South Hills' homes, streets, and pest challenges inside and out. We're not a franchise, and we respond like a local company.
                         </p>
                     </div>
 
@@ -512,7 +533,7 @@
                             Is LongPro licensed and insured?
                             <svg class="w-5 h-5 text-brand-gold transition group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
                         </summary>
-                        <div class="mt-4 text-brand-text-muted leading-relaxed"><p>Yes, fully licensed, insured, and BBB A+ rated since 2012. We use unmarked vehicles for discreet service and maintain the highest professional standards.</p></div>
+                        <div class="mt-4 text-brand-text-muted leading-relaxed"><p>Yes, fully licensed, insured, and BBB Accredited since 2015. We use unmarked vehicles for discreet service and maintain the highest professional standards.</p></div>
                     </details>
                 </div>
             </div>
@@ -583,7 +604,7 @@
         <div class="max-w-7xl mx-auto px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" class="h-12 w-auto mb-4">
+                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-12 w-auto mb-4">
                     <p class="text-brand-text-muted text-sm leading-relaxed">Discreet, professional pest control solutions for Cleveland and surrounding areas. We handle your pest problems with expertise and discretion.</p>
                 </div>
                 <nav aria-label="Footer navigation">
@@ -607,7 +628,7 @@
                         <p><a href="tel:+12163004121" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
                         <p><a href="mailto:info@longpropc.com" class="hover:text-brand-gold transition">info@longpropc.com</a></p>
                     </div>
-                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" class="h-20 w-auto mt-4">
+                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" width="200" height="80" class="h-20 w-auto mt-4">
                 </div>
             </div>
             <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">

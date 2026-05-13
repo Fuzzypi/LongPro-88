@@ -1,0 +1,309 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://longpropc.com/#business",
+      "name": "LongPro Pest Control",
+      "legalName": "LongPro Pest Control LLC",
+      "description": "Award-winning pest control service in Cleveland, OH offering bed bug extermination, cockroach control, termite inspection, and emergency pest services.",
+      "url": "https://longpropc.com",
+      "logo": "https://longpropc.com/logo.png",
+      "image": "https://longpropc.com/images/business-hero.jpg",
+      "sameAs": [
+        "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
+        "https://share.google/GETw9NeHew2eJ5lB2"
+      ],
+      "telephone": "+12163004121",
+      "email": "info@longpropc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cleveland",
+        "addressRegion": "OH",
+        "addressCountry": "US",
+        "addressLocality": "Cleveland"
+      },
+      "geo": {
+        "@type": "Point",
+        "latitude": 41.4993,
+        "longitude": -81.6944
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.4993,
+          "longitude": -81.6944
+        },
+        "geoRadius": "40.23"
+      },
+      "hoursOfOperation": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "CLOSED"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+12163004121",
+        "email": "info@longpropc.com",
+        "url": "https://longpropc.com/contact/"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5.0",
+        "worstRating": "1.0",
+        "ratingCount": "33",
+        "reviewCount": "33"
+      },
+      "review": {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Marquis Wise"
+        },
+        "datePublished": "2024-06-15",
+        "description": "Excellent bed bug treatment service. Fast response, professional, and thorough. Highly recommend for anyone dealing with pest issues.",
+        "name": "Outstanding pest control service",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5.0",
+          "bestRating": "5.0",
+          "worstRating": "1.0"
+        }
+      },
+      "knowsAbout": [
+        "Bed Bug Control",
+        "Cockroach Extermination",
+        "Ant Control",
+        "Spider Control",
+        "Flea Treatment",
+        "General Pest Control",
+        "Termite Inspection",
+        "WDI Inspection",
+        "VA Loan Termite Inspection",
+        "Emergency Pest Service",
+        "Pest Prevention",
+        "Pest Identification"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Unmarked Vehicles",
+          "value": "Discreet service with unmarked vehicles for customer privacy"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Inspection-First Approach",
+          "value": "Comprehensive inspection before treatment recommendations"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Fast Scheduling",
+          "value": "Same-day or 24-hour service available"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "BBB Accreditation",
+          "value": "A+ rating with Better Business Bureau for 13+ years"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://longpropc.com/#catalog",
+        "name": "Pest Control Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-bedbugs",
+            "name": "Bed Bug Extermination",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Bed Bug Extermination",
+                "description": "Professional bed bug detection and treatment",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-cockroaches",
+            "name": "Cockroach Extermination",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Cockroach Extermination",
+                "description": "Effective cockroach control and elimination",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-ants-spiders",
+            "name": "Ant & Spider Control",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Ant & Spider Control",
+                "description": "Professional ant and spider pest management",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-fleas",
+            "name": "Flea Extermination",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Flea Extermination",
+                "description": "Complete flea treatment for homes and properties",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-general-pest",
+            "name": "General Pest Control",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "General Pest Control",
+                "description": "Comprehensive pest control for various pest types",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-wdi-termite",
+            "name": "WDI Termite Inspection",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "WDI Termite Inspection",
+                "description": "Professional Wood Destroying Insect inspection and reporting",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-va-termite",
+            "name": "VA Home Loan Termite Inspection",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "VA Home Loan Termite Inspection",
+                "description": "VA-compliant termite inspection for home loan requirements",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://longpropc.com/#service-emergency",
+            "name": "Emergency Service",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Emergency Pest Service",
+                "description": "Same-day emergency pest control service",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "USD",
+                  "price": "Quote Required"
+                },
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        ]
+      },
+      "potentialAction": [
+        {
+          "@type": "ScheduleAction",
+          "name": "Schedule Service",
+          "description": "Schedule a pest control service or inspection",
+          "url": "https://longpropc.com/contact/",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://longpropc.com/contact/",
+            "actionPlatform": [
+              "DesktopWebPlatform",
+              "MobileWebPlatform"
+            ]
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "name": "Call Business",
+          "description": "Call LongPro Pest Control",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+12163004121"
+          }
+        }
+      ]
+    }
+  ]
+}

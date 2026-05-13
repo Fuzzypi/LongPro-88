@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "projectId": "longpro-88",
+  "brainProjectId": null,
+  "tasks": {
+    "32ed0287": {
+      "completed": true,
+      "notes": []
+    },
+    "2be3bec0": {
+      "completed": true,
+      "notes": []
+    },
+    "8c51e9e6": {
+      "completed": true,
+      "notes": []
+    },
+    "ab96f325": {
+      "completed": true,
+      "notes": []
+    },
+    "7e800aac": {
+      "completed": true,
+      "notes": []
+    },
+    "43fcfd01": {
+      "completed": true,
+      "notes": [
+        "Blocked until wrangler deploy publishes the updated dist_assets/llms.txt to production",
+        "Merge blocked by 3 issues: (1) /services/general-pest-control missing from manifest routing, (2) truncated redirect key, (3) citation scan CLI not environment-agnostic"
+      ]
+    },
+    "b1d0517a": {
+      "completed": true,
+      "notes": []
+    },
+    "8e56517b": {
+      "completed": true,
+      "notes": []
+    },
+    "043f0044": {
+      "completed": true,
+      "notes": []
+    },
+    "bdaed557": {
+      "completed": true,
+      "notes": []
+    },
+    "d8a6f0fb": {
+      "completed": true,
+      "notes": []
+    },
+    "bf52e72b": {
+      "completed": true,
+      "notes": []
+    },
+    "94f2e1b0": {
+      "completed": true,
+      "notes": []
+    },
+    "125868fa": {
+      "completed": true,
+      "notes": [
+        "Already present — 5 FAQPage JSON-LD blocks covering 19 Q&As across all FAQ sections"
+      ]
+    },
+    "919b6450": {
+      "completed": true,
+      "notes": []
+    },
+    "5e65b068": {
+      "completed": true,
+      "notes": []
+    },
+    "774388d2": {
+      "completed": true,
+      "notes": []
+    },
+    "efa16aea": {
+      "completed": true,
+      "notes": []
+    },
+    "130bbb7b": {
+      "completed": true,
+      "notes": []
+    },
+    "9c133148": {
+      "completed": true,
+      "notes": []
+    },
+    "7aed94f6": {
+      "completed": true,
+      "notes": []
+    },
+    "739cb332": {
+      "completed": true,
+      "notes": []
+    },
+    "f9d1a72f": {
+      "completed": true,
+      "notes": []
+    },
+    "5c209123": {
+      "completed": true,
+      "notes": []
+    },
+    "ee558621": {
+      "completed": true,
+      "notes": []
+    },
+    "5bf832c9": {
+      "completed": true,
+      "notes": []
+    }
+  },
+  "status": "completed",
+  "completedAt": "2026-05-03T23:20:24.221Z",
+  "planTitle": "Agentic Visibility Fixes — LongPro Pest Control"
+}

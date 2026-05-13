@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "projectId": "longpro-88",
+  "brainProjectId": null,
+  "tasks": {
+    "ff6ae4ed": {
+      "completed": true,
+      "notes": []
+    },
+    "9bce80c2": {
+      "completed": true,
+      "notes": []
+    },
+    "4d8e5ce7": {
+      "completed": true,
+      "notes": []
+    },
+    "ac29a74f": {
+      "completed": true,
+      "notes": []
+    },
+    "534c5b00": {
+      "completed": true,
+      "notes": []
+    },
+    "7b993716": {
+      "completed": true,
+      "notes": [
+        "Replaced the remaining 10 logo-based social previews on home, about, contact, reviews, services, service-area, South Hills, and three priority blog posts. Generated dedicated 1200x630 share-card assets under public/images/og and dist_assets/images/og, then aligned each page's og:image, twitter:image, and page-level schema image fields to the new asset."
+      ]
+    },
+    "fa3aac71": {
+      "completed": true,
+      "notes": [
+        "Verification passed after the replacement pass: repo scan found zero remaining logo-based og:image or twitter:image tags in dist_assets, all 10 edited pages point OG and Twitter to the expected new preview asset, and every JSON-LD block on those pages parses successfully."
+      ]
+    },
+    "ce2a4999": {
+      "completed": true,
+      "notes": [
+        "Reconciled the local-authority backlog on 2026-05-01 by rerunning the citation scanner, rechecking direct Yahoo Local and Contractors Up pages, and splitting the outstanding work into agent-executable, waiting-on-provider, and owner-only buckets. Yahoo Local is now resolved on the direct page; Contractors Up remains stale and still leaks the Archmere address."
+      ]
+    },
+    "1c83b1a3": {
+      "completed": true,
+      "notes": [
+        "Executed the repo-side authority follow-up that does not require owner login: `npm run citations:self-test`, `npm run citations:scan`, refreshed `docs/citation-cleanup-tracker.md`, updated `docs/citation-cleanup-inventory.json`, and added `docs/local-authority-follow-through-2026-05-01.md` as the current Phase 4 handoff. The exact owner-only next actions are now documented for Yelp, Manta, A Greater Town, and Google Business Profile completion."
+      ]
+    },
+    "aa0bfeab": {
+      "completed": true,
+      "notes": [
+        "Ranked the current content gaps from the built inventory in docs/content-depth-priority-2026-05-01.md. The main commercial gap is no longer blog volume; it is thin high-intent hub coverage plus missing service-intent pages for inspection, emergency response, and heat treatment. The recommended first slice is to expand /services/, /service-area/, and /services/general-pest-control/ before adding a batch of new URLs."
+      ]
+    },
+    "97b30de2": {
+      "completed": true,
+      "notes": [
+        "Implemented the first content-expansion slice on the highest-value existing pages instead of adding a large new URL batch. Expanded dist_assets/services/index.html, dist_assets/service-area/index.html, and dist_assets/services/general-pest-control/index.html with stronger commercial copy, clearer internal linking into service/blog/area pages, and minor schema alignment on the two hub pages."
+      ]
+    },
+    "256b5956": {
+      "completed": true,
+      "notes": [
+        "Re-verified the three Phase 5 pages after the content slice with deterministic checks: all JSON-LD blocks parsed, the expected new section markers and internal links were present, and visible copy depth increased on /services/, /service-area/, and /services/general-pest-control/. Added docs/site-improvements-handoff-2026-05-01.md as the current post-intake, post-reconciliation handoff."
+      ]
+    }
+  },
+  "status": "completed",
+  "completedAt": "2026-05-01T00:28:26.730Z",
+  "planTitle": "LongPro Website World-Class Plan"
+}

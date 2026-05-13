@@ -14637,24 +14637,129 @@ var LONGPRO_REDIRECT_MAP = {
   "/accessibility-statement": "/",
   "/bed-bug-faq": "/faq",
   "/cockroach-extermination-in-cleveland": "/services/cockroach-extermination",
+  "/post/how-to-keep-your-home-safe-from-common-pests": "/blog",
   "/post/understanding-regional-pest-challenges-in-north-olmsted": "/blog",
-  "/blog/2024/november/the-impact-of-seasonal-changes-on-bed-bug-activity": "/blog"
+  "/blog/2024/november/the-impact-of-seasonal-changes-on-bed-bug-activity": "/blog",
+  "/.well-known/llms.txt": "/llms.txt"
 };
 function longproHandleRedirect(request) {
   const url = new URL(request.url);
   const normalized = url.pathname.replace(/\/+$/, "") || "/";
   const target = LONGPRO_REDIRECT_MAP[normalized];
-  if (!target) return null;
-  const dest = new URL(target, url.origin);
+  if (!target && !normalized.startsWith("/post/")) return null;
+  const redirectTarget = target || "/blog";
+  const dest = new URL(redirectTarget, url.origin);
   dest.search = url.search;
   return Response.redirect(dest.toString(), 301);
 }
 __name(longproHandleRedirect, "longproHandleRedirect");
+function longproIsScheduleRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.replace(/\/+$/, "") === "/api/schedule";
+}
+__name(longproIsScheduleRequest, "longproIsScheduleRequest");
+async function longproHandleSchedule(request, env2 = {}) {
+  if (request.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        allow: "POST, OPTIONS",
+        "access-control-allow-methods": "POST, OPTIONS",
+        "access-control-allow-headers": "content-type",
+        "access-control-allow-origin": "*"
+      }
+    });
+  }
+  if (request.method !== "POST") {
+    return longproJson({ ok: false, error: "Method not allowed. POST a JSON body with: name, phone, email, service, urgency, message. Optional: property_type, address, preferred_time." }, {
+      status: 405,
+      headers: { allow: "POST, OPTIONS", "access-control-allow-origin": "*" }
+    });
+  }
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return longproJson({ ok: false, error: "Invalid JSON. Expected: { name, phone, email, service, urgency, message }" }, { status: 400, headers: { "access-control-allow-origin": "*" } });
+  }
+  const name = longproClean(body.name, 100);
+  const phone = longproClean(body.phone, 20);
+  const email = longproClean(body.email, 120);
+  const service = longproClean(body.service, 100);
+  const urgency = longproClean(body.urgency, 50) || "flexible";
+  const message = longproClean(body.message, 1e3);
+  const propertyType = longproClean(body.property_type, 50);
+  const address = longproClean(body.address, 300);
+  const preferredTime = longproClean(body.preferred_time, 100);
+  if (!name || !phone && !email) {
+    return longproJson({
+      ok: false,
+      error: "name and at least one of phone or email are required",
+      schema: { required: ["name"], oneOf: ["phone", "email"], optional: ["service", "urgency", "message", "property_type", "address", "preferred_time"] }
+    }, { status: 400, headers: { "access-control-allow-origin": "*" } });
+  }
+  const endpoint = longproLeadEndpoint(env2);
+  if (!endpoint) {
+    return longproJson({ ok: false, error: "Scheduling system is not configured" }, { status: 503, headers: { "access-control-allow-origin": "*" } });
+  }
+  const urgencyNote = urgency !== "flexible" ? `[Urgency: ${urgency}] ` : "";
+  const propertyNote = propertyType ? `[Property: ${propertyType}] ` : "";
+  const addressNote = address ? `[Address: ${address}] ` : "";
+  const timeNote = preferredTime ? `[Preferred: ${preferredTime}] ` : "";
+  const enrichedMessage = `${urgencyNote}${propertyNote}${addressNote}${timeNote}${message || "Service request via scheduling API"}`.trim();
+  const lead = {
+    name,
+    phone,
+    email,
+    service,
+    message: enrichedMessage,
+    source: longproClean(body.source, 200) || "api/schedule",
+    utm_source: longproClean(body.utm_source, 100) || "agent",
+    utm_medium: "api",
+    utm_campaign: longproClean(body.utm_campaign, 100) || "",
+    utm_content: "",
+    utm_term: "",
+    page_url: request.headers.get("referer") || "",
+    user_agent: request.headers.get("user-agent") || "",
+    ip_address: request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for") || ""
+  };
+  const headers = { "content-type": "application/json" };
+  if (env2.PESTPRO_INTAKE_TOKEN) {
+    headers.authorization = `Bearer ${env2.PESTPRO_INTAKE_TOKEN}`;
+  }
+  let response;
+  try {
+    response = await fetch(endpoint, { method: "POST", headers, body: JSON.stringify(lead) });
+  } catch (error) {
+    console.error("LongPro schedule intake request failed", error);
+    return longproJson({ ok: false, error: "Scheduling service unavailable" }, { status: 502, headers: { "access-control-allow-origin": "*" } });
+  }
+  if (!response.ok) {
+    console.error("LongPro schedule intake rejected", response.status);
+    return longproJson({ ok: false, error: "Scheduling request rejected" }, { status: 502, headers: { "access-control-allow-origin": "*" } });
+  }
+  const confirmationId = `LP-${Date.now().toString(36).toUpperCase()}`;
+  return longproJson({
+    ok: true,
+    confirmation_id: confirmationId,
+    status: "received",
+    next_steps: urgency === "same-day"
+      ? "LongPro will call within 1 hour during business hours (Mon-Sat 9AM-9PM ET) to confirm same-day availability."
+      : "LongPro will call within 24 hours during business hours (Mon-Sat 9AM-9PM ET) to schedule an inspection.",
+    expected_callback: urgency === "same-day" ? "within 1 hour" : "within 24 hours",
+    business_hours: "Monday-Saturday 9:00 AM - 9:00 PM ET",
+    note: "Free inspection is always the first step. No treatment begins without your approval of a written estimate."
+  }, { status: 201, headers: { "access-control-allow-origin": "*" } });
+}
+__name(longproHandleSchedule, "longproHandleSchedule");
 var longproWorker = {
   ...__astrojsSsrVirtualEntry,
   async fetch(request, env2, context2) {
     const redirect = longproHandleRedirect(request);
     if (redirect) return redirect;
+    if (longproIsScheduleRequest(request)) {
+      return longproHandleSchedule(request, env2);
+    }
     if (longproIsContactRequest(request)) {
       return longproHandleContact(request, env2);
     }

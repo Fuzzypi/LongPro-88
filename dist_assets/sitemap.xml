@@ -31,12 +31,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://longpropc.com/privacy-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
   <!-- Services -->
   <url>
     <loc>https://longpropc.com/services/</loc>
@@ -142,6 +136,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://longpropc.com/blog/german-cockroaches-cleveland-apartments/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/cleveland-seasonal-pest-calendar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/professional-pest-control-vs-diy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://longpropc.com/blog/how-to-prepare-for-bed-bug-treatment/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -163,6 +172,41 @@
   </url>
   <url>
     <loc>https://longpropc.com/blog/do-bed-bugs-spread-to-neighbors/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/bed-bug-treatment-cost-cleveland/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/do-bed-bugs-come-back-after-treatment/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/pet-safe-pest-control-cleveland/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/bed-bug-inspection-what-to-expect/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/emergency-pest-control-cleveland/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/cuyahoga-county-bed-bug-help/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://longpropc.com/blog/bed-bug-vs-flea-bites/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
