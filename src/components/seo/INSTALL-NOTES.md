@@ -111,7 +111,7 @@ This JSON-LD package includes:
 
 - **Ratings & Reviews**
   - Aggregate Rating: 5.0 stars, 33 reviews
-  - Sample Review: Marquis Wise, 5 stars, bed bug treatment testimonial
+  - Sample Review: anonymous customer, 5 stars, bed bug treatment testimonial
 
 - **Services & Offers**
   - 8 service categories with individual Offer entries:

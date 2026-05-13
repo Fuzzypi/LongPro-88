@@ -1,4 +1,4 @@
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 
 const checks = [];
 
@@ -16,6 +16,20 @@ function titleOf(html) {
 
 function linksTo(html, href) {
   return html.includes(`href="${href}"`);
+}
+
+function readPublicTextFiles(dir) {
+  const files = [];
+  for (const entry of readdirSync(dir)) {
+    const path = `${dir}/${entry}`;
+    const stat = statSync(path);
+    if (stat.isDirectory()) {
+      files.push(...readPublicTextFiles(path));
+    } else if (/\.(html|txt|xml|js|jsx|json|md)$/i.test(path)) {
+      files.push(path);
+    }
+  }
+  return files;
 }
 
 const worker = read("src/index.js");
@@ -109,6 +123,18 @@ check(
     linksTo(blogIndex, "/blog/professional-pest-control-vs-diy")
 );
 
+const reviewsPage = read("dist_assets/reviews/index.html");
+const reviewJsonLdBlocks = [...reviewsPage.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)];
+let reviewsJsonLdValid = reviewJsonLdBlocks.length > 0;
+for (const [, block] of reviewJsonLdBlocks) {
+  try {
+    JSON.parse(block);
+  } catch {
+    reviewsJsonLdValid = false;
+  }
+}
+check("reviews page JSON-LD remains parseable", reviewsJsonLdValid);
+
 const sitemap = read("dist_assets/sitemap.xml");
 check(
   "sitemap includes new cockroach article",
@@ -129,6 +155,26 @@ check(
   "llms.txt includes staggered non-bed-bug articles",
   llms.includes("https://longpropc.com/blog/cleveland-seasonal-pest-calendar/") &&
     llms.includes("https://longpropc.com/blog/professional-pest-control-vs-diy/")
+);
+
+const personalNameTokens = ["Marquis Wise", "Sean", "Shawn"];
+const publicTextFiles = [
+  ...readPublicTextFiles("dist_assets"),
+  ...readPublicTextFiles("src/components/seo"),
+];
+const personalNameHits = [];
+for (const file of publicTextFiles) {
+  const text = read(file);
+  for (const token of personalNameTokens) {
+    if (text.includes(token)) {
+      personalNameHits.push(`${file}: ${token}`);
+    }
+  }
+}
+check(
+  "public website assets do not expose owner or technician names",
+  personalNameHits.length === 0,
+  personalNameHits.join("; ")
 );
 
 const failures = checks.filter((item) => !item.passed);

@@ -94,8 +94,8 @@ const LongProJsonLd = () => {
         review: {
           '@type': 'Review',
           author: {
-            '@type': 'Person',
-            name: 'Marquis Wise',
+            '@type': 'Organization',
+            name: 'LongPro Pest Control customer',
           },
           datePublished: '2024-06-15',
           description:
