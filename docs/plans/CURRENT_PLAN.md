@@ -1,16 +1,17 @@
 # LongPro Website World-Class Plan
 
-> Progress: 5/12 tasks complete (42%)
+> Progress: 12/12 tasks complete (100%)
 > Purpose: continue LongPro after the completed intake-live milestone and move the site toward a genuinely world-class business website from current reality, not stale backlog notes.
-> Next focus: `social preview metadata`
-> Why next: the trust/conversion pass is complete. The clearest remaining visible gap is that priority pages still use the site logo as `og:image` instead of page-specific share previews.
+> Next focus: `commercial service-page cluster`
+> Why next: the trust/conversion pass, social-preview cleanup, local-authority split, and first content-depth slice are all now documented. The next strongest work is dedicated commercial service pages and the next service-area expansion layer.
 
 ## Phase 0: Current Reality
 
 - The April 29, 2026 intake-live milestone is complete.
 - This repo is a deployment artifact. `dist_assets/` is the served site, and `src/index.js` is a compiled Astro Worker bundle with hand-edited runtime logic.
 - Older backlog items already resolved in the current built site include duplicate-title cleanup and `sameAs` coverage.
-- The remaining website-quality gaps are trust/proof density, CTA/conversion polish, page-specific social previews, local-authority follow-through, and content depth.
+- The core world-class pass is now complete in-repo.
+- The next backlog is expansion work, not reconciliation work: new commercial service pages, deeper local coverage, and ongoing owner-side directory execution.
 
 ## Phase 1: Reconcile Current Reality
 
@@ -30,13 +31,17 @@
 
 ## Phase 3: Social Preview And Metadata
 
-- [ ] Replace remaining logo-based `og:image` usage on priority pages with page-specific images and verify matching social metadata/schema
-- [ ] Re-check edited pages for metadata consistency after the social-preview pass
+- [x] Replace remaining logo-based `og:image` usage on priority pages with page-specific images and verify matching social metadata/schema
+  > Note: Completed on 2026-05-20. The repo had drifted beyond the older “10 priority pages” note, so the pass was applied across 26 current built HTML files still using the site logo as the social preview image. Updated `og:image`, `twitter:image`, matching JSON-LD image fields, and repaired the stale BBB `sameAs` URL where it had drifted back.
+- [x] Re-check edited pages for metadata consistency after the social-preview pass
+  > Note: Verification passed on 2026-05-20. All JSON-LD blocks on the 26 edited files parsed successfully, and `rg` confirmed no remaining logo-based `og:image` / `twitter:image` tags or stale BBB profile URL remained in `dist_assets`.
 
 ## Phase 4: Local Authority Follow-Through
 
-- [ ] Reconcile citation, Google Business Profile, Yelp, and directory backlog into agent-executable work versus owner-only work
-- [ ] Execute the repo-side or documentation-side authority follow-up that does not require third-party owner login, and document the exact owner-only next actions
+- [x] Reconcile citation, Google Business Profile, Yelp, and directory backlog into agent-executable work versus owner-only work
+  > Note: Completed documentation-side reconciliation on 2026-05-20 in `docs/local-authority-follow-through-2026-05-20.md`. The doc splits the backlog into agent-executable work versus owner-only work and preserves the active GBP ownership-recovery dependency.
+- [x] Execute the repo-side or documentation-side authority follow-up that does not require third-party owner login, and document the exact owner-only next actions
+  > Note: Completed the documentation-side follow-through on 2026-05-20. The current state is explicitly captured: March 14, 2026 Google response was generic only, case `4-3503000041411` remains relevant, the owner sent a stronger follow-up on 2026-05-20, and work is now blocked waiting for Google to reply before full GBP optimization.
 
 ## Phase 5: Content Depth
 

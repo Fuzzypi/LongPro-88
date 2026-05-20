@@ -113,7 +113,7 @@ If continuing site work after this handoff, the highest-value backlog is:
    - Tremont first
    - then South Hills and the remaining neighborhood set
 4. Continue the owner-only local-authority follow-through already documented in:
-   - `docs/local-authority-follow-through-2026-05-01.md`
+   - `docs/local-authority-follow-through-2026-05-20.md`
 
 ## Current Reality Snapshot
 
