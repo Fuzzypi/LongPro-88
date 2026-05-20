@@ -32,7 +32,7 @@
 ## Phase 3: Social Preview And Metadata
 
 - [x] Replace remaining logo-based `og:image` usage on priority pages with page-specific images and verify matching social metadata/schema
-  > Note: Completed on 2026-05-20. The repo had drifted beyond the older “10 priority pages” note, so the pass was applied across 26 current built HTML files still using the site logo as the social preview image. Updated `og:image`, `twitter:image`, matching JSON-LD image fields, and repaired the stale BBB `sameAs` URL where it had drifted back.
+  > Note: Completed on 2026-05-20. The repo had drifted beyond the older “10 priority pages” note, so the pass was applied across 26 current built HTML files still using the site logo as the social preview image. Updated `og:image`, `twitter:image`, matching JSON-LD image fields, and repaired the stale BBB `sameAs` URL where it had drifted back. A follow-up parity pass the same day reconciled `main` with the live deployed preview-image set by syncing 22 built pages to the live `og`/`twitter` image paths and adding the 12 deployed `/images/og/*` assets back into the repo.
 - [x] Re-check edited pages for metadata consistency after the social-preview pass
   > Note: Verification passed on 2026-05-20. All JSON-LD blocks on the 26 edited files parsed successfully, and `rg` confirmed no remaining logo-based `og:image` / `twitter:image` tags or stale BBB profile URL remained in `dist_assets`.
 

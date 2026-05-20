@@ -122,5 +122,6 @@ As of 2026-05-01:
 - LongPro → PestPro intake is live end-to-end
 - trust/conversion upgrades on home/about/contact/reviews are complete
 - page-specific social previews for the priority pages are complete
+- repo/live preview-image parity was re-established on 2026-05-20 by syncing the deployed `/images/og/*` asset set back into `main`
 - local-authority repo-side follow-through is complete and the owner-only tasks are clearly split out
 - the content backlog is no longer “write more posts first”; it is “build stronger commercial service and service-area depth from the current inventory outward”
