@@ -1,0 +1,114 @@
+name: Live Site Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "dist_assets/**"
+      - "scripts/monitor-live-signals.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/live-monitor.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      ISSUE_TITLE: Live site monitor failing
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run live monitor
+        id: monitor
+        run: |
+          set -o pipefail
+          npm run monitor:live | tee monitor.log
+
+      - name: Upload monitor log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-monitor-log
+          path: monitor.log
+
+      - name: Open or update failure issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = process.env.ISSUE_TITLE;
+            const body = [
+              "The scheduled live monitor failed.",
+              "",
+              `Run: ${process.env.RUN_URL}`,
+              `Commit: ${context.sha}`,
+              `Triggered by: ${context.eventName}`
+            ].join("\n");
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open"
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }
+
+      - name: Close failure issue after recovery
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = process.env.ISSUE_TITLE;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open"
+            });
+            const existing = issues.find((issue) => issue.title === title);
+            if (!existing) {
+              return;
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              body: `Live monitor recovered. Run: ${process.env.RUN_URL}`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              state: "closed"
+            });

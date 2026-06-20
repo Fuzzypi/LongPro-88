@@ -3,6 +3,8 @@
     "citations:dry-run": "node scripts/scan-citations.mjs --dry-run",
     "citations:scan": "node scripts/scan-citations.mjs",
     "citations:self-test": "node scripts/scan-citations.mjs --self-test",
+    "deploy:live": "env -u CLOUDFLARE_API_TOKEN npx wrangler deploy",
+    "monitor:live": "node scripts/monitor-live-signals.mjs",
     "seo:verify": "node scripts/verify-seo-fixes.mjs"
   },
   "devDependencies": {
