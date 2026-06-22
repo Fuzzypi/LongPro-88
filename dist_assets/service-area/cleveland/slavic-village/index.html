@@ -2,72 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control</title>
-    <meta name="description" content="Professional pest control in Slavic Village & Broadway, Cleveland OH. LongPro Pest Control is right across the valley. Bed bug extermination, cockroach control, ant & spider removal. Affordable, discreet service. Call (216) 300-4121.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://longpropc.com/service-area/cleveland/slavic-village/">
-    <meta property="og:title" content="Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control">
-    <meta property="og:description" content="Professional pest control in Slavic Village and Broadway, Cleveland OH. LongPro Pest Control handles bed bugs, cockroaches, ants, spiders, and older-home pest issues with discreet service."><meta property="og:image" content="https://longpropc.com/images/house-keys.webp">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://longpropc.com/service-area/cleveland/slavic-village/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control">
-    <meta name="twitter:description" content="Professional pest control in Slavic Village and Broadway, Cleveland OH. Discreet service for older homes, duplexes, and apartments."><meta name="twitter:image" content="https://longpropc.com/images/house-keys.webp">
-    <link rel="stylesheet" href="/_astro/about.CRmxRFHV.css">
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1EH98YLZ1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Z1EH98YLZ1');
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "LongPro Pest Control LLC",
-        "image": "https://longpropc.com/logo.png",
-        "description": "Professional pest control services in Slavic Village and Broadway, Cleveland OH. Bed bug, cockroach, ant, spider removal and extermination.",
-        "url": "https://longpropc.com",
-        "telephone": "(216) 300-4121",
-        "email": "info@longpropc.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Old Brooklyn, Cleveland",
-            "addressLocality": "Cleveland",
-            "addressRegion": "OH",
-            "postalCode": "44134",
-            "addressCountry": "US"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Cleveland",
-            "containedIn": {
-                "@type": "State",
-                "name": "Ohio"
-            }
-        },
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "ratingCount": "150"
-        }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z1EH98YLZ1');
+
+  window.longproTrackEvent = function(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, { event_category: 'engagement', ...params });
+  };
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link || typeof window.longproTrackEvent !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    var normalizedHref = href.replace(/\/+(?=\?|$)/g, '');
+    var location = link.getAttribute('data-track-location') || '';
+    var params = {
+      event_label: href,
+      page_path: window.location.pathname,
+      link_text: (link.textContent || '').trim()
+    };
+    if (location) params.cta_location = location;
+    if (href.indexOf('tel:') === 0) {
+      window.longproTrackEvent('phone_click', params);
+      if (location) window.longproTrackEvent('phone_click_' + location, params);
+      return;
     }
-    </script>
+    if (
+      normalizedHref === '/contact' ||
+      normalizedHref === '/contact/' ||
+      normalizedHref.indexOf('/contact?') === 0 ||
+      normalizedHref.indexOf('/contact/?') === 0
+    ) {
+      window.longproTrackEvent('quote_click', params);
+      if (location) window.longproTrackEvent('quote_click_' + location, params);
+    }
+  });
+
+  if (window.location.pathname === '/contact/' || window.location.pathname === '/contact') {
+    window.longproTrackEvent('contact_page_view', { page_path: window.location.pathname });
+  }
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/longpro-logo.webp">
+    <title>Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control</title>
+    <meta name="description" content="Professional pest control in Slavic Village and Broadway, Cleveland OH. LongPro Pest Control handles bed bugs, cockroaches, ants, spiders, and older-home pest issues with discreet service. Call (216) 300-4121.">
+    <link rel="canonical" href="https://longpropc.com/service-area/cleveland/slavic-village/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control">
+    <meta property="og:description" content="Professional pest control in Slavic Village and Broadway, Cleveland OH. LongPro Pest Control handles bed bugs, cockroaches, ants, spiders, and older-home pest issues with discreet service.">
+    <meta property="og:url" content="https://longpropc.com/service-area/cleveland/slavic-village/">
+    <meta property="og:site_name" content="LongPro Pest Control">
+    <meta property="og:image" content="https://longpropc.com/images/house-keys.webp">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pest Control Slavic Village Cleveland OH | Exterminator Broadway | LongPro Pest Control">
+    <meta name="twitter:description" content="Professional pest control in Slavic Village and Broadway, Cleveland OH. Discreet service for older homes, duplexes, and apartments.">
+    <meta name="twitter:image" content="https://longpropc.com/images/house-keys.webp">
+    <!-- Geo -->
+    <meta name="geo.region" content="US-OH">
+    <meta name="geo.placename" content="Slavic Village">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://longpropc.com/#business","name":"LongPro Pest Control LLC","legalName":"LongPro Pest Control LLC","url":"https://longpropc.com/","image":"https://longpropc.com/images/og/home-preview.png","telephone":"+12163004121","email":"info@longpropc.com","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Cleveland","addressRegion":"OH","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Cleveland"},{"@type":"City","name":"Lakewood"},{"@type":"City","name":"Parma"},{"@type":"City","name":"Euclid"},{"@type":"City","name":"Strongsville"},{"@type":"AdministrativeArea","name":"Cuyahoga County"},{"@type":"AdministrativeArea","name":"Greater Cleveland"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"}],"sameAs":["https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736","https://share.google/GETw9NeHew2eJ5lB2"],"knowsAbout":["bed bug extermination","cockroach extermination","ant control","spider control","flea extermination","general pest control"]},{"@type":"WebSite","@id":"https://longpropc.com/#website","url":"https://longpropc.com/","name":"LongPro Pest Control","publisher":{"@id":"https://longpropc.com/#business"}}]}</script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Pest Control",
+        "name": "Pest Control in Slavic Village, Cleveland OH",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "LongPro Pest Control LLC",
-            "telephone": "(216) 300-4121"
+            "@id": "https://longpropc.com/#business",
+            "name": "LongPro Pest Control LLC"
         },
-        "areaServed": "Slavic Village, Broadway, Cleveland, OH",
-        "serviceType": ["Pest Extermination", "Bed Bug Control", "Cockroach Control", "Ant Removal", "Spider Removal"]
+        "areaServed": {
+            "@type": "Neighborhood",
+            "name": "Slavic Village",
+            "containedInPlace": {
+                "@type": "City",
+                "name": "Cleveland",
+                "containedInPlace": {
+                    "@type": "State",
+                    "name": "Ohio"
+                }
+            }
+        },
+        "serviceType": "Pest Control",
+        "description": "Discreet pest control services in Slavic Village and Broadway, Cleveland OH including bed bug extermination, cockroach control, ant and spider removal, and older-home pest management."
     }
     </script>
     <script type="application/ld+json">
@@ -80,7 +105,7 @@
                 "name": "Why do older homes in Slavic Village and Broadway have more pest problems?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Slavic Village and Broadway are among Cleveland's oldest neighborhoods, with homes dating back over a century. Older housing stock naturally has more cracks, gaps, and deteriorated areas that provide entry points for pests like cockroaches, ants, spiders, and bed bugs. Aging pipes, foundations, and exterior walls create ideal conditions for infestations. Our experienced team at LongPro Pest Control understands these unique challenges and provides targeted solutions."
+                    "text": "Slavic Village and Broadway are among Cleveland's oldest neighborhoods, with homes dating back over a century. Older housing stock naturally has more cracks, gaps, and deteriorated areas that provide entry points for pests like cockroaches, ants, spiders, and bed bugs. Aging pipes, foundations, and exterior walls create ideal conditions for infestations. LongPro Pest Control understands these older-home challenges and provides targeted solutions."
                 }
             },
             {
@@ -88,7 +113,7 @@
                 "name": "How can multi-family buildings prevent pest problems in Slavic Village?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Multi-family properties are especially vulnerable to pest issues because infestations can spread quickly between units. In neighborhoods like Slavic Village where many duplexes and apartment buildings exist, coordinated pest control is essential. LongPro Pest Control offers building-wide treatments and can work with property managers on regular maintenance plans to prevent recurring infestations across multiple units."
+                    "text": "Multi-family properties are especially vulnerable because infestations can spread quickly between units. In neighborhoods like Slavic Village where many duplexes and apartment buildings exist, coordinated pest control is essential. LongPro Pest Control can handle building-wide treatments and ongoing maintenance plans to stop recurring infestations across multiple units."
                 }
             },
             {
@@ -96,7 +121,7 @@
                 "name": "Is quality pest control affordable in Slavic Village?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! LongPro Pest Control believes professional pest control shouldn't break the bank. We offer competitive, honest pricing for residents and property owners in Slavic Village and Broadway. We never pressure you into unnecessary treatments—just straightforward, effective solutions. Call (216) 300-4121 for a free quote."
+                    "text": "Yes. LongPro Pest Control believes professional pest control should be honest and fairly priced. We offer competitive pricing for residents and property owners in Slavic Village and Broadway, and we do not pressure you into unnecessary treatments."
                 }
             },
             {
@@ -104,7 +129,7 @@
                 "name": "How close is LongPro Pest Control to Slavic Village?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "LongPro Pest Control is based in Old Brooklyn, just across the Cuyahoga Valley from Slavic Village and Broadway. This proximity means faster response times and lower service costs for our neighbors. We're a trusted, locally-owned business serving Cleveland's Southeast Side neighborhoods for years."
+                    "text": "LongPro Pest Control is based in Old Brooklyn, just across the Cuyahoga Valley from Slavic Village and Broadway. That proximity means faster response times and lower travel overhead for our Southeast Side neighbors."
                 }
             }
         ]
@@ -119,312 +144,392 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://longpropc.com"
+                "item": "https://longpropc.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Service Area",
-                "item": "https://longpropc.com/service-area"
+                "item": "https://longpropc.com/service-area/"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Cleveland",
-                "item": "https://longpropc.com/service-area/cleveland"
+                "item": "https://longpropc.com/service-area/cleveland/"
             },
             {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Slavic Village",
-                "item": "https://longpropc.com/service-area/cleveland/slavic-village"
+                "item": "https://longpropc.com/service-area/cleveland/slavic-village/"
             }
         ]
     }
     </script>
+    <link rel="stylesheet" href="/_astro/about.CRmxRFHV.css">
 </head>
-<body class="bg-brand-bg text-brand-text">
-    <!-- Sticky Navigation -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-8">
-                <a href="https://longpropc.com" class="font-bold text-xl text-brand-primary">LongPro Pest Control</a>
-                <ul class="hidden md:flex gap-6 text-sm">
-                    <li><a href="https://longpropc.com" class="hover:text-brand-primary">Home</a></li>
-                    <li><a href="https://longpropc.com/service-area" class="text-brand-primary font-semibold border-b-2 border-brand-primary">Service Area</a></li>
-                    <li><a href="https://longpropc.com/about" class="hover:text-brand-primary">About</a></li>
-                    <li><a href="https://longpropc.com/contact" class="hover:text-brand-primary">Contact</a></li>
-                </ul>
-            </div>
-            <a href="tel:(216) 300-4121" class="bg-brand-primary text-white px-4 py-2 rounded hover:bg-brand-primary/90">(216) 300-4121</a>
-        </div>
-    </nav>
+<body class="bg-brand-bg text-brand-text min-h-screen flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-red text-white px-4 py-2 z-50 rounded">Skip to content</a>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-brand-primary to-brand-primary/80 text-white py-12 md:py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <nav class="text-sm mb-6 opacity-90">
-                <a href="https://longpropc.com" class="hover:underline">Home</a> / 
-                <a href="https://longpropc.com/service-area" class="hover:underline">Service Area</a> / 
-                <a href="https://longpropc.com/service-area/cleveland" class="hover:underline">Cleveland</a> / 
-                <span>Slavic Village</span>
-            </nav>
-            <h1 class="text-2xl md:text-4xl font-bold text-white mb-8 whitespace-nowrap">Pest Control in Slavic Village, Cleveland OH</h1>
-            <p class="text-lg mb-6 max-w-2xl">Professional extermination and pest control for Cleveland's historic Slavic Village and Broadway neighborhoods. We're just across the Cuyahoga Valley—fast, affordable, honest service.</p>
-            <a href="tel:(216) 300-4121" class="inline-block bg-white text-brand-primary font-bold px-6 py-3 rounded hover:bg-gray-100">Call Now: (216) 300-4121</a>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-12">
-        
-        <!-- Neighborhood Features -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Slavic Village & Broadway: Cleveland's Historic Southeast Side</h2>
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-brand-primary">Neighborhood History</h3>
-                    <p class="text-gray-700 mb-4">Slavic Village and Broadway represent one of Cleveland's oldest and most historically rich neighborhoods. Originally settled in 1799 as the township of Newburgh, the area became the heart of Czech and Polish immigrant communities in the late 1800s and early 1900s.</p>
-                    <p class="text-gray-700">Centered around E. 65th and 71st Streets between Broadway and Harvard Avenues, along Fleet Avenue, this neighborhood is characterized by multi-family homes, duplexes, and historic single-family residences that tell the story of Cleveland's industrial heritage.</p>
+    <header class="sticky top-0 z-50 bg-brand-dark border-b border-brand-border">
+        <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="flex-shrink-0">
+                <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-14 w-auto">
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <div class="relative group">
+                    <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-brand-primary">Modern Revitalization</h3>
-                    <p class="text-gray-700 mb-4">In recent years, Slavic Village has been undergoing exciting revitalization. New investment, community gardens, and bicycle trails are bringing fresh energy to the neighborhood while honoring its rich heritage.</p>
-                    <p class="text-gray-700">The area's proximity to downtown Cleveland, the Cuyahoga Valley National Park, and the Towpath Trail makes it increasingly attractive to residents and visitors. Close to I-77 and I-490, Slavic Village offers both neighborhood character and convenient access to regional destinations.</p>
+                <div class="relative group">
+                    <button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition">Services</button>
+                    <div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
+                        <a href="/services/general-pest-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">General Pest Control</a>
+                        <a href="/services/bed-bug-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
+                        <a href="/services/cockroach-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
+                        <a href="/services/ant-and-spider-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant &amp; Spider Control</a>
+                        <a href="/services/flea-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a>
+                </div>
+                <div class="relative group">
+                    <a href="/service-area/" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a>
+                </div>
+                <div class="relative group">
+                    <a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
+                </div>
+                <div class="relative group">
+                    <a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
+                </div>
+                <div class="relative group">
+                    <a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a>
+                </div>
+                <div class="relative group">
+                    <a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a>
                 </div>
             </div>
-            <div class="bg-blue-50 border-l-4 border-brand-primary p-6 rounded">
-                <p class="text-gray-800"><strong>Proximity Advantage:</strong> LongPro Pest Control is based in Old Brooklyn, just across the Cuyahoga Valley from Slavic Village and Broadway. This means faster response times and lower service costs for your neighborhood.</p>
+            <a href="tel:+12163004121" data-track-location="header" class="hidden md:inline-block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold">(216) 300-4121</a>
+            <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex flex-col gap-1.5 cursor-pointer">
+                <span class="block w-6 h-0.5 bg-brand-text transition"></span>
+                <span class="block w-6 h-0.5 bg-brand-text transition"></span>
+                <span class="block w-6 h-0.5 bg-brand-text transition"></span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark-alt border-t border-brand-border max-h-0 overflow-hidden transition-all duration-300">
+            <div class="px-4 py-4 flex flex-col gap-4">
+                <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
+                <span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
+                <div class="flex flex-col gap-2 ml-4">
+                    <a href="/services/general-pest-control/" class="text-brand-text hover:text-brand-gold transition">General Pest Control</a>
+                    <a href="/services/bed-bug-extermination/" class="text-brand-text hover:text-brand-gold transition">Bed Bug Extermination</a>
+                    <a href="/services/cockroach-extermination/" class="text-brand-text hover:text-brand-gold transition">Cockroach Extermination</a>
+                    <a href="/services/ant-and-spider-control/" class="text-brand-text hover:text-brand-gold transition">Ant &amp; Spider Control</a>
+                    <a href="/services/flea-extermination/" class="text-brand-text hover:text-brand-gold transition">Flea Extermination</a>
+                </div>
+                <a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a>
+                <a href="/service-area/" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a>
+                <a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
+                <a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
+                <a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a>
+                <a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a>
+                <div class="mt-4 pt-4 border-t border-brand-border">
+                    <a href="tel:+12163004121" data-track-location="mobile_menu" class="block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold text-center">(216) 300-4121</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Pest Challenges Section -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Older Housing = More Pest Problems</h2>
-            <p class="text-lg mb-8 text-gray-700">Slavic Village's historic charm comes with a common challenge: aging housing stock naturally attracts and harbors pests.</p>
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div class="bg-white p-6 border border-gray-200 rounded">
-                    <h3 class="text-lg font-bold mb-4 text-brand-primary">Why Older Homes Attract Pests</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Cracks and gaps in aging foundations</li>
-                        <li>✓ Deteriorated exterior walls and siding</li>
-                        <li>✓ Compromised pipes and utility entry points</li>
-                        <li>✓ Warped doors and window frames</li>
-                        <li>✓ Hidden voids in walls and crawl spaces</li>
-                        <li>✓ Decades of accumulated hiding places</li>
+    <script type="module">
+        const toggle = document.getElementById('mobile-menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', (!expanded).toString());
+                if (expanded) {
+                    menu.style.maxHeight = '0';
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                    }, 300);
+                } else {
+                    menu.classList.remove('hidden');
+                    menu.style.maxHeight = menu.scrollHeight + 'px';
+                }
+            });
+        }
+    </script>
+
+    <main id="main-content" role="main" class="flex-1">
+        <nav aria-label="Breadcrumb" class="max-w-7xl mx-auto px-4 py-3">
+            <ol class="flex flex-wrap gap-2 text-sm">
+                <li class="flex items-center gap-2">
+                    <a href="/" class="text-brand-gold hover:text-brand-gold transition">Home</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="text-brand-text-muted">/</span>
+                    <a href="/service-area/" class="text-brand-gold hover:text-brand-gold transition">Service Area</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="text-brand-text-muted">/</span>
+                    <a href="/service-area/cleveland/" class="text-brand-gold hover:text-brand-gold transition">Cleveland</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="text-brand-text-muted">/</span>
+                    <span aria-current="page" class="text-brand-text">Slavic Village</span>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8">Pest Control in Slavic Village, Cleveland OH</h1>
+            <p class="text-lg text-brand-text-muted max-w-3xl mb-12 leading-relaxed">LongPro Pest Control provides professional, discreet pest control services throughout Slavic Village and the Broadway corridor on Cleveland's Southeast Side. From century-old single-family homes to duplexes and apartment buildings along Fleet Avenue and Harvard, we deliver fast, effective pest elimination with complete confidentiality. Our base in nearby Old Brooklyn lets us respond quickly without the inflated pricing or generic service of national chains.</p>
+
+            <section class="mb-16 bg-brand-surface border border-brand-border rounded-lg p-8">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Slavic Village and Broadway: Cleveland's Historic Southeast Side</h2>
+                <div class="space-y-4 text-brand-text-muted max-w-3xl leading-relaxed">
+                    <p>Slavic Village is one of Cleveland's oldest and most historically rich neighborhoods. The area grew around Czech and Polish immigrant communities and still carries that older housing stock today. Many of the homes, duplexes, and mixed-use properties in the neighborhood have the character people love, but they also have more seams, gaps, and aging utility penetrations than newer construction.</p>
+                    <p>Broadway and Fleet Avenue create a dense residential-commercial corridor where pest problems can move faster than owners expect. Apartment buildings, side-by-side duplexes, and closely spaced houses make shared-wall and neighboring-unit issues more common, especially with bed bugs and cockroaches.</p>
+                    <p>LongPro is based in Old Brooklyn, just across the valley. That nearby location matters here. We can usually respond quickly, we know the housing stock, and we understand how to treat these properties without turning the service call into a public spectacle.</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Why Pest Problems Show Up Faster Here</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-brand-text mb-3">Older construction gives pests more entry points</h3>
+                        <p class="text-brand-text-muted leading-relaxed">Aging foundations, settled walls, older basements, and decades of repairs create more access points for ants, spiders, cockroaches, and mice activity than newer homes usually have. We inspect for the actual entry conditions instead of just spraying and leaving.</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-brand-text mb-3">Shared walls make apartment issues harder to isolate</h3>
+                        <p class="text-brand-text-muted leading-relaxed">In duplexes and multi-family buildings, pests do not respect unit boundaries. Bed bugs, cockroaches, and occasional invaders can move between walls, utility chases, and common areas. That is why Slavic Village problems often need a more coordinated treatment plan.</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-brand-text mb-3">Historic homes need targeted treatment, not overkill</h3>
+                        <p class="text-brand-text-muted leading-relaxed">We do not treat older homes like blank boxes. Slavic Village properties often have original trim, older flooring transitions, and irregular void spaces. We build the treatment around the structure so you get real control without unnecessary chemical use.</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-brand-text mb-3">Property managers need something workable</h3>
+                        <p class="text-brand-text-muted leading-relaxed">If you own or manage a multi-unit building in the area, the goal is not a one-off visit that looks good on paper. The goal is a building that stays under control. We can handle inspections, unit coordination, and recurring follow-up when the problem calls for it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-brand-text mb-8">Pest Control Services Available in Slavic Village</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/services/general-pest-control/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">General Pest Control</h3>
+                        <p class="text-brand-text-muted text-sm">Targeted treatment for the recurring household pests that show up in older Cleveland homes. Honest assessments, no automatic contract pressure.</p>
+                    </a>
+                    <a href="/services/bed-bug-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Bed Bug Extermination</h3>
+                        <p class="text-brand-text-muted text-sm">Complete bed bug removal for apartments, duplexes, and single-family homes. We handle sensitive infestations discreetly from inspection through follow-up.</p>
+                    </a>
+                    <a href="/services/cockroach-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Cockroach Extermination</h3>
+                        <p class="text-brand-text-muted text-sm">German and American cockroach control for kitchens, basements, and multi-unit buildings where infestations can spread fast.</p>
+                    </a>
+                    <a href="/services/ant-and-spider-control/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Ant &amp; Spider Control</h3>
+                        <p class="text-brand-text-muted text-sm">Source-focused ant and spider treatment for older homes with recurring entry-point issues and hidden voids.</p>
+                    </a>
+                    <a href="/services/flea-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Flea Extermination</h3>
+                        <p class="text-brand-text-muted text-sm">Whole-home flea treatments that break the cycle and help prevent reinfestation for pet owners and property managers.</p>
+                    </a>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+                        <h3 class="text-lg font-bold text-brand-gold mb-3">Inspection-Based Recommendations</h3>
+                        <p class="text-brand-text-muted text-sm">Some Slavic Village properties need a one-time treatment. Others need coordinated multi-unit work. We inspect first, explain the real problem, and recommend only what fits.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16 bg-brand-surface border border-brand-border rounded-lg p-8">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Why Slavic Village Residents Choose LongPro</h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div class="space-y-4">
+                        <div class="bg-brand-red/10 border border-brand-red/20 rounded-lg p-6">
+                            <h3 class="text-lg font-bold text-brand-text mb-3">Nearby Response</h3>
+                            <p class="text-brand-text-muted text-sm">We are based in Old Brooklyn, not on the far edge of the metro. That means faster scheduling and less wasted time when you need someone out quickly.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-brand-red/10 border border-brand-red/20 rounded-lg p-6">
+                            <h3 class="text-lg font-bold text-brand-text mb-3">Discreet Service</h3>
+                            <p class="text-brand-text-muted text-sm">We use unmarked vehicles and keep the visit low-profile. In dense neighborhoods with close neighbors, privacy matters.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-brand-red/10 border border-brand-red/20 rounded-lg p-6">
+                            <h3 class="text-lg font-bold text-brand-text mb-3">Honest Pricing</h3>
+                            <p class="text-brand-text-muted text-sm">You get a direct explanation of the problem, the treatment, and the price. No upsell scripts. No pressure to buy a recurring plan if the job does not call for one.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4 text-brand-text-muted max-w-3xl leading-relaxed">
+                    <p>Slavic Village has a mix of homeowners, landlords, tenants, and small property managers. They all need the same thing: someone who will actually solve the pest problem without making the experience worse. LongPro's BBB A+ history and Cleveland-specific experience matter more here than a polished national chain pitch.</p>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Slavic Village and Nearby Areas We Serve</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Slavic Village</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Broadway</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Fleet Avenue corridor</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Harvard corridor</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">South Hills</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Newburgh Heights</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Old Brooklyn</p>
+                    </div>
+                    <div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center">
+                        <p class="text-brand-text font-semibold">Greater Cleveland</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16 bg-brand-surface border border-brand-border rounded-lg p-8">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Frequently Asked Questions - Pest Control in Slavic Village</h2>
+                <div class="space-y-6 max-w-3xl">
+                    <details class="bg-brand-dark rounded-lg overflow-hidden">
+                        <summary class="px-6 py-4 cursor-pointer hover:bg-brand-dark-alt transition font-semibold text-brand-text flex justify-between items-center">
+                            <span>Why do older homes in Slavic Village and Broadway have more pest problems?</span>
+                            <span class="text-brand-gold">+</span>
+                        </summary>
+                        <div class="px-6 py-4 bg-brand-dark-alt text-brand-text-muted leading-relaxed border-t border-brand-border">Slavic Village and Broadway are among Cleveland's oldest neighborhoods, with homes dating back over a century. Older housing stock naturally has more cracks, gaps, and deteriorated areas that provide entry points for pests like cockroaches, ants, spiders, and bed bugs. Aging pipes, foundations, and exterior walls create ideal conditions for infestations. LongPro Pest Control understands these older-home challenges and provides targeted solutions.</div>
+                    </details>
+                    <details class="bg-brand-dark rounded-lg overflow-hidden">
+                        <summary class="px-6 py-4 cursor-pointer hover:bg-brand-dark-alt transition font-semibold text-brand-text flex justify-between items-center">
+                            <span>How can multi-family buildings prevent pest problems in Slavic Village?</span>
+                            <span class="text-brand-gold">+</span>
+                        </summary>
+                        <div class="px-6 py-4 bg-brand-dark-alt text-brand-text-muted leading-relaxed border-t border-brand-border">Multi-family properties are especially vulnerable because infestations can spread quickly between units. In neighborhoods like Slavic Village where many duplexes and apartment buildings exist, coordinated pest control is essential. LongPro Pest Control can handle building-wide treatments and ongoing maintenance plans to stop recurring infestations across multiple units.</div>
+                    </details>
+                    <details class="bg-brand-dark rounded-lg overflow-hidden">
+                        <summary class="px-6 py-4 cursor-pointer hover:bg-brand-dark-alt transition font-semibold text-brand-text flex justify-between items-center">
+                            <span>Is quality pest control affordable in Slavic Village?</span>
+                            <span class="text-brand-gold">+</span>
+                        </summary>
+                        <div class="px-6 py-4 bg-brand-dark-alt text-brand-text-muted leading-relaxed border-t border-brand-border">Yes. LongPro Pest Control believes professional pest control should be honest and fairly priced. We offer competitive pricing for residents and property owners in Slavic Village and Broadway, and we do not pressure you into unnecessary treatments.</div>
+                    </details>
+                    <details class="bg-brand-dark rounded-lg overflow-hidden">
+                        <summary class="px-6 py-4 cursor-pointer hover:bg-brand-dark-alt transition font-semibold text-brand-text flex justify-between items-center">
+                            <span>How close is LongPro Pest Control to Slavic Village?</span>
+                            <span class="text-brand-gold">+</span>
+                        </summary>
+                        <div class="px-6 py-4 bg-brand-dark-alt text-brand-text-muted leading-relaxed border-t border-brand-border">LongPro Pest Control is based in Old Brooklyn, just across the Cuyahoga Valley from Slavic Village and Broadway. That proximity means faster response times and lower travel overhead for our Southeast Side neighbors.</div>
+                    </details>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-brand-text mb-6">Schedule Pest Control in Slavic Village</h2>
+                <div class="space-y-6 text-brand-text-muted max-w-3xl leading-relaxed">
+                    <p>Getting pest control service at your Slavic Village property is straightforward:</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <span class="text-brand-gold font-bold flex-shrink-0 text-xl">1</span>
+                            <span><strong class="text-brand-text block mb-1">Call or Request Online</strong>Contact us at <a href="tel:+12163004121" class="text-brand-gold hover:text-brand-gold font-semibold transition">(216) 300-4121</a> or <a href="/contact/" class="text-brand-gold hover:text-brand-gold font-semibold transition">request a free estimate online</a>.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-brand-gold font-bold flex-shrink-0 text-xl">2</span>
+                            <span><strong class="text-brand-text block mb-1">Inspection First</strong>We inspect the home or building, identify where the problem started, and figure out whether it is isolated or moving between units.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-brand-gold font-bold flex-shrink-0 text-xl">3</span>
+                            <span><strong class="text-brand-text block mb-1">Get a Clear Recommendation</strong>We explain the problem, the treatment plan, and the price up front. If coordinated treatment is needed, we will tell you that directly.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-brand-gold font-bold flex-shrink-0 text-xl">4</span>
+                            <span><strong class="text-brand-text block mb-1">Solve the Problem</strong>We carry out the treatment with discretion and follow up as needed so the issue is actually resolved.</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="bg-white p-6 border border-gray-200 rounded">
-                    <h3 class="text-lg font-bold mb-4 text-brand-primary">Multi-Family Building Challenges</h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li>✓ Infestations spread quickly between units</li>
-                        <li>✓ Shared walls and ceilings</li>
-                        <li>✓ Common area pest problems</li>
-                        <li>✓ Coordination challenges with tenants</li>
-                        <li>✓ Pipes and vents connecting multiple units</li>
-                        <li>✓ Need for building-wide treatment plans</li>
-                    </ul>
+            </section>
+
+            <section class="bg-brand-surface border border-brand-border rounded-lg p-8 mb-16">
+                <h2 class="text-2xl font-bold text-white mb-6">Explore More LongPro Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="/services/general-pest-control/" class="block bg-brand-dark rounded p-4 hover:border-l-4 hover:border-brand-gold transition-colors">
+                        <h3 class="font-bold text-brand-gold mb-2">General Pest Control</h3>
+                        <p class="text-brand-text-muted text-sm">Honest, targeted treatment for common household pests without contract pressure.</p>
+                    </a>
+                    <a href="/service-area/" class="block bg-brand-dark rounded p-4 hover:border-l-4 hover:border-brand-gold transition-colors">
+                        <h3 class="font-bold text-brand-gold mb-2">Full Service Area</h3>
+                        <p class="text-brand-text-muted text-sm">See every city and neighborhood we serve across Greater Cleveland.</p>
+                    </a>
+                    <a href="/reviews/" class="block bg-brand-dark rounded p-4 hover:border-l-4 hover:border-brand-gold transition-colors">
+                        <h3 class="font-bold text-brand-gold mb-2">Customer Reviews</h3>
+                        <p class="text-brand-text-muted text-sm">Read the current Google review profile and featured customer feedback.</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <section class="w-full bg-brand-red py-12 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Need Pest Control in Slavic Village, Cleveland OH?</h2>
+                <p class="text-lg text-white/90 mb-8">Discreet, professional pest elimination for older homes, duplexes, and apartment buildings. Same-day inspections are often available.</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+12163004121" class="bg-white text-brand-red hover:bg-gray-100 transition px-8 py-3 rounded font-semibold">Call (216) 300-4121</a>
+                    <a href="/contact/" class="border-2 border-white text-white hover:bg-white hover:text-brand-red transition px-8 py-3 rounded font-semibold">Request Free Estimate</a>
                 </div>
             </div>
         </section>
-
-        <!-- Services Grid -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Our Pest Control Services</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">Bed Bug Extermination</h3>
-                    <p class="text-gray-700">Complete bed bug removal using proven treatment methods. We handle residential and multi-unit properties with discretion.</p>
-                </div>
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">Cockroach Control</h3>
-                    <p class="text-gray-700">Effective cockroach elimination for apartments, duplexes, and older homes. We target the source and prevent reinfestation.</p>
-                </div>
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">Ant & Spider Removal</h3>
-                    <p class="text-gray-700">Ant colonies and spider problems eliminated with targeted, safe treatments. We stop them at the source.</p>
-                </div>
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">General Pest Control</h3>
-                    <p class="text-gray-700">Preventative maintenance for roaches, ants, spiders, and other common household pests.</p>
-                </div>
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">Property Management Plans</h3>
-                    <p class="text-gray-700">Regular pest control for multi-unit buildings and apartment complexes with coordinated treatments.</p>
-                </div>
-                <div class="bg-white p-6 border border-gray-200 rounded hover:shadow-lg transition">
-                    <h3 class="text-lg font-bold mb-3 text-brand-primary">Emergency Service</h3>
-                    <p class="text-gray-700">We respond quickly to pest emergencies in Slavic Village. Call (216) 300-4121 for same-day service.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Why Trust LongPro Pest Control</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-brand-primary">Local & Affordable</h3>
-                    <p class="text-gray-700 mb-4">We're your neighbors. Based in Old Brooklyn, just across the valley from Slavic Village, we understand the unique pest challenges of Cleveland's historic neighborhoods. We offer competitive pricing without the upsell tactics.</p>
-                    <h3 class="text-xl font-bold mb-4 mt-6 text-brand-primary">BBB A+ Since 2012</h3>
-                    <p class="text-gray-700 mb-4">LongPro Pest Control has maintained an A+ rating with the Better Business Bureau since 2012. That's over a decade of honest service and customer trust.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-brand-primary">Discreet & Professional</h3>
-                    <p class="text-gray-700 mb-4">We use unmarked vehicles and provide discreet service. Your neighbors won't know we're treating a pest problem. We respect your privacy.</p>
-                    <h3 class="text-xl font-bold mb-4 mt-6 text-brand-primary">Fast Response Times</h3>
-                    <p class="text-gray-700 mb-4">Because we're based nearby, we can respond quickly to your pest control needs. Same-day service is often available in Slavic Village.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Accordion -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <details class="bg-white border border-gray-200 rounded">
-                    <summary class="p-6 cursor-pointer font-bold text-lg text-brand-primary hover:bg-gray-50">Why do older homes in Slavic Village have more pest problems?</summary>
-                    <div class="px-6 pb-6 text-gray-700 border-t">
-                        <p>Slavic Village and Broadway are among Cleveland's oldest neighborhoods, with homes dating back over a century. Older housing stock naturally has more cracks, gaps, and deteriorated areas that provide entry points for pests like cockroaches, ants, spiders, and bed bugs. Aging pipes, foundations, and exterior walls create ideal conditions for infestations. Our experienced team at LongPro Pest Control understands these unique challenges and provides targeted solutions specifically designed for historic homes.</p>
-                    </div>
-                </details>
-                <details class="bg-white border border-gray-200 rounded">
-                    <summary class="p-6 cursor-pointer font-bold text-lg text-brand-primary hover:bg-gray-50">How can multi-family buildings prevent pest problems?</summary>
-                    <div class="px-6 pb-6 text-gray-700 border-t">
-                        <p>Multi-family properties are especially vulnerable to pest issues because infestations can spread quickly between units. In neighborhoods like Slavic Village where many duplexes and apartment buildings exist, coordinated pest control is essential. LongPro Pest Control offers building-wide treatments and can work with property managers on regular maintenance plans to prevent recurring infestations across multiple units. We understand the unique coordination challenges of managing pest control in multi-unit buildings.</p>
-                    </div>
-                </details>
-                <details class="bg-white border border-gray-200 rounded">
-                    <summary class="p-6 cursor-pointer font-bold text-lg text-brand-primary hover:bg-gray-50">Is quality pest control affordable in Slavic Village?</summary>
-                    <div class="px-6 pb-6 text-gray-700 border-t">
-                        <p>Yes! LongPro Pest Control believes professional pest control shouldn't break the bank. We offer competitive, honest pricing for residents and property owners in Slavic Village and Broadway. We never pressure you into unnecessary treatments—just straightforward, effective solutions. We'll give you a free quote and explain exactly what you need. Call (216) 300-4121 to discuss your pest control needs and pricing.</p>
-                    </div>
-                </details>
-                <details class="bg-white border border-gray-200 rounded">
-                    <summary class="p-6 cursor-pointer font-bold text-lg text-brand-primary hover:bg-gray-50">How close is LongPro to Slavic Village?</summary>
-                    <div class="px-6 pb-6 text-gray-700 border-t">
-                        <p>LongPro Pest Control is based in Old Brooklyn, just across the Cuyahoga Valley from Slavic Village and Broadway. This proximity means faster response times and lower service costs for our neighbors. We're a trusted, locally-owned business serving Cleveland's Southeast Side neighborhoods, including Slavic Village, Broadway, Tremont, Central, and Union-Miles. Our location advantage translates to better service for you.</p>
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <!-- How to Schedule -->
-        <section class="mb-16 bg-gray-50 p-8 rounded">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">How to Schedule Your Pest Control Service</h2>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="text-center">
-                    <div class="bg-brand-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
-                    <h3 class="font-bold mb-2">Call Us</h3>
-                    <p class="text-gray-700 text-sm">(216) 300-4121</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-brand-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
-                    <h3 class="font-bold mb-2">Describe Issue</h3>
-                    <p class="text-gray-700 text-sm">Tell us about your pest problem</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-brand-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
-                    <h3 class="font-bold mb-2">Get Quote</h3>
-                    <p class="text-gray-700 text-sm">Free estimate, no hidden fees</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-brand-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">4</div>
-                    <h3 class="font-bold mb-2">Get Service</h3>
-                    <p class="text-gray-700 text-sm">Same-day or scheduled service</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Related Resources -->
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-brand-text">Nearby Cleveland Neighborhoods We Serve</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="https://longpropc.com/service-area/cleveland/old-brooklyn" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">Old Brooklyn →</h3>
-                    <p class="text-gray-700 text-sm">LongPro's home neighborhood. Serving residents and property managers.</p>
-                </a>
-                <a href="https://longpropc.com/service-area/cleveland/tremont" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">Tremont →</h3>
-                    <p class="text-gray-700 text-sm">Professional pest control for this vibrant arts neighborhood.</p>
-                </a>
-                <a href="https://longpropc.com/service-area/cleveland/central" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">Central →</h3>
-                    <p class="text-gray-700 text-sm">Pest control solutions for Central Cleveland residents.</p>
-                </a>
-                <a href="https://longpropc.com/service-area/cleveland/union-miles" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">Union-Miles →</h3>
-                    <p class="text-gray-700 text-sm">Serving Union-Miles with fast, affordable pest control.</p>
-                </a>
-                <a href="https://longpropc.com/service-area/cleveland" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">All Cleveland Areas →</h3>
-                    <p class="text-gray-700 text-sm">View all neighborhoods we serve across Cleveland.</p>
-                </a>
-                <a href="https://longpropc.com/service-area" class="p-6 border border-gray-200 rounded hover:shadow-lg transition hover:border-brand-primary">
-                    <h3 class="font-bold text-brand-primary mb-2">Full Service Area →</h3>
-                    <p class="text-gray-700 text-sm">All neighborhoods and areas we serve in Northeast Ohio.</p>
-                </a>
-            </div>
-        </section>
-
     </main>
 
-    <!-- CTA Banner -->
-    <section class="bg-brand-primary text-white py-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Need Pest Control in Slavic Village?</h2>
-            <p class="text-lg mb-6">Call LongPro Pest Control today for fast, affordable service. We're just across the valley.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <a href="tel:(216) 300-4121" class="bg-white text-brand-primary font-bold px-8 py-3 rounded hover:bg-gray-100 text-lg">(216) 300-4121</a>
-                <a href="mailto:info@longpropc.com" class="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white/10 text-lg">info@longpropc.com</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+    <footer class="bg-brand-dark border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="font-bold text-lg mb-4">LongPro Pest Control</h3>
-                    <p class="text-gray-400 text-sm mb-4">Professional pest control for Cleveland's Southeast Side neighborhoods. Serving Slavic Village, Broadway, Old Brooklyn, Tremont, and more.</p>
+                    <img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-12 w-auto mb-4">
+                    <p class="text-brand-text-muted text-sm leading-relaxed">Discreet, professional pest control solutions for Cleveland and surrounding areas. We handle your pest problems with expertise and discretion.</p>
                 </div>
-                <div>
-                    <h3 class="font-bold mb-4">Service Areas</h3>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li><a href="https://longpropc.com/service-area/cleveland" class="hover:text-white">Cleveland</a></li>
-                        <li><a href="https://longpropc.com/service-area/cleveland/slavic-village" class="hover:text-white">Slavic Village</a></li>
-                        <li><a href="https://longpropc.com/service-area/cleveland/old-brooklyn" class="hover:text-white">Old Brooklyn</a></li>
-                        <li><a href="https://longpropc.com/service-area" class="hover:text-white">All Areas</a></li>
+                <nav aria-label="Footer navigation">
+                    <h3 class="text-brand-text font-semibold mb-4 uppercase text-sm tracking-wider">Quick Links</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="/" class="text-brand-text-muted hover:text-brand-gold transition">Home</a></li>
+                        <li><a href="/services/" class="text-brand-text-muted hover:text-brand-gold transition">Services</a></li>
+                        <li><a href="/about/" class="text-brand-text-muted hover:text-brand-gold transition">About</a></li>
+                        <li><a href="/service-area/" class="text-brand-text-muted hover:text-brand-gold transition">Service Area</a></li>
+                        <li><a href="/faq/" class="text-brand-text-muted hover:text-brand-gold transition">FAQ</a></li>
+                        <li><a href="/reviews/" class="text-brand-text-muted hover:text-brand-gold transition">Reviews</a></li>
+                        <li><a href="/blog/" class="text-brand-text-muted hover:text-brand-gold transition">Blog</a></li>
+                        <li><a href="/contact/" class="text-brand-text-muted hover:text-brand-gold transition">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div>
-                    <h3 class="font-bold mb-4">Services</h3>
-                    <ul class="text-gray-400 text-sm space-y-2">
-                        <li><a href="#" class="hover:text-white">Bed Bug Control</a></li>
-                        <li><a href="#" class="hover:text-white">Cockroach Removal</a></li>
-                        <li><a href="#" class="hover:text-white">Ant Extermination</a></li>
-                        <li><a href="#" class="hover:text-white">General Pest Control</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold mb-4">Contact</h3>
-                    <p class="text-gray-400 text-sm mb-2">
-                        <strong>Phone:</strong> (216) 300-4121<br>
-                        <strong>Email:</strong> info@longpropc.com<br>
-                        <strong>Location:</strong> Old Brooklyn, Cleveland
-                    </p>
-                    <div class="mt-4 flex items-center gap-2">
-                        <img src="https://www.bbb.org/seal.png" alt="BBB A+ Rated" class="h-12" title="BBB A+ Rated Since 2012">
-                        <span class="text-xs text-gray-400">A+ Rated Since 2012</span>
+                    <h3 class="text-brand-text font-semibold mb-4 uppercase text-sm tracking-wider">Contact Info</h3>
+                    <div class="text-brand-text-muted text-sm space-y-2 mb-4">
+                        <p class="font-semibold text-brand-text">LongPro Pest Control LLC</p>
+                        <p>Cleveland, OH</p>
+                        <p> <a href="tel:+12163004121" data-track-location="footer" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
+                        <p><a href="mailto:info@longpropc.com" class="hover:text-brand-gold transition">info@longpropc.com</a></p>
                     </div>
+                    <a href="https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736" target="_blank" rel="noopener" aria-label="LongPro Pest Control BBB Accredited Business A+ Rating"><img src="/images/bbb-badge.webp" alt="BBB A+ Rated Business - LongPro Pest Control" width="200" height="80" class="h-20 w-auto mt-4 hover:opacity-80 transition-opacity"></a>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2026 LongPro Pest Control LLC. All rights reserved. | <a href="https://longpropc.com/privacy" class="hover:text-white">Privacy Policy</a> | <a href="https://longpropc.com/terms" class="hover:text-white">Terms of Service</a></p>
+            <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-brand-text-muted text-sm">© 2026 LongPro Pest Control LLC. All rights reserved.</p>
+                <a href="/privacy-policy/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Privacy Policy</a>
             </div>
         </div>
     </footer>
-
-</body>
+ <div class="md:hidden fixed bottom-0 inset-x-0 z-50 border-t border-brand-border bg-brand-dark/95 backdrop-blur"> <div class="mx-auto flex max-w-md gap-3 px-3 py-3"> <a href="tel:+12163004121" data-track-location="mobile_sticky" class="flex-1 rounded bg-brand-red px-4 py-3 text-center font-semibold text-white transition hover:bg-brand-red-light">Call Now</a> <a href="/contact/?message=Please%20call%20me%20back" data-track-location="mobile_sticky" class="flex-1 rounded border border-brand-gold px-4 py-3 text-center font-semibold text-brand-gold transition hover:bg-brand-gold hover:text-brand-dark">Request Callback</a> </div> </div></body>
 </html>

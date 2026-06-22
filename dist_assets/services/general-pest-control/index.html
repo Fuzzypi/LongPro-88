@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Pest Control Cleveland OH | Residential Exterminator | LongPro Pest Control</title>
-    <meta name="description" content="Honest, effective general pest control in Cleveland OH. LongPro Pest Control treats the problem — not your wallet. One-time treatments, seasonal prevention. No unnecessary contracts. BBB A+ rated. Call (216) 300-4121.">
+    <title>Cleveland General Pest Control | LongPro Pest Control</title>
+    <meta name="description" content="Honest, effective general pest control in Cleveland OH. LongPro Pest Control treats the problem — not your wallet. One-time treatments, seasonal prevention. No unnecessary contracts. BBB A+ accredited since 2015. Call (216) 300-4121.">
     <meta name="theme-color" content="#0f172a">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -13,13 +13,13 @@
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://longpropc.com/services/general-pest-control/">
-    <meta property="og:title" content="General Pest Control Cleveland OH | Residential Exterminator | LongPro Pest Control">
-    <meta property="og:description" content="Honest, effective general pest control in Cleveland OH. LongPro Pest Control treats the problem — not your wallet. One-time treatments, seasonal prevention. No unnecessary contracts. BBB A+ rated.">
+    <meta property="og:title" content="Cleveland General Pest Control | LongPro Pest Control">
+    <meta property="og:description" content="Honest, effective general pest control in Cleveland OH. LongPro Pest Control treats the problem — not your wallet. One-time treatments, seasonal prevention. No unnecessary contracts. BBB A+ accredited since 2015.">
     <meta property="og:image" content="https://longpropc.com/images/og/general-pest-control-preview.png">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://longpropc.com/services/general-pest-control/">
-    <meta name="twitter:title" content="General Pest Control Cleveland OH | LongPro Pest Control">
+    <meta name="twitter:title" content="Cleveland General Pest Control | LongPro Pest Control">
     <meta name="twitter:description" content="Honest, effective general pest control in Cleveland OH. We treat the problem — not your wallet. One-time treatments, seasonal prevention, no contracts.">
     <meta name="twitter:image" content="https://longpropc.com/images/og/general-pest-control-preview.png">
     
@@ -30,72 +30,50 @@
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1EH98YLZ1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Z1EH98YLZ1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z1EH98YLZ1');
+
+  window.longproTrackEvent = function(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, { event_category: 'engagement', ...params });
+  };
 
   document.addEventListener('click', function(event) {
     var link = event.target.closest && event.target.closest('a[href]');
-    if (!link || typeof gtag !== 'function') return;
+    if (!link || typeof window.longproTrackEvent !== 'function') return;
     var href = link.getAttribute('href') || '';
+    var normalizedHref = href.replace(/\/+(?=\?|$)/g, '');
+    var location = link.getAttribute('data-track-location') || '';
+    var params = {
+      event_label: href,
+      page_path: window.location.pathname,
+      link_text: (link.textContent || '').trim()
+    };
+    if (location) params.cta_location = location;
     if (href.indexOf('tel:') === 0) {
-      gtag('event', 'phone_click', { event_category: 'engagement', event_label: href });
-    } else if (href === '/contact' || href.indexOf('/contact?') === 0) {
-      gtag('event', 'quote_click', { event_category: 'engagement', event_label: window.location.pathname });
+      window.longproTrackEvent('phone_click', params);
+      if (location) window.longproTrackEvent('phone_click_' + location, params);
+      return;
+    }
+    if (
+      normalizedHref === '/contact' ||
+      normalizedHref === '/contact/' ||
+      normalizedHref.indexOf('/contact?') === 0 ||
+      normalizedHref.indexOf('/contact/?') === 0
+    ) {
+      window.longproTrackEvent('quote_click', params);
+      if (location) window.longproTrackEvent('quote_click_' + location, params);
     }
   });
-    </script>
+
+  if (window.location.pathname === '/contact/' || window.location.pathname === '/contact') {
+    window.longproTrackEvent('contact_page_view', { page_path: window.location.pathname });
+  }
+</script>
     
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "LongPro Pest Control LLC",
-        "image": "https://longpropc.com/images/longpro-logo.webp",
-        "description": "Honest, effective pest control in Cleveland OH. We treat the problem, not your wallet.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Cleveland",
-            "addressRegion": "OH",
-            "addressCountry": "US"
-        },
-        "telephone": "(216) 300-4121",
-        "email": "info@longpropc.com",
-        "url": "https://longpropc.com",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "ratingCount": "17",
-            "reviewCount": "17"
-        },
-        "sameAs": [
-            "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
-            "https://share.google/GETw9NeHew2eJ5lB2"
-        ],
-        "priceRange": "$$"
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "General Pest Control",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "LongPro Pest Control LLC",
-            "url": "https://longpropc.com"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Cleveland",
-            "state": "OH"
-        },
-        "serviceType": "Pest Control",
-        "description": "Honest, targeted pest control treatments for common household pests. One-time treatments, seasonal prevention, as-needed service."
-    }
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://longpropc.com/#business","name":"LongPro Pest Control LLC","legalName":"LongPro Pest Control LLC","url":"https://longpropc.com/","image":"https://longpropc.com/images/og/home-preview.png","telephone":"+12163004121","email":"info@longpropc.com","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Cleveland","addressRegion":"OH","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Cleveland"},{"@type":"City","name":"Lakewood"},{"@type":"City","name":"Parma"},{"@type":"City","name":"Euclid"},{"@type":"City","name":"Strongsville"},{"@type":"AdministrativeArea","name":"Cuyahoga County"},{"@type":"AdministrativeArea","name":"Greater Cleveland"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"}],"sameAs":["https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736","https://share.google/GETw9NeHew2eJ5lB2"],"knowsAbout":["bed bug extermination","cockroach extermination","ant control","spider control","flea extermination","general pest control"]},{"@type":"WebSite","@id":"https://longpropc.com/#website","url":"https://longpropc.com/","name":"LongPro Pest Control","publisher":{"@id":"https://longpropc.com/#business"}}]}</script>
     
     <script type="application/ld+json">
     {
@@ -139,7 +117,7 @@
                 "name": "What makes LongPro different from big pest control chains?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "We are locally owned with no high-pressure sales or unnecessary contracts. We're BBB A+ rated, use unmarked vehicles, and focus on honest solutions rather than pushing expensive plans."
+                    "text": "We are locally owned with no high-pressure sales or unnecessary contracts. We're BBB A+ accredited since 2015, use unmarked vehicles, and focus on honest solutions rather than pushing expensive plans."
                 }
             }
         ]
@@ -161,7 +139,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Services",
-                "item": "https://longpropc.com/services"
+                "item": "https://longpropc.com/services/"
             },
             {
                 "@type": "ListItem",
@@ -345,21 +323,21 @@
                 <div class="relative group">
                     <button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition "> Services </button>
                     <div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10">
-                        <a href="/services/general-pest-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b bg-brand-dark-alt text-brand-gold">General Pest Control</a>
-                        <a href="/services/bed-bug-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
-                        <a href="/services/cockroach-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
-                        <a href="/services/ant-and-spider-control" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant &amp; Spider Control</a>
-                        <a href="/services/flea-extermination" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a>
+                        <a href="/services/general-pest-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b bg-brand-dark-alt text-brand-gold">General Pest Control</a>
+                        <a href="/services/bed-bug-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a>
+                        <a href="/services/cockroach-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a>
+                        <a href="/services/ant-and-spider-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant &amp; Spider Control</a>
+                        <a href="/services/flea-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a>
                     </div>
                 </div>
-                <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
-                <a href="/service-area" class="text-brand-text hover:text-brand-gold transition">Service Area</a>
-                <a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
-                <a href="/reviews" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
-                <a href="/blog" class="text-brand-text hover:text-brand-gold transition">Blog</a>
-                <a href="/contact" class="text-brand-text hover:text-brand-gold transition">Contact</a>
+                <a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a>
+                <a href="/service-area/" class="text-brand-text hover:text-brand-gold transition">Service Area</a>
+                <a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
+                <a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
+                <a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a>
+                <a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a>
             </div>
-            <a href="tel:+12163004121" class="hidden md:inline-block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold">(216) 300-4121</a>
+            <a href="tel:+12163004121" data-track-location="header" class="hidden md:inline-block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold">(216) 300-4121</a>
             <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex flex-col gap-1.5 cursor-pointer">
                 <span class="block w-6 h-0.5 bg-brand-text transition"></span>
                 <span class="block w-6 h-0.5 bg-brand-text transition"></span>
@@ -370,15 +348,15 @@
             <div class="px-4 py-4 flex flex-col gap-4">
                 <a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
                 <span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
-                <div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold"> General Pest Control </a><a href="/services/bed-bug-extermination" class="text-brand-text hover:text-brand-gold transition"> Bed Bug Extermination </a><a href="/services/cockroach-extermination" class="text-brand-text hover:text-brand-gold transition"> Cockroach Extermination </a><a href="/services/ant-and-spider-control" class="text-brand-text hover:text-brand-gold transition"> Ant &amp; Spider Control </a><a href="/services/flea-extermination" class="text-brand-text hover:text-brand-gold transition"> Flea Extermination </a></div>
-                <a href="/about" class="text-brand-text hover:text-brand-gold transition">About</a>
-                <a href="/service-area" class="text-brand-text hover:text-brand-gold transition">Service Area</a>
-                <a href="/faq" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
-                <a href="/reviews" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
-                <a href="/blog" class="text-brand-text hover:text-brand-gold transition">Blog</a>
-                <a href="/contact" class="text-brand-text hover:text-brand-gold transition">Contact</a>
+                <div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control/" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold"> General Pest Control </a><a href="/services/bed-bug-extermination/" class="text-brand-text hover:text-brand-gold transition"> Bed Bug Extermination </a><a href="/services/cockroach-extermination/" class="text-brand-text hover:text-brand-gold transition"> Cockroach Extermination </a><a href="/services/ant-and-spider-control/" class="text-brand-text hover:text-brand-gold transition"> Ant &amp; Spider Control </a><a href="/services/flea-extermination/" class="text-brand-text hover:text-brand-gold transition"> Flea Extermination </a></div>
+                <a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a>
+                <a href="/service-area/" class="text-brand-text hover:text-brand-gold transition">Service Area</a>
+                <a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
+                <a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
+                <a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a>
+                <a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a>
                 <div class="mt-4 pt-4 border-t border-brand-border">
-                    <a href="tel:+12163004121" class="block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold text-center">(216) 300-4121</a>
+                    <a href="tel:+12163004121" data-track-location="mobile_menu" class="block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold text-center">(216) 300-4121</a>
                 </div>
             </div>
         </div>
@@ -404,7 +382,7 @@
     
     <main id="main-content">
         <div class="breadcrumbs max-w-7xl mx-auto">
-            <a href="/">Home</a> / <a href="/services">Services</a> / <span class="text-brand-text">General Pest Control</span>
+            <a href="/">Home</a> / <a href="/services/">Services</a> / <span class="text-brand-text">General Pest Control</span>
         </div>
         
         <section class="content-section max-w-7xl mx-auto">
@@ -432,7 +410,7 @@
                 </div>
                 <div class="approach-item">
                     <h3>Need A Faster Answer?</h3>
-                    <p>Use the phone-first path when the problem is escalating quickly. Our <a href="/blog/emergency-pest-control-cleveland">emergency pest control guide</a> explains what to do while you wait for an inspection.</p>
+                    <p>Use the phone-first path when the problem is escalating quickly. Our <a href="/blog/emergency-pest-control-cleveland/">emergency pest control guide</a> explains what to do while you wait for an inspection.</p>
                 </div>
             </div>
         </section>
@@ -570,7 +548,7 @@
             
             <details>
                 <summary>What makes LongPro different from big pest control chains?</summary>
-                <p>We're locally owned with no high-pressure sales tactics. We don't push unnecessary quarterly contracts. We're BBB A+ rated, use unmarked vehicles for discretion, and focus on honest solutions rather than maximizing contract value. We treat the problem, not your wallet.</p>
+                <p>We're locally owned with no high-pressure sales tactics. We don't push unnecessary quarterly contracts. We're BBB A+ accredited since 2015, use unmarked vehicles for discretion, and focus on honest solutions rather than maximizing contract value. We treat the problem, not your wallet.</p>
             </details>
         </section>
         
@@ -579,14 +557,14 @@
             <p>Need help with a specific pest, a nearby area page, or a safety-focused guide? Start with these next steps:</p>
             
             <div class="related-services">
-                <a href="/services/bed-bug-extermination" class="service-link">Bed Bug Extermination</a>
-                <a href="/services/cockroach-extermination" class="service-link">Cockroach Extermination</a>
-                <a href="/services/ant-and-spider-control" class="service-link">Ant &amp; Spider Control</a>
-                <a href="/services/flea-extermination" class="service-link">Flea Extermination</a>
-                <a href="/service-area/cleveland" class="service-link">Cleveland Service Area</a>
-                <a href="/service-area/lakewood" class="service-link">Lakewood Service Area</a>
-                <a href="/blog/pet-safe-pest-control-cleveland" class="service-link">Pet-Safe Pest Control Guide</a>
-                <a href="/blog/emergency-pest-control-cleveland" class="service-link">Emergency Pest Control Guide</a>
+                <a href="/services/bed-bug-extermination/" class="service-link">Bed Bug Extermination</a>
+                <a href="/services/cockroach-extermination/" class="service-link">Cockroach Extermination</a>
+                <a href="/services/ant-and-spider-control/" class="service-link">Ant &amp; Spider Control</a>
+                <a href="/services/flea-extermination/" class="service-link">Flea Extermination</a>
+                <a href="/service-area/cleveland/" class="service-link">Cleveland Service Area</a>
+                <a href="/service-area/lakewood/" class="service-link">Lakewood Service Area</a>
+                <a href="/blog/pet-safe-pest-control-cleveland/" class="service-link">Pet-Safe Pest Control Guide</a>
+                <a href="/blog/emergency-pest-control-cleveland/" class="service-link">Emergency Pest Control Guide</a>
             </div>
         </section>
         
@@ -595,7 +573,7 @@
             <p style="color: white; margin-bottom: 1.5rem;">We treat the problem — not your wallet. Call today for a free inspection and honest pricing.</p>
             <div class="cta-buttons">
                 <a href="tel:+12163004121" class="btn btn-primary">(216) 300-4121</a>
-                <a href="/contact" class="btn btn-secondary">Schedule Online</a>
+                <a href="/contact/" class="btn btn-secondary">Schedule Online</a>
             </div>
         </section>
     </main>
@@ -611,13 +589,13 @@
                     <h3 class="text-brand-text font-semibold mb-4 uppercase text-sm tracking-wider">Quick Links</h3>
                     <ul class="flex flex-col gap-3">
                         <li><a href="/" class="text-brand-text-muted hover:text-brand-gold transition">Home</a></li>
-                        <li><a href="/services" class="text-brand-text-muted hover:text-brand-gold transition">Services</a></li>
-                        <li><a href="/about" class="text-brand-text-muted hover:text-brand-gold transition">About</a></li>
-                        <li><a href="/service-area" class="text-brand-text-muted hover:text-brand-gold transition">Service Area</a></li>
-                        <li><a href="/faq" class="text-brand-text-muted hover:text-brand-gold transition">FAQ</a></li>
-                        <li><a href="/reviews" class="text-brand-text-muted hover:text-brand-gold transition">Reviews</a></li>
-                        <li><a href="/blog" class="text-brand-text-muted hover:text-brand-gold transition">Blog</a></li>
-                        <li><a href="/contact" class="text-brand-text-muted hover:text-brand-gold transition">Contact</a></li>
+                        <li><a href="/services/" class="text-brand-text-muted hover:text-brand-gold transition">Services</a></li>
+                        <li><a href="/about/" class="text-brand-text-muted hover:text-brand-gold transition">About</a></li>
+                        <li><a href="/service-area/" class="text-brand-text-muted hover:text-brand-gold transition">Service Area</a></li>
+                        <li><a href="/faq/" class="text-brand-text-muted hover:text-brand-gold transition">FAQ</a></li>
+                        <li><a href="/reviews/" class="text-brand-text-muted hover:text-brand-gold transition">Reviews</a></li>
+                        <li><a href="/blog/" class="text-brand-text-muted hover:text-brand-gold transition">Blog</a></li>
+                        <li><a href="/contact/" class="text-brand-text-muted hover:text-brand-gold transition">Contact</a></li>
                     </ul>
                 </nav>
                 <div>
@@ -625,17 +603,17 @@
                     <div class="text-brand-text-muted text-sm space-y-2 mb-4">
                         <p class="font-semibold text-brand-text">LongPro Pest Control LLC</p>
                         <p>Cleveland, OH</p>
-                        <p><a href="tel:+12163004121" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
+                        <p> <a href="tel:+12163004121" data-track-location="footer" class="hover:text-brand-gold transition">(216) 300-4121</a></p>
                         <p><a href="mailto:info@longpropc.com" class="hover:text-brand-gold transition">info@longpropc.com</a></p>
                     </div>
-                    <img src="/images/bbb-badge.webp" alt="BBB A+ Rated" width="200" height="80" class="h-20 w-auto mt-4">
+                    <a href="https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736" target="_blank" rel="noopener" aria-label="LongPro Pest Control BBB Accredited Business A+ Rating"><img src="/images/bbb-badge.webp" alt="BBB A+ Rated Business - LongPro Pest Control" width="200" height="80" class="h-20 w-auto mt-4 hover:opacity-80 transition-opacity"></a>
                 </div>
             </div>
             <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-brand-text-muted text-sm">© 2026 LongPro Pest Control LLC. All rights reserved.</p>
-                <a href="/privacy-policy" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Privacy Policy</a>
+                <a href="/privacy-policy/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Privacy Policy</a>
             </div>
         </div>
     </footer>
-</body>
+ <div class="md:hidden fixed bottom-0 inset-x-0 z-50 border-t border-brand-border bg-brand-dark/95 backdrop-blur"> <div class="mx-auto flex max-w-md gap-3 px-3 py-3"> <a href="tel:+12163004121" data-track-location="mobile_sticky" class="flex-1 rounded bg-brand-red px-4 py-3 text-center font-semibold text-white transition hover:bg-brand-red-light">Call Now</a> <a href="/contact/?message=Please%20call%20me%20back" data-track-location="mobile_sticky" class="flex-1 rounded border border-brand-gold px-4 py-3 text-center font-semibold text-brand-gold transition hover:bg-brand-gold hover:text-brand-dark">Request Callback</a> </div> </div></body>
 </html>

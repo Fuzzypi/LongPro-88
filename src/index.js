@@ -14463,7 +14463,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 __name(deserializeManifest, "deserializeManifest");
-var manifest = deserializeManifest({ "hrefRoot": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/", "cacheDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/.astro/", "outDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/", "srcDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/", "publicDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/public/", "buildClientDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/", "buildServerDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/_worker.js/", "adapterName": "@astrojs/cloudflare", "routes": [{ "file": "", "links": [], "scripts": [], "styles": [], "routeData": { "type": "page", "component": "_server-islands.astro", "params": ["name"], "segments": [[{ "content": "_server-islands", "dynamic": false, "spread": false }], [{ "content": "name", "dynamic": true, "spread": false }]], "pattern": "^\\/_server-islands\\/([^/]+?)$", "prerender": false, "isIndex": false, "fallbackRoutes": [], "route": "/_server-islands/[name]", "origin": "internal", "_meta": { "trailingSlash": "never" } } }, { "file": "404.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/404", "isIndex": false, "type": "page", "pattern": "^\\/404$", "segments": [[{ "content": "404", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/404.astro", "pathname": "/404", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "about/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/about", "isIndex": false, "type": "page", "pattern": "^\\/about$", "segments": [[{ "content": "about", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/about.astro", "pathname": "/about", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "blog/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/blog", "isIndex": true, "type": "page", "pattern": "^\\/blog$", "segments": [[{ "content": "blog", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/blog/index.astro", "pathname": "/blog", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "component-test/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/component-test", "isIndex": false, "type": "page", "pattern": "^\\/component-test$", "segments": [[{ "content": "component-test", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/component-test.astro", "pathname": "/component-test", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "contact/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/contact", "isIndex": false, "type": "page", "pattern": "^\\/contact$", "segments": [[{ "content": "contact", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/contact.astro", "pathname": "/contact", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "faq/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/faq", "isIndex": false, "type": "page", "pattern": "^\\/faq$", "segments": [[{ "content": "faq", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/faq.astro", "pathname": "/faq", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "privacy-policy/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/privacy-policy", "isIndex": false, "type": "page", "pattern": "^\\/privacy-policy$", "segments": [[{ "content": "privacy-policy", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/privacy-policy.astro", "pathname": "/privacy-policy", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "reviews/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/reviews", "isIndex": false, "type": "page", "pattern": "^\\/reviews$", "segments": [[{ "content": "reviews", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/reviews.astro", "pathname": "/reviews", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "service-area/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/service-area", "isIndex": false, "type": "page", "pattern": "^\\/service-area$", "segments": [[{ "content": "service-area", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/service-area.astro", "pathname": "/service-area", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/ant-and-spider-control/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/ant-and-spider-control", "isIndex": false, "type": "page", "pattern": "^\\/services\\/ant-and-spider-control$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "ant-and-spider-control", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/ant-and-spider-control.astro", "pathname": "/services/ant-and-spider-control", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/bed-bug-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/bed-bug-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/bed-bug-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "bed-bug-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/bed-bug-extermination.astro", "pathname": "/services/bed-bug-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/cockroach-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/cockroach-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/cockroach-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "cockroach-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/cockroach-extermination.astro", "pathname": "/services/cockroach-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/flea-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/flea-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/flea-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "flea-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/flea-extermination.astro", "pathname": "/services/flea-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services", "isIndex": true, "type": "page", "pattern": "^\\/services$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/index.astro", "pathname": "/services", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/", "isIndex": true, "type": "page", "pattern": "^\\/$", "segments": [], "params": [], "component": "src/pages/index.astro", "pathname": "/", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }], "site": "https://longpropc.com", "base": "/", "trailingSlash": "never", "compressHTML": true, "componentMetadata": [["\0astro:content", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/blog/[...slug].astro", { "propagation": "in-tree", "containsHead": true }], ["\0@astro-page:src/pages/blog/[...slug]@_@astro", { "propagation": "in-tree", "containsHead": false }], ["\0@astrojs-ssr-virtual-entry", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/blog/index.astro", { "propagation": "in-tree", "containsHead": true }], ["\0@astro-page:src/pages/blog/index@_@astro", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/404.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/about.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/component-test.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/contact.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/faq.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/index.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/privacy-policy.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/reviews.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/service-area.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/ant-and-spider-control.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/bed-bug-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/cockroach-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/flea-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/index.astro", { "propagation": "none", "containsHead": true }]], "renderers": [], "clientDirectives": [["idle", '(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();'], ["load", '(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();'], ["media", '(()=>{var n=(a,t)=>{let i=async()=>{await(await a())()};if(t.value){let e=matchMedia(t.value);e.matches?i():e.addEventListener("change",i,{once:!0})}};(self.Astro||(self.Astro={})).media=n;window.dispatchEvent(new Event("astro:media"));})();'], ["only", '(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();'], ["visible", '(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();']], "entryModules": { "\0astro-internal:middleware": "_astro-internal_middleware.mjs", "\0virtual:astro:actions/noop-entrypoint": "noop-entrypoint.mjs", "\0@astro-page:src/pages/404@_@astro": "pages/404.astro.mjs", "\0@astro-page:src/pages/about@_@astro": "pages/about.astro.mjs", "\0@astro-page:src/pages/blog/index@_@astro": "pages/blog.astro.mjs", "\0@astro-page:src/pages/blog/[...slug]@_@astro": "pages/blog/_---slug_.astro.mjs", "\0@astro-page:src/pages/component-test@_@astro": "pages/component-test.astro.mjs", "\0@astro-page:src/pages/contact@_@astro": "pages/contact.astro.mjs", "\0@astro-page:src/pages/faq@_@astro": "pages/faq.astro.mjs", "\0@astro-page:src/pages/privacy-policy@_@astro": "pages/privacy-policy.astro.mjs", "\0@astro-page:src/pages/reviews@_@astro": "pages/reviews.astro.mjs", "\0@astro-page:src/pages/service-area@_@astro": "pages/service-area.astro.mjs", "\0@astro-page:src/pages/services/ant-and-spider-control@_@astro": "pages/services/ant-and-spider-control.astro.mjs", "\0@astro-page:src/pages/services/bed-bug-extermination@_@astro": "pages/services/bed-bug-extermination.astro.mjs", "\0@astro-page:src/pages/services/cockroach-extermination@_@astro": "pages/services/cockroach-extermination.astro.mjs", "\0@astro-page:src/pages/services/flea-extermination@_@astro": "pages/services/flea-extermination.astro.mjs", "\0@astro-page:src/pages/services/index@_@astro": "pages/services.astro.mjs", "\0@astro-page:src/pages/index@_@astro": "pages/index.astro.mjs", "\0@astrojs-ssr-virtual-entry": "index.js", "\0@astro-renderers": "renderers.mjs", "\0@astrojs-ssr-adapter": "_@astrojs-ssr-adapter.mjs", "\0@astrojs-manifest": "manifest_DxqjZnrF.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/unstorage/drivers/cloudflare-kv-binding.mjs": "chunks/cloudflare-kv-binding_DMly_2Gl.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/.astro/content-assets.mjs": "chunks/content-assets_XqCgPAV2.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/.astro/content-modules.mjs": "chunks/content-modules_Bvq7llv8.mjs", "\0astro:data-layer-content": "chunks/_astro_data-layer-content_De9ikjIg.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/astro/dist/assets/services/sharp.js": "chunks/sharp_DJvlWAgu.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/ContactForm.astro?astro&type=script&index=0&lang.ts": "_astro/ContactForm.astro_astro_type_script_index_0_lang.BD6Uy8Ts.js", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/Header.astro?astro&type=script&index=0&lang.ts": "_astro/Header.astro_astro_type_script_index_0_lang.C1zPNowl.js", "astro:scripts/before-hydration.js": "" }, "inlinedScripts": [["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/ContactForm.astro?astro&type=script&index=0&lang.ts", 'const t=document.getElementById("contact-form"),s=document.getElementById("contact-submit"),a=document.getElementById("submit-text"),o=document.getElementById("submit-spinner"),n=document.getElementById("form-messages");t&&t.addEventListener("submit",async r=>{r.preventDefault(),s.disabled=!0,a.textContent="Sending...",o.classList.remove("hidden"),n.innerHTML="";const e=new FormData(t),d={name:e.get("name"),phone:e.get("phone"),email:e.get("email"),service:e.get("service"),message:e.get("message")};try{if((await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)})).ok)t.style.display="none",n.innerHTML=`\n            <div class="p-4 bg-green-900 border border-green-700 text-green-100 rounded">\n              <p class="font-semibold">Thank you! We\'ll contact you within 24 hours.</p>\n            </div>\n          `;else throw new Error("Server responded with an error")}catch{s.disabled=!1,a.textContent="Send Message",o.classList.add("hidden"),n.innerHTML=`\n          <div class="p-4 bg-brand-red border border-brand-red-light text-white rounded">\n            <p class="font-semibold mb-2">Something went wrong. Please call us at <a href="tel:+12163004121" class="underline font-bold">(216) 300-4121</a>.</p>\n            <p class="text-sm opacity-90">Our team is available Monday-Saturday, 8am-6pm.</p>\n          </div>\n        `}});'], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/Header.astro?astro&type=script&index=0&lang.ts", 'const t=document.getElementById("mobile-menu-toggle"),e=document.getElementById("mobile-menu");t&&e&&t.addEventListener("click",()=>{const i=t.getAttribute("aria-expanded")==="true";t.setAttribute("aria-expanded",!i),i?(e.style.maxHeight="0",setTimeout(()=>{e.classList.add("hidden")},300)):(e.classList.remove("hidden"),e.style.maxHeight=e.scrollHeight+"px")});']], "assets": ["/_astro/about.CRmxRFHV.css", "/robots.txt", "/_worker.js/_@astrojs-ssr-adapter.mjs", "/_worker.js/_astro-internal_middleware.mjs", "/_worker.js/index.js", "/_worker.js/noop-entrypoint.mjs", "/_worker.js/renderers.mjs", "/images/bbb-badge.jpg", "/images/bbb-badge.webp", "/images/bedbug-card.png", "/images/bedbug-card.webp", "/images/detective-hero.webp", "/images/detective-magnifying.jpg", "/images/detective-magnifying.webp", "/images/detective-sleeping.webp", "/images/house-keys.jpg", "/images/house-keys.webp", "/images/longpro-logo.png", "/images/longpro-logo.webp", "/images/roach-card.png", "/images/roach-card.webp", "/images/spider-card.png", "/images/spider-card.webp", "/_worker.js/chunks/BaseLayout_sGXwoEUg.mjs", "/_worker.js/chunks/Breadcrumbs_0rTJK41I.mjs", "/_worker.js/chunks/CTABanner_D9Kw3Xot.mjs", "/_worker.js/chunks/ContactForm_BnH6WyIh.mjs", "/_worker.js/chunks/FAQAccordion_eZyh7RqB.mjs", "/_worker.js/chunks/ReviewCard_C1ZLlQp0.mjs", "/_worker.js/chunks/ServiceCard_DMwhgSFK.mjs", "/_worker.js/chunks/_@astrojs-ssr-adapter_DA0V-M_N.mjs", "/_worker.js/chunks/_astro_assets_DwpodA-s.mjs", "/_worker.js/chunks/_astro_content_Ac_rPelT.mjs", "/_worker.js/chunks/_astro_data-layer-content_De9ikjIg.mjs", "/_worker.js/chunks/astro-designed-error-pages_BDZES2zx.mjs", "/_worker.js/chunks/astro_DV3TNnWV.mjs", "/_worker.js/chunks/cloudflare-kv-binding_DMly_2Gl.mjs", "/_worker.js/chunks/content-assets_XqCgPAV2.mjs", "/_worker.js/chunks/content-modules_Bvq7llv8.mjs", "/_worker.js/chunks/index_DCXQzt0_.mjs", "/_worker.js/chunks/noop-middleware_CGfsmZNc.mjs", "/_worker.js/chunks/parse_CDBk4F85.mjs", "/_worker.js/chunks/path_BgNISshD.mjs", "/_worker.js/chunks/remote_CrdlObHx.mjs", "/_worker.js/chunks/reviews_DqLY6DRl.mjs", "/_worker.js/chunks/sharp_DJvlWAgu.mjs", "/_worker.js/_astro/about.CRmxRFHV.css", "/_worker.js/pages/404.astro.mjs", "/_worker.js/pages/about.astro.mjs", "/_worker.js/pages/blog.astro.mjs", "/_worker.js/pages/component-test.astro.mjs", "/_worker.js/pages/contact.astro.mjs", "/_worker.js/pages/faq.astro.mjs", "/_worker.js/pages/index.astro.mjs", "/_worker.js/pages/privacy-policy.astro.mjs", "/_worker.js/pages/reviews.astro.mjs", "/_worker.js/pages/service-area.astro.mjs", "/_worker.js/pages/services.astro.mjs", "/_worker.js/chunks/astro/server_DcWq5z78.mjs", "/_worker.js/pages/services/ant-and-spider-control.astro.mjs", "/_worker.js/pages/services/bed-bug-extermination.astro.mjs", "/_worker.js/pages/services/cockroach-extermination.astro.mjs", "/_worker.js/pages/services/flea-extermination.astro.mjs", "/_worker.js/pages/blog/_---slug_.astro.mjs", "/404.html", "/about/index.html", "/blog/index.html", "/component-test/index.html", "/contact/index.html", "/faq/index.html", "/privacy-policy/index.html", "/reviews/index.html", "/service-area/index.html", "/services/ant-and-spider-control/index.html", "/services/bed-bug-extermination/index.html", "/services/cockroach-extermination/index.html", "/services/flea-extermination/index.html", "/services/index.html", "/index.html"], "buildFormat": "directory", "checkOrigin": true, "allowedDomains": [], "actionBodySizeLimit": 1048576, "serverIslandNameMap": [], "key": "hJnmRukfz5gpCZdj6phErdhGDFgZ8BjaLJ8PvqMh3HE=", "sessionConfig": { "driver": "cloudflare-kv-binding", "options": { "binding": "SESSION" } } });
+var manifest = deserializeManifest({ "hrefRoot": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/", "cacheDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/.astro/", "outDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/", "srcDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/", "publicDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/public/", "buildClientDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/", "buildServerDir": "file:///sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/dist/_worker.js/", "adapterName": "@astrojs/cloudflare", "routes": [{ "file": "", "links": [], "scripts": [], "styles": [], "routeData": { "type": "page", "component": "_server-islands.astro", "params": ["name"], "segments": [[{ "content": "_server-islands", "dynamic": false, "spread": false }], [{ "content": "name", "dynamic": true, "spread": false }]], "pattern": "^\\/_server-islands\\/([^/]+?)$", "prerender": false, "isIndex": false, "fallbackRoutes": [], "route": "/_server-islands/[name]", "origin": "internal", "_meta": { "trailingSlash": "never" } } }, { "file": "404.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/404", "isIndex": false, "type": "page", "pattern": "^\\/404$", "segments": [[{ "content": "404", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/404.astro", "pathname": "/404", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "about/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/about", "isIndex": false, "type": "page", "pattern": "^\\/about$", "segments": [[{ "content": "about", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/about.astro", "pathname": "/about", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "blog/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/blog", "isIndex": true, "type": "page", "pattern": "^\\/blog$", "segments": [[{ "content": "blog", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/blog/index.astro", "pathname": "/blog", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "component-test/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/component-test", "isIndex": false, "type": "page", "pattern": "^\\/component-test$", "segments": [[{ "content": "component-test", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/component-test.astro", "pathname": "/component-test", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "contact/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/contact", "isIndex": false, "type": "page", "pattern": "^\\/contact$", "segments": [[{ "content": "contact", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/contact.astro", "pathname": "/contact", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "faq/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/faq", "isIndex": false, "type": "page", "pattern": "^\\/faq$", "segments": [[{ "content": "faq", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/faq.astro", "pathname": "/faq", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "privacy-policy/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/privacy-policy", "isIndex": false, "type": "page", "pattern": "^\\/privacy-policy$", "segments": [[{ "content": "privacy-policy", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/privacy-policy.astro", "pathname": "/privacy-policy", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "reviews/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/reviews", "isIndex": false, "type": "page", "pattern": "^\\/reviews$", "segments": [[{ "content": "reviews", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/reviews.astro", "pathname": "/reviews", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "service-area/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/service-area", "isIndex": false, "type": "page", "pattern": "^\\/service-area$", "segments": [[{ "content": "service-area", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/service-area.astro", "pathname": "/service-area", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/ant-and-spider-control/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/ant-and-spider-control", "isIndex": false, "type": "page", "pattern": "^\\/services\\/ant-and-spider-control$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "ant-and-spider-control", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/ant-and-spider-control.astro", "pathname": "/services/ant-and-spider-control", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/bed-bug-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/bed-bug-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/bed-bug-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "bed-bug-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/bed-bug-extermination.astro", "pathname": "/services/bed-bug-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/cockroach-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/cockroach-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/cockroach-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "cockroach-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/cockroach-extermination.astro", "pathname": "/services/cockroach-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/flea-extermination/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/flea-extermination", "isIndex": false, "type": "page", "pattern": "^\\/services\\/flea-extermination$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "flea-extermination", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/flea-extermination.astro", "pathname": "/services/flea-extermination", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/general-pest-control/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services/general-pest-control", "isIndex": false, "type": "page", "pattern": "^\\/services\\/general-pest-control$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }], [{ "content": "general-pest-control", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/general-pest-control.astro", "pathname": "/services/general-pest-control", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "services/index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/services", "isIndex": true, "type": "page", "pattern": "^\\/services$", "segments": [[{ "content": "services", "dynamic": false, "spread": false }]], "params": [], "component": "src/pages/services/index.astro", "pathname": "/services", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }, { "file": "index.html", "links": [], "scripts": [], "styles": [], "routeData": { "route": "/", "isIndex": true, "type": "page", "pattern": "^\\/$", "segments": [], "params": [], "component": "src/pages/index.astro", "pathname": "/", "prerender": true, "fallbackRoutes": [], "distURL": [], "origin": "project", "_meta": { "trailingSlash": "never" } } }], "site": "https://longpropc.com", "base": "/", "trailingSlash": "never", "compressHTML": true, "componentMetadata": [["\0astro:content", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/blog/[...slug].astro", { "propagation": "in-tree", "containsHead": true }], ["\0@astro-page:src/pages/blog/[...slug]@_@astro", { "propagation": "in-tree", "containsHead": false }], ["\0@astrojs-ssr-virtual-entry", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/blog/index.astro", { "propagation": "in-tree", "containsHead": true }], ["\0@astro-page:src/pages/blog/index@_@astro", { "propagation": "in-tree", "containsHead": false }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/404.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/about.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/component-test.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/contact.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/faq.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/index.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/privacy-policy.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/reviews.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/service-area.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/ant-and-spider-control.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/bed-bug-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/cockroach-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/flea-extermination.astro", { "propagation": "none", "containsHead": true }], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/pages/services/index.astro", { "propagation": "none", "containsHead": true }]], "renderers": [], "clientDirectives": [["idle", '(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();'], ["load", '(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();'], ["media", '(()=>{var n=(a,t)=>{let i=async()=>{await(await a())()};if(t.value){let e=matchMedia(t.value);e.matches?i():e.addEventListener("change",i,{once:!0})}};(self.Astro||(self.Astro={})).media=n;window.dispatchEvent(new Event("astro:media"));})();'], ["only", '(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();'], ["visible", '(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();']], "entryModules": { "\0astro-internal:middleware": "_astro-internal_middleware.mjs", "\0virtual:astro:actions/noop-entrypoint": "noop-entrypoint.mjs", "\0@astro-page:src/pages/404@_@astro": "pages/404.astro.mjs", "\0@astro-page:src/pages/about@_@astro": "pages/about.astro.mjs", "\0@astro-page:src/pages/blog/index@_@astro": "pages/blog.astro.mjs", "\0@astro-page:src/pages/blog/[...slug]@_@astro": "pages/blog/_---slug_.astro.mjs", "\0@astro-page:src/pages/component-test@_@astro": "pages/component-test.astro.mjs", "\0@astro-page:src/pages/contact@_@astro": "pages/contact.astro.mjs", "\0@astro-page:src/pages/faq@_@astro": "pages/faq.astro.mjs", "\0@astro-page:src/pages/privacy-policy@_@astro": "pages/privacy-policy.astro.mjs", "\0@astro-page:src/pages/reviews@_@astro": "pages/reviews.astro.mjs", "\0@astro-page:src/pages/service-area@_@astro": "pages/service-area.astro.mjs", "\0@astro-page:src/pages/services/ant-and-spider-control@_@astro": "pages/services/ant-and-spider-control.astro.mjs", "\0@astro-page:src/pages/services/bed-bug-extermination@_@astro": "pages/services/bed-bug-extermination.astro.mjs", "\0@astro-page:src/pages/services/cockroach-extermination@_@astro": "pages/services/cockroach-extermination.astro.mjs", "\0@astro-page:src/pages/services/flea-extermination@_@astro": "pages/services/flea-extermination.astro.mjs", "\0@astro-page:src/pages/services/index@_@astro": "pages/services.astro.mjs", "\0@astro-page:src/pages/index@_@astro": "pages/index.astro.mjs", "\0@astrojs-ssr-virtual-entry": "index.js", "\0@astro-renderers": "renderers.mjs", "\0@astrojs-ssr-adapter": "_@astrojs-ssr-adapter.mjs", "\0@astrojs-manifest": "manifest_DxqjZnrF.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/unstorage/drivers/cloudflare-kv-binding.mjs": "chunks/cloudflare-kv-binding_DMly_2Gl.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/.astro/content-assets.mjs": "chunks/content-assets_XqCgPAV2.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/.astro/content-modules.mjs": "chunks/content-modules_Bvq7llv8.mjs", "\0astro:data-layer-content": "chunks/_astro_data-layer-content_De9ikjIg.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/node_modules/astro/dist/assets/services/sharp.js": "chunks/sharp_DJvlWAgu.mjs", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/ContactForm.astro?astro&type=script&index=0&lang.ts": "_astro/ContactForm.astro_astro_type_script_index_0_lang.BD6Uy8Ts.js", "/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/Header.astro?astro&type=script&index=0&lang.ts": "_astro/Header.astro_astro_type_script_index_0_lang.C1zPNowl.js", "astro:scripts/before-hydration.js": "" }, "inlinedScripts": [["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/ContactForm.astro?astro&type=script&index=0&lang.ts", 'const t=document.getElementById("contact-form"),s=document.getElementById("contact-submit"),a=document.getElementById("submit-text"),o=document.getElementById("submit-spinner"),n=document.getElementById("form-messages");t&&t.addEventListener("submit",async r=>{r.preventDefault(),s.disabled=!0,a.textContent="Sending...",o.classList.remove("hidden"),n.innerHTML="";const e=new FormData(t),d={name:e.get("name"),phone:e.get("phone"),email:e.get("email"),service:e.get("service"),message:e.get("message")};try{if((await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)})).ok)t.style.display="none",n.innerHTML=`\n            <div class="p-4 bg-green-900 border border-green-700 text-green-100 rounded">\n              <p class="font-semibold">Thank you! We\'ll contact you within 24 hours.</p>\n            </div>\n          `;else throw new Error("Server responded with an error")}catch{s.disabled=!1,a.textContent="Send Message",o.classList.add("hidden"),n.innerHTML=`\n          <div class="p-4 bg-brand-red border border-brand-red-light text-white rounded">\n            <p class="font-semibold mb-2">Something went wrong. Please call us at <a href="tel:+12163004121" class="underline font-bold">(216) 300-4121</a>.</p>\n            <p class="text-sm opacity-90">Our team is available Monday-Saturday, 9am-9pm.</p>\n          </div>\n        `}});'], ["/sessions/confident-wizardly-cerf/mnt/aos-platform/projects/longpro-88/src/components/Header.astro?astro&type=script&index=0&lang.ts", 'const t=document.getElementById("mobile-menu-toggle"),e=document.getElementById("mobile-menu");t&&e&&t.addEventListener("click",()=>{const i=t.getAttribute("aria-expanded")==="true";t.setAttribute("aria-expanded",!i),i?(e.style.maxHeight="0",setTimeout(()=>{e.classList.add("hidden")},300)):(e.classList.remove("hidden"),e.style.maxHeight=e.scrollHeight+"px")});']], "assets": ["/_astro/about.CRmxRFHV.css", "/robots.txt", "/_worker.js/_@astrojs-ssr-adapter.mjs", "/_worker.js/_astro-internal_middleware.mjs", "/_worker.js/index.js", "/_worker.js/noop-entrypoint.mjs", "/_worker.js/renderers.mjs", "/images/bbb-badge.jpg", "/images/bbb-badge.webp", "/images/bedbug-card.png", "/images/bedbug-card.webp", "/images/detective-hero.webp", "/images/detective-magnifying.jpg", "/images/detective-magnifying.webp", "/images/detective-sleeping.webp", "/images/house-keys.jpg", "/images/house-keys.webp", "/images/longpro-logo.png", "/images/longpro-logo.webp", "/images/roach-card.png", "/images/roach-card.webp", "/images/spider-card.png", "/images/spider-card.webp", "/_worker.js/chunks/BaseLayout_sGXwoEUg.mjs", "/_worker.js/chunks/Breadcrumbs_0rTJK41I.mjs", "/_worker.js/chunks/CTABanner_D9Kw3Xot.mjs", "/_worker.js/chunks/ContactForm_BnH6WyIh.mjs", "/_worker.js/chunks/FAQAccordion_eZyh7RqB.mjs", "/_worker.js/chunks/ReviewCard_C1ZLlQp0.mjs", "/_worker.js/chunks/ServiceCard_DMwhgSFK.mjs", "/_worker.js/chunks/_@astrojs-ssr-adapter_DA0V-M_N.mjs", "/_worker.js/chunks/_astro_assets_DwpodA-s.mjs", "/_worker.js/chunks/_astro_content_Ac_rPelT.mjs", "/_worker.js/chunks/_astro_data-layer-content_De9ikjIg.mjs", "/_worker.js/chunks/astro-designed-error-pages_BDZES2zx.mjs", "/_worker.js/chunks/astro_DV3TNnWV.mjs", "/_worker.js/chunks/cloudflare-kv-binding_DMly_2Gl.mjs", "/_worker.js/chunks/content-assets_XqCgPAV2.mjs", "/_worker.js/chunks/content-modules_Bvq7llv8.mjs", "/_worker.js/chunks/index_DCXQzt0_.mjs", "/_worker.js/chunks/noop-middleware_CGfsmZNc.mjs", "/_worker.js/chunks/parse_CDBk4F85.mjs", "/_worker.js/chunks/path_BgNISshD.mjs", "/_worker.js/chunks/remote_CrdlObHx.mjs", "/_worker.js/chunks/reviews_DqLY6DRl.mjs", "/_worker.js/chunks/sharp_DJvlWAgu.mjs", "/_worker.js/_astro/about.CRmxRFHV.css", "/_worker.js/pages/404.astro.mjs", "/_worker.js/pages/about.astro.mjs", "/_worker.js/pages/blog.astro.mjs", "/_worker.js/pages/component-test.astro.mjs", "/_worker.js/pages/contact.astro.mjs", "/_worker.js/pages/faq.astro.mjs", "/_worker.js/pages/index.astro.mjs", "/_worker.js/pages/privacy-policy.astro.mjs", "/_worker.js/pages/reviews.astro.mjs", "/_worker.js/pages/service-area.astro.mjs", "/_worker.js/pages/services.astro.mjs", "/_worker.js/chunks/astro/server_DcWq5z78.mjs", "/_worker.js/pages/services/ant-and-spider-control.astro.mjs", "/_worker.js/pages/services/bed-bug-extermination.astro.mjs", "/_worker.js/pages/services/cockroach-extermination.astro.mjs", "/_worker.js/pages/services/flea-extermination.astro.mjs", "/_worker.js/pages/blog/_---slug_.astro.mjs", "/404.html", "/about/index.html", "/blog/index.html", "/component-test/index.html", "/contact/index.html", "/faq/index.html", "/privacy-policy/index.html", "/reviews/index.html", "/service-area/index.html", "/services/ant-and-spider-control/index.html", "/services/bed-bug-extermination/index.html", "/services/cockroach-extermination/index.html", "/services/flea-extermination/index.html", "/services/general-pest-control/index.html", "/services/index.html", "/images/general-pest-control-og.webp", "/index.html"], "buildFormat": "directory", "checkOrigin": true, "allowedDomains": [], "actionBodySizeLimit": 1048576, "serverIslandNameMap": [], "key": "hJnmRukfz5gpCZdj6phErdhGDFgZ8BjaLJ8PvqMh3HE=", "sessionConfig": { "driver": "cloudflare-kv-binding", "options": { "binding": "SESSION" } } });
 if (manifest.sessionConfig) manifest.sessionConfig.driverModule = () => Promise.resolve().then(() => (init_cloudflare_kv_binding_DMly_2Gl(), cloudflare_kv_binding_DMly_2Gl_exports));
 
 // dist/_worker.js/index.js
@@ -14486,6 +14486,9 @@ var _page12 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_co
 var _page13 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_flea_extermination_astro(), flea_extermination_astro_exports)), "_page13");
 var _page14 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_services_astro(), services_astro_exports)), "_page14");
 var _page15 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => (init_index_astro(), index_astro_exports)), "_page15");
+var _page16 = /* @__PURE__ */ __name(() => Promise.resolve().then(() => {
+  throw new Error("services/general-pest-control is prerendered only — SSR render should not be invoked");
+}), "_page16");
 var pageMap = /* @__PURE__ */ new Map([
   ["src/pages/404.astro", _page0],
   ["src/pages/about.astro", _page1],
@@ -14501,6 +14504,7 @@ var pageMap = /* @__PURE__ */ new Map([
   ["src/pages/services/bed-bug-extermination.astro", _page11],
   ["src/pages/services/cockroach-extermination.astro", _page12],
   ["src/pages/services/flea-extermination.astro", _page13],
+  ["src/pages/services/general-pest-control.astro", _page16],
   ["src/pages/services/index.astro", _page14],
   ["src/pages/index.astro", _page15]
 ]);
@@ -14514,12 +14518,272 @@ var _manifest = Object.assign(manifest, {
 var _args = void 0;
 var _exports = createExports(_manifest);
 var __astrojsSsrVirtualEntry = _exports.default;
+var LONGPRO_JSON_HEADERS = { "content-type": "application/json; charset=utf-8" };
+function longproJson(data, init = {}) {
+  return new Response(JSON.stringify(data), {
+    ...init,
+    headers: {
+      ...LONGPRO_JSON_HEADERS,
+      ...(init.headers || {})
+    }
+  });
+}
+__name(longproJson, "longproJson");
+function longproClean(value, limit = 2e3) {
+  return typeof value === "string" ? value.trim().slice(0, limit) : "";
+}
+__name(longproClean, "longproClean");
+function longproUrlParam(urlString, name) {
+  try {
+    return longproClean(new URL(urlString).searchParams.get(name) || "", 200);
+  } catch {
+    return "";
+  }
+}
+__name(longproUrlParam, "longproUrlParam");
+function longproLeadEndpoint(env2 = {}) {
+  return env2.PESTPRO_LEADS_URL || env2.PESTPRO_LEAD_ENDPOINT || env2.PESTPRO_INTAKE_URL || "";
+}
+__name(longproLeadEndpoint, "longproLeadEndpoint");
+function longproIsContactRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.replace(/\/+$/, "") === "/api/contact";
+}
+__name(longproIsContactRequest, "longproIsContactRequest");
+function longproIsComponentTestRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.replace(/\/+$/, "") === "/component-test";
+}
+__name(longproIsComponentTestRequest, "longproIsComponentTestRequest");
+async function longproHandleContact(request, env2 = {}) {
+  if (request.method === "GET" && new URL(request.url).searchParams.get("status") === "1") {
+    const configured = Boolean(longproLeadEndpoint(env2));
+    return longproJson({ ok: configured, configured }, { status: configured ? 200 : 503 });
+  }
+  if (request.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        allow: "POST, OPTIONS",
+        "access-control-allow-methods": "POST, OPTIONS",
+        "access-control-allow-headers": "content-type"
+      }
+    });
+  }
+  if (request.method !== "POST") {
+    return longproJson({ ok: false, error: "Method not allowed" }, {
+      status: 405,
+      headers: { allow: "POST, OPTIONS" }
+    });
+  }
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return longproJson({ ok: false, error: "Invalid JSON" }, { status: 400 });
+  }
+  const name = longproClean(body.name, 100);
+  const phone = longproClean(body.phone, 20);
+  const email = longproClean(body.email, 120);
+  const service = longproClean(body.service, 100);
+  const message = longproClean(body.message, 1e3);
+  if (!name || !phone && !email) {
+    return longproJson({ ok: false, error: "Name and a phone or email are required" }, { status: 400 });
+  }
+  const endpoint = longproLeadEndpoint(env2);
+  if (!endpoint) {
+    return longproJson({ ok: false, error: "Lead intake is not configured" }, { status: 503 });
+  }
+  const pageUrl = request.headers.get("referer") || "";
+  const lead = {
+    name,
+    phone,
+    email,
+    service,
+    message,
+    source: longproClean(body.source, 200) || "longpropc.com",
+    utm_source: longproClean(body.utm_source, 100) || longproUrlParam(pageUrl, "utm_source"),
+    utm_medium: longproClean(body.utm_medium, 100) || longproUrlParam(pageUrl, "utm_medium"),
+    utm_campaign: longproClean(body.utm_campaign, 100) || longproUrlParam(pageUrl, "utm_campaign"),
+    utm_content: longproClean(body.utm_content, 200) || longproUrlParam(pageUrl, "utm_content"),
+    utm_term: longproClean(body.utm_term, 100) || longproUrlParam(pageUrl, "utm_term"),
+    page_url: pageUrl,
+    user_agent: request.headers.get("user-agent") || "",
+    ip_address: request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for") || ""
+  };
+  const headers = { "content-type": "application/json" };
+  if (env2.PESTPRO_INTAKE_TOKEN) {
+    headers.authorization = `Bearer ${env2.PESTPRO_INTAKE_TOKEN}`;
+  }
+  let response;
+  try {
+    response = await fetch(endpoint, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(lead)
+    });
+  } catch (error) {
+    console.error("LongPro lead intake request failed", error);
+    return longproJson({ ok: false, error: "Lead intake unavailable" }, { status: 502 });
+  }
+  if (!response.ok) {
+    console.error("LongPro lead intake rejected", response.status);
+    return longproJson({ ok: false, error: "Lead intake rejected" }, { status: 502 });
+  }
+  return longproJson({ ok: true });
+}
+__name(longproHandleContact, "longproHandleContact");
+var LONGPRO_REDIRECT_MAP = {
+  "/accessibility-statement": "/",
+  "/bed-bug-faq": "/faq",
+  "/cockroach-extermination-in-cleveland": "/services/cockroach-extermination",
+  "/post/how-to-keep-your-home-safe-from-common-pests": "/blog",
+  "/post/understanding-regional-pest-challenges-in-north-olmsted": "/blog",
+  "/blog/2024/november/the-impact-of-seasonal-changes-on-bed-bug-activity": "/blog",
+  "/.well-known/llms.txt": "/llms.txt"
+};
+function longproHandleRedirect(request) {
+  const url = new URL(request.url);
+  if (url.protocol !== "https:" || url.hostname === "www.longpropc.com") {
+    const canonical = new URL(url.toString());
+    canonical.protocol = "https:";
+    canonical.hostname = "longpropc.com";
+    return Response.redirect(canonical.toString(), 301);
+  }
+  const normalized = url.pathname.replace(/\/+$/, "") || "/";
+  const target = LONGPRO_REDIRECT_MAP[normalized];
+  if (!target && !normalized.startsWith("/post/")) return null;
+  const redirectTarget = target || "/blog";
+  const dest = new URL(redirectTarget, url.origin);
+  dest.search = url.search;
+  return Response.redirect(dest.toString(), 301);
+}
+__name(longproHandleRedirect, "longproHandleRedirect");
+function longproIsScheduleRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.replace(/\/+$/, "") === "/api/schedule";
+}
+__name(longproIsScheduleRequest, "longproIsScheduleRequest");
+async function longproHandleSchedule(request, env2 = {}) {
+  if (request.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        allow: "POST, OPTIONS",
+        "access-control-allow-methods": "POST, OPTIONS",
+        "access-control-allow-headers": "content-type",
+        "access-control-allow-origin": "*"
+      }
+    });
+  }
+  if (request.method !== "POST") {
+    return longproJson({ ok: false, error: "Method not allowed. POST a JSON body with: name, phone, email, service, urgency, message. Optional: property_type, address, preferred_time." }, {
+      status: 405,
+      headers: { allow: "POST, OPTIONS", "access-control-allow-origin": "*" }
+    });
+  }
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return longproJson({ ok: false, error: "Invalid JSON. Expected: { name, phone, email, service, urgency, message }" }, { status: 400, headers: { "access-control-allow-origin": "*" } });
+  }
+  const name = longproClean(body.name, 100);
+  const phone = longproClean(body.phone, 20);
+  const email = longproClean(body.email, 120);
+  const service = longproClean(body.service, 100);
+  const urgency = longproClean(body.urgency, 50) || "flexible";
+  const message = longproClean(body.message, 1e3);
+  const propertyType = longproClean(body.property_type, 50);
+  const address = longproClean(body.address, 300);
+  const preferredTime = longproClean(body.preferred_time, 100);
+  if (!name || !phone && !email) {
+    return longproJson({
+      ok: false,
+      error: "name and at least one of phone or email are required",
+      schema: { required: ["name"], oneOf: ["phone", "email"], optional: ["service", "urgency", "message", "property_type", "address", "preferred_time"] }
+    }, { status: 400, headers: { "access-control-allow-origin": "*" } });
+  }
+  const endpoint = longproLeadEndpoint(env2);
+  if (!endpoint) {
+    return longproJson({ ok: false, error: "Scheduling system is not configured" }, { status: 503, headers: { "access-control-allow-origin": "*" } });
+  }
+  const urgencyNote = urgency !== "flexible" ? `[Urgency: ${urgency}] ` : "";
+  const propertyNote = propertyType ? `[Property: ${propertyType}] ` : "";
+  const addressNote = address ? `[Address: ${address}] ` : "";
+  const timeNote = preferredTime ? `[Preferred: ${preferredTime}] ` : "";
+  const enrichedMessage = `${urgencyNote}${propertyNote}${addressNote}${timeNote}${message || "Service request via scheduling API"}`.trim();
+  const lead = {
+    name,
+    phone,
+    email,
+    service,
+    message: enrichedMessage,
+    source: longproClean(body.source, 200) || "api/schedule",
+    utm_source: longproClean(body.utm_source, 100) || "agent",
+    utm_medium: "api",
+    utm_campaign: longproClean(body.utm_campaign, 100) || "",
+    utm_content: "",
+    utm_term: "",
+    page_url: request.headers.get("referer") || "",
+    user_agent: request.headers.get("user-agent") || "",
+    ip_address: request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for") || ""
+  };
+  const headers = { "content-type": "application/json" };
+  if (env2.PESTPRO_INTAKE_TOKEN) {
+    headers.authorization = `Bearer ${env2.PESTPRO_INTAKE_TOKEN}`;
+  }
+  let response;
+  try {
+    response = await fetch(endpoint, { method: "POST", headers, body: JSON.stringify(lead) });
+  } catch (error) {
+    console.error("LongPro schedule intake request failed", error);
+    return longproJson({ ok: false, error: "Scheduling service unavailable" }, { status: 502, headers: { "access-control-allow-origin": "*" } });
+  }
+  if (!response.ok) {
+    console.error("LongPro schedule intake rejected", response.status);
+    return longproJson({ ok: false, error: "Scheduling request rejected" }, { status: 502, headers: { "access-control-allow-origin": "*" } });
+  }
+  const confirmationId = `LP-${Date.now().toString(36).toUpperCase()}`;
+  return longproJson({
+    ok: true,
+    confirmation_id: confirmationId,
+    status: "received",
+    next_steps: urgency === "same-day"
+      ? "LongPro will call within 1 hour during business hours (Mon-Sat 9AM-9PM ET) to confirm same-day availability."
+      : "LongPro will call within 24 hours during business hours (Mon-Sat 9AM-9PM ET) to schedule an inspection.",
+    expected_callback: urgency === "same-day" ? "within 1 hour" : "within 24 hours",
+    business_hours: "Monday-Saturday 9:00 AM - 9:00 PM ET",
+    note: "Free inspection is always the first step. No treatment begins without your approval of a written estimate."
+  }, { status: 201, headers: { "access-control-allow-origin": "*" } });
+}
+__name(longproHandleSchedule, "longproHandleSchedule");
+var longproWorker = {
+  ...__astrojsSsrVirtualEntry,
+  async fetch(request, env2, context2) {
+    const redirect = longproHandleRedirect(request);
+    if (redirect) return redirect;
+    if (longproIsScheduleRequest(request)) {
+      return longproHandleSchedule(request, env2);
+    }
+    if (longproIsContactRequest(request)) {
+      return longproHandleContact(request, env2);
+    }
+    if (longproIsComponentTestRequest(request)) {
+      return new Response("Not found", {
+        status: 404,
+        headers: { "content-type": "text/plain; charset=utf-8" }
+      });
+    }
+    return __astrojsSsrVirtualEntry.fetch(request, env2, context2);
+  }
+};
 var _start = "start";
 if (Object.prototype.hasOwnProperty.call(serverEntrypointModule, _start)) {
   serverEntrypointModule[_start](_manifest, _args);
 }
 export {
-  __astrojsSsrVirtualEntry as default,
+  longproWorker as default,
   pageMap
 };
 /**

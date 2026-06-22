@@ -1,0 +1,164 @@
+{
+  "generatedAt": "2026-06-22T14:22:28.463Z",
+  "site": "https://longpropc.com",
+  "pages": [
+    {
+      "path": "/",
+      "label": "homepage",
+      "status": 200,
+      "location": null,
+      "headerCall": true,
+      "quoteCta": true,
+      "stickyCallBar": true
+    },
+    {
+      "path": "/contact/",
+      "label": "contact page",
+      "status": 200,
+      "location": null,
+      "headerCall": true,
+      "quoteCta": true,
+      "stickyCallBar": true
+    },
+    {
+      "path": "/services/bed-bug-extermination/",
+      "label": "bed bug service page",
+      "status": 200,
+      "location": null,
+      "headerCall": true,
+      "quoteCta": true,
+      "stickyCallBar": true
+    },
+    {
+      "path": "/services/general-pest-control/",
+      "label": "general pest service page",
+      "status": 200,
+      "location": null,
+      "headerCall": true,
+      "quoteCta": true,
+      "stickyCallBar": true
+    },
+    {
+      "path": "/reviews/",
+      "label": "reviews page",
+      "status": 200,
+      "location": null,
+      "headerCall": false,
+      "quoteCta": true,
+      "stickyCallBar": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "homepage returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "homepage exposes phone CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage exposes callback CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "contact page exposes phone CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page exposes callback CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bed bug service page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "bed bug service page exposes phone CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "bed bug service page exposes callback CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "general pest service page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "general pest service page exposes phone CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "general pest service page exposes callback CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reviews page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "reviews page exposes phone CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reviews page exposes callback CTA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage exposes sticky mobile call bar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage call tracking is wired safely",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page explains the lighter lead requirement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page does not hard-require phone, email, service, or message",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page tracks callback milestones",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact page analytics calls fail safely when GA is unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "service page exposes call and callback CTAs",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "failures": []
+}
