@@ -71,13 +71,36 @@ const parmaHeightsArea = read("dist_assets/service-area/parma-heights/index.html
 const fairviewParkBedBug = read("dist_assets/service-area/fairview-park/bed-bugs/index.html");
 check("bed bug service title is distinct from home title", titleOf(home) !== titleOf(bedBug));
 check(
-  "bed bug service title targets treatment and extermination",
-  titleOf(bedBug) === "Cleveland Bed Bug Treatment | LongPro Pest Control"
+  "bed bug service title leads with the target query and stays under 60 characters",
+  titleOf(bedBug) === "Bed Bug Exterminator Cleveland OH | LongPro Pest Control" &&
+    titleOf(bedBug).length < 60
 );
 check(
   "bed bug service social titles match updated title",
-  bedBug.includes('property="og:title" content="Cleveland Bed Bug Treatment | LongPro Pest Control"') &&
-    bedBug.includes('name="twitter:title" content="Cleveland Bed Bug Treatment | LongPro Pest Control"')
+  bedBug.includes('property="og:title" content="Bed Bug Exterminator Cleveland OH | LongPro Pest Control"') &&
+    bedBug.includes('name="twitter:title" content="Bed Bug Exterminator Cleveland OH | LongPro Pest Control"')
+);
+check(
+  "bed bug service puts phone and quote CTAs above the first content section",
+  bedBug.indexOf('data-track-location="bed_bug_hero"') > -1 &&
+    bedBug.indexOf('Call (216) 300-4121') > -1 &&
+    bedBug.indexOf('Request a Free Quote') > -1 &&
+    bedBug.indexOf('data-track-location="bed_bug_hero"') < bedBug.indexOf("Signs You Have Bed Bugs")
+);
+check(
+  "bed bug service surfaces trust signals above the fold",
+  bedBug.includes("5.0 Google") &&
+    bedBug.includes("17 public reviews") &&
+    bedBug.includes("A+ BBB") &&
+    bedBug.includes("Unmarked") &&
+    bedBug.indexOf("5.0 Google") < bedBug.indexOf("Signs You Have Bed Bugs")
+);
+check(
+  "bed bug service includes visible service-page testimonials",
+  bedBug.includes("Cleveland Bed Bug Treatment Reviews") &&
+    bedBug.includes("Its been a few months since my bed bug treatment") &&
+    bedBug.includes("The service technician explained everything") &&
+    bedBug.includes("Read more LongPro Pest Control reviews")
 );
 check(
   "bed bug service keeps its dedicated social preview image",
