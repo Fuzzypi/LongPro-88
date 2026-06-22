@@ -1,6 +1,7 @@
 import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 
 const checks = [];
+const wranglerConfig = readFileSync("wrangler.toml", "utf8");
 
 function check(name, passed, detail = "") {
   checks.push({ name, passed, detail });
@@ -41,22 +42,68 @@ check(
   "indexed Wix example has explicit redirect mapping",
   worker.includes('"/post/how-to-keep-your-home-safe-from-common-pests": "/blog"')
 );
+check(
+  "worker forces apex https canonical redirects",
+  worker.includes('url.protocol !== "https:" || url.hostname === "www.longpropc.com"') &&
+    worker.includes('canonical.protocol = "https:"') &&
+    worker.includes('canonical.hostname = "longpropc.com"')
+);
+check(
+  "Cloudflare assets run the Worker before static asset matching",
+  wranglerConfig.includes("run_worker_first = true")
+);
+check(
+  "Wrangler config manages the apex and www custom domains",
+  wranglerConfig.includes('pattern = "longpropc.com"') &&
+    wranglerConfig.includes('pattern = "www.longpropc.com"') &&
+    wranglerConfig.includes("custom_domain = true")
+);
 
 const notFound = read("dist_assets/404.html");
 check("404 page remains noindex", notFound.includes('<meta name="robots" content="noindex, nofollow">'));
 check("404 page does not emit a canonical tag", !notFound.includes('rel="canonical"'));
 
 const home = read("dist_assets/index.html");
+const contactHtml = read("dist_assets/contact/index.html");
 const bedBug = read("dist_assets/services/bed-bug-extermination/index.html");
+const parmaArea = read("dist_assets/service-area/parma/index.html");
+const parmaHeightsArea = read("dist_assets/service-area/parma-heights/index.html");
+const fairviewParkBedBug = read("dist_assets/service-area/fairview-park/bed-bugs/index.html");
 check("bed bug service title is distinct from home title", titleOf(home) !== titleOf(bedBug));
 check(
   "bed bug service title targets treatment and extermination",
-  titleOf(bedBug) === "Bed Bug Treatment &amp; Extermination Cleveland OH | LongPro Pest Control"
+  titleOf(bedBug) === "Cleveland Bed Bug Treatment | LongPro Pest Control"
 );
 check(
   "bed bug service social titles match updated title",
-  bedBug.includes('property="og:title" content="Bed Bug Treatment &amp; Extermination Cleveland OH | LongPro Pest Control"') &&
-    bedBug.includes('name="twitter:title" content="Bed Bug Treatment &amp; Extermination Cleveland OH | LongPro Pest Control"')
+  bedBug.includes('property="og:title" content="Cleveland Bed Bug Treatment | LongPro Pest Control"') &&
+    bedBug.includes('name="twitter:title" content="Cleveland Bed Bug Treatment | LongPro Pest Control"')
+);
+check(
+  "bed bug service keeps its dedicated social preview image",
+  bedBug.includes('property="og:image" content="https://longpropc.com/images/og/bed-bug-extermination-preview.png"') &&
+    bedBug.includes('name="twitter:image" content="https://longpropc.com/images/og/bed-bug-extermination-preview.png"')
+);
+check(
+  "priority service-area page keeps its stronger social preview",
+  parmaArea.includes('property="og:image" content="https://longpropc.com/images/house-keys.webp"') &&
+    parmaArea.includes('name="twitter:image" content="https://longpropc.com/images/house-keys.webp"')
+);
+check(
+  "service-area pages keep the service-area social preview",
+  parmaHeightsArea.includes('property="og:image" content="https://longpropc.com/images/og/service-area-preview.png"') &&
+    parmaHeightsArea.includes('name="twitter:image" content="https://longpropc.com/images/og/service-area-preview.png"')
+);
+check(
+  "bed bug city pages keep the bed bug social preview",
+  fairviewParkBedBug.includes('property="og:image" content="https://longpropc.com/images/og/bed-bug-extermination-preview.png"') &&
+    fairviewParkBedBug.includes('name="twitter:image" content="https://longpropc.com/images/og/bed-bug-extermination-preview.png"')
+);
+check(
+  "priority service-area pages no longer use stale BBB rating-duration wording",
+  !/BBB A\+ rated|13\+ years rated|13\+ consecutive years|13\+ years of A\+ BBB rating/.test(
+    `${parmaArea}\n${parmaHeightsArea}\n${fairviewParkBedBug}`
+  )
 );
 
 const newPostPath = "dist_assets/blog/german-cockroaches-cleveland-apartments/index.html";
@@ -115,12 +162,12 @@ for (const [name, html] of [
 const blogIndex = read("dist_assets/blog/index.html");
 check(
   "blog index links to new cockroach article",
-  linksTo(blogIndex, "/blog/german-cockroaches-cleveland-apartments")
+  linksTo(blogIndex, "/blog/german-cockroaches-cleveland-apartments/")
 );
 check(
   "blog index links to staggered non-bed-bug articles",
-  linksTo(blogIndex, "/blog/cleveland-seasonal-pest-calendar") &&
-    linksTo(blogIndex, "/blog/professional-pest-control-vs-diy")
+  linksTo(blogIndex, "/blog/cleveland-seasonal-pest-calendar/") &&
+    linksTo(blogIndex, "/blog/professional-pest-control-vs-diy/")
 );
 
 const reviewsPage = read("dist_assets/reviews/index.html");
@@ -175,6 +222,65 @@ check(
   "public website assets do not expose owner or technician names",
   personalNameHits.length === 0,
   personalNameHits.join("; ")
+);
+
+const publicHtmlFiles = publicTextFiles.filter((file) => file.endsWith(".html"));
+const aggregateSchemaHits = [];
+const reviewSchemaHits = [];
+const legacyPhoneHits = [];
+const slashlessInternalHrefHits = [];
+for (const file of publicHtmlFiles) {
+  const html = read(file);
+  if (/AggregateRating|aggregateRating/.test(html)) {
+    aggregateSchemaHits.push(file);
+  }
+  if (/"@type"\s*:\s*"Review"|\"@type\":\"Review\"/.test(html)) {
+    reviewSchemaHits.push(file);
+  }
+  if (html.includes("294-2843")) {
+    legacyPhoneHits.push(file);
+  }
+  if (/href="\/(?:about|blog|contact|faq|privacy-policy|reviews|service-area|services)(?!\/|[?#"])/.test(html)) {
+    slashlessInternalHrefHits.push(file);
+  }
+}
+check(
+  "public pages no longer emit AggregateRating schema",
+  aggregateSchemaHits.length === 0,
+  aggregateSchemaHits.join("; ")
+);
+check(
+  "public pages no longer emit self-serving Review schema",
+  reviewSchemaHits.length === 0,
+  reviewSchemaHits.join("; ")
+);
+check(
+  "public pages no longer expose the legacy phone number",
+  legacyPhoneHits.length === 0,
+  legacyPhoneHits.join("; ")
+);
+check(
+  "public pages point internal marketing links at trailing-slash canonicals",
+  slashlessInternalHrefHits.length === 0,
+  slashlessInternalHrefHits.join("; ")
+);
+check(
+  "home page includes header, mobile menu, and sticky call tracking",
+  home.includes('data-track-location="header"') &&
+    home.includes('data-track-location="mobile_menu"') &&
+    home.includes('data-track-location="mobile_sticky"') &&
+    home.includes("phone_click_' + location") &&
+    home.includes("quote_click_' + location")
+);
+check(
+  "contact page tracks page views and callback form milestones",
+  contactHtml.includes("contact_page_view") &&
+    contactHtml.includes("callback_form_start") &&
+    contactHtml.includes("callback_form_submit")
+);
+check(
+  "key pages include the mobile sticky CTA",
+  home.includes("Call Now") && contactHtml.includes("Call Now") && reviewsPage.includes("Call Now")
 );
 
 const failures = checks.filter((item) => !item.passed);

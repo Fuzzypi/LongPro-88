@@ -14644,6 +14644,12 @@ var LONGPRO_REDIRECT_MAP = {
 };
 function longproHandleRedirect(request) {
   const url = new URL(request.url);
+  if (url.protocol !== "https:" || url.hostname === "www.longpropc.com") {
+    const canonical = new URL(url.toString());
+    canonical.protocol = "https:";
+    canonical.hostname = "longpropc.com";
+    return Response.redirect(canonical.toString(), 301);
+  }
   const normalized = url.pathname.replace(/\/+$/, "") || "/";
   const target = LONGPRO_REDIRECT_MAP[normalized];
   if (!target && !normalized.startsWith("/post/")) return null;

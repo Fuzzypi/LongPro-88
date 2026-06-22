@@ -1,11 +1,15 @@
 {
   "scripts": {
-    "citations:dry-run": "node scripts/scan-citations.mjs --dry-run",
-    "citations:scan": "node scripts/scan-citations.mjs",
-    "citations:self-test": "node scripts/scan-citations.mjs --self-test",
-    "deploy:live": "env -u CLOUDFLARE_API_TOKEN npx wrangler deploy",
-    "monitor:live": "node scripts/monitor-live-signals.mjs",
-    "seo:verify": "node scripts/verify-seo-fixes.mjs"
+    "build": "./scripts/run-with-node.sh node_modules/wrangler/bin/wrangler.js deploy --dry-run",
+    "citations:dry-run": "./scripts/run-with-node.sh scripts/scan-citations.mjs --dry-run",
+    "citations:scan": "./scripts/run-with-node.sh scripts/scan-citations.mjs",
+    "citations:self-test": "./scripts/run-with-node.sh scripts/scan-citations.mjs --self-test",
+    "deploy:live": "env -u CLOUDFLARE_API_TOKEN ./scripts/run-with-node.sh node_modules/wrangler/bin/wrangler.js deploy",
+    "monitor:live": "./scripts/run-with-node.sh scripts/monitor-live-signals.mjs",
+    "seo:conversion": "./scripts/run-with-node.sh scripts/verify-conversion-flow.mjs",
+    "seo:crawl": "./scripts/run-with-node.sh scripts/seo-live-audit.mjs",
+    "seo:report": "./scripts/run-with-node.sh scripts/seo-report.mjs",
+    "seo:verify": "./scripts/run-with-node.sh scripts/verify-seo-fixes.mjs"
   },
   "devDependencies": {
     "wrangler": "^4.73.0"

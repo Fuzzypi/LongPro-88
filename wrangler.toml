@@ -9,7 +9,16 @@ preview_urls = false
 binding = "ASSETS"
 directory = "./dist_assets"
 html_handling = "auto-trailing-slash"
-not_found_handling = "none"
+not_found_handling = "404-page"
+run_worker_first = true
 
 [observability]
 enabled = true
+
+[[routes]]
+pattern = "longpropc.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.longpropc.com"
+custom_domain = true

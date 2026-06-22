@@ -48,14 +48,20 @@ for (const queryPlan of plan) {
   const page = args.fixture
     ? readFileSync(resolve(args.fixture), 'utf8')
     : runBrowseText(queryPlan.url);
-  const matchedSources = findSourceMatches(page, queryPlan.oldNumber, inventory.sources);
+  const queryAssessment = assessQueryPage(page);
+  const matchedSources = queryAssessment.resultsUsable
+    ? findSourceMatches(page, queryPlan.oldNumber, inventory.sources)
+    : [];
   evidence.queries.push({
     id: queryPlan.id,
     oldNumberId: queryPlan.oldNumberId,
     query: queryPlan.query,
     url: queryPlan.url,
     oldNumber: queryPlan.oldNumber,
-    foundOldNumber: matchedSources.length > 0,
+    queryStatus: queryAssessment.status,
+    queryStatusReason: queryAssessment.reason,
+    resultsUsable: queryAssessment.resultsUsable,
+    foundOldNumber: queryAssessment.resultsUsable ? matchedSources.length > 0 : null,
     matchedSources,
     textPreview: compactText(page).slice(0, 2000)
   });
@@ -171,6 +177,48 @@ function findBrowseCli() {
     );
   }
   return found;
+}
+
+function assessQueryPage(text) {
+  const compact = compactText(text);
+  const knownFailures = [
+    {
+      status: 'search_error',
+      reason: 'Yahoo returned a temporary search error page instead of search results.',
+      markers: [
+        'We had temporary problems searching for web pages.',
+        'Search again for'
+      ]
+    },
+    {
+      status: 'blocked',
+      reason: 'The request was blocked by an anti-bot or cookie challenge page.',
+      markers: [
+        'Please enable cookies.',
+        'Sorry, you have been blocked',
+        'This website uses a security service to protect itself from online attacks.',
+        'This website uses a security service to protect against malicious bots.',
+        'Verification successful. Waiting for',
+        'Cloudflare Ray ID:'
+      ]
+    }
+  ];
+
+  for (const failure of knownFailures) {
+    if (failure.markers.some((marker) => compact.includes(marker))) {
+      return {
+        status: failure.status,
+        reason: failure.reason,
+        resultsUsable: false
+      };
+    }
+  }
+
+  return {
+    status: 'ok',
+    reason: 'Search results were returned normally.',
+    resultsUsable: true
+  };
 }
 
 function findSourceMatches(text, oldNumber, sources) {
@@ -290,27 +338,44 @@ function findAllIndexes(text, needle) {
 }
 
 function runSelfTest() {
-  const fixture = `
-    Search Results
-    AllBiz https://www.allbiz.com/business/longpro-pest-control-llc
-    Longpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz
-    Yellow Pages https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control
-    Phone: (216) 456-5452
-    Better Business Bureau https://www.bbb.org/us/oh/cleveland/profile/pest-control
-    Phone: (216) 294-2843
-  `;
   const inventory = readJson(resolve(DEFAULT_INVENTORY));
   validateInventory(inventory);
   const old456 = inventory.phoneNumbers.old.find((phone) => phone.id === 'old-first-business-cell');
   const old294 = inventory.phoneNumbers.old.find((phone) => phone.id === 'old-website-listing');
+  const fixture = `
+    Search Results
+    AllBiz https://www.allbiz.com/business/longpro-pest-control-llc
+    Longpro Pest Control LLC | ${old456.display} | Cleveland - AllBiz
+    Yellow Pages https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control
+    Phone: ${old456.display}
+    Better Business Bureau https://www.bbb.org/us/oh/cleveland/profile/pest-control
+    Phone: ${old294.display}
+  `;
   const matches456 = findSourceMatches(fixture, old456, inventory.sources);
   const matches294 = findSourceMatches(fixture, old294, inventory.sources);
+  const yahooFailureFixture = `
+    Search Results
+    We had temporary problems searching for web pages.
+    Search again for "LongPro Pest Control" "216-456-5452" site:manta.com
+    Powered by Bing
+  `;
+  const blockedFixture = `
+    Please enable cookies.
+    Sorry, you have been blocked
+    Cloudflare Ray ID: abc123
+  `;
+  const yahooFailureAssessment = assessQueryPage(yahooFailureFixture);
+  const blockedAssessment = assessQueryPage(blockedFixture);
 
   assert(containsPhone(fixture, old456), 'expected old 456 number to be detected');
   assert(containsPhone(fixture, old294), 'expected old 294 number to be detected');
   assert(matches456.some((match) => match.sourceId === 'allbiz'), 'expected AllBiz source match');
   assert(matches456.some((match) => match.sourceId === 'yellow-pages'), 'expected Yellow Pages source match');
   assert(matches294.some((match) => match.sourceId === 'bbb'), 'expected BBB source match');
+  assert(yahooFailureAssessment.status === 'search_error', 'expected Yahoo failure fixture to be flagged');
+  assert(yahooFailureAssessment.resultsUsable === false, 'expected Yahoo failure fixture to be unusable');
+  assert(blockedAssessment.status === 'blocked', 'expected blocked fixture to be flagged');
+  assert(blockedAssessment.resultsUsable === false, 'expected blocked fixture to be unusable');
 
   console.log('citation scanner self-test passed');
 }
