@@ -1,0 +1,311 @@
+{
+  "generatedAt": "2026-06-22T15:13:50.588Z",
+  "site": "https://longpropc.com",
+  "verdict": "LONGPRO_CONTACT_SUBMIT_REPAIR_DEPLOYED",
+  "repo": {
+    "path": "/Users/fuzzypi/Desktop/LongPro-88",
+    "branch": "main",
+    "startingHead": "55615a815b974ef3e8b0d94a5ff4a4093884994a",
+    "endingHead": "55615a815b974ef3e8b0d94a5ff4a4093884994a"
+  },
+  "deployment": {
+    "startingVersionId": "525b9f0b-b909-4b45-a906-7bac54f21380",
+    "deployedVersionId": "a34e7b62-1182-4579-ba20-6834c35551f2"
+  },
+  "rootCause": {
+    "summary": "The contact Worker awaited downstream PestPro intake with no timeout, so a slow or hung downstream request could leave the browser submit pending indefinitely.",
+    "downstreamInvolved": true
+  },
+  "filesChanged": [
+    "src/index.js",
+    "scripts/verify-contact-submit.mjs",
+    "reports/seo/2026-06-22/contact-submit-repair.md",
+    "reports/seo/2026-06-22/contact-submit-repair.json",
+    "reports/seo/2026-06-22/contact-submit-success-ui-proof.png"
+  ],
+  "checks": [
+    {
+      "name": "built contact page contains contact_submit_success wiring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "built contact page exposes the live phone number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "built contact page does not expose the legacy phone number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "local contact page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "local contact page contains contact_submit_success wiring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "local status endpoint returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "local status endpoint reports configured",
+      "passed": true,
+      "detail": "{\"ok\":true,\"configured\":true}"
+    },
+    {
+      "name": "local invalid payload returns 400",
+      "passed": true,
+      "detail": "status=400"
+    },
+    {
+      "name": "local invalid payload returns validation JSON",
+      "passed": true,
+      "detail": "{\"ok\":false,\"error\":\"Name and a phone or email are required\"}"
+    },
+    {
+      "name": "local valid payload returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "local valid payload returns ok JSON",
+      "passed": true,
+      "detail": "{\"ok\":true}"
+    },
+    {
+      "name": "local valid payload completes in under 2 seconds",
+      "passed": true,
+      "detail": "elapsedMs=4"
+    },
+    {
+      "name": "local valid payload forwarded the lead downstream",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "local valid payload preserved live source metadata",
+      "passed": true,
+      "detail": "{\"name\":\"Verify Contact Success\",\"phone\":\"\",\"email\":\"verify@example.com\",\"service\":\"other\",\"message\":\"Local success proof\",\"source\":\"longpropc.com\",\"utm_source\":\"verify\",\"utm_medium\":\"test\",\"utm_campaign\":\"\",\"utm_content\":\"\",\"utm_term\":\"\",\"page_url\":\"https://longpropc.com/contact/?utm_source=verify&utm_medium=test\",\"user_agent\":\"LongPro contact verify\",\"ip_address\":\"127.0.0.1\"}"
+    },
+    {
+      "name": "local hung downstream returns deterministic timeout status",
+      "passed": true,
+      "detail": "status=504"
+    },
+    {
+      "name": "local hung downstream returns Lead intake unavailable JSON",
+      "passed": true,
+      "detail": "{\"ok\":false,\"error\":\"Lead intake unavailable\"}"
+    },
+    {
+      "name": "local hung downstream returns in under 2 seconds",
+      "passed": true,
+      "detail": "elapsedMs=911"
+    },
+    {
+      "name": "local downstream rejection returns 502",
+      "passed": true,
+      "detail": "status=502"
+    },
+    {
+      "name": "local downstream rejection returns deterministic JSON",
+      "passed": true,
+      "detail": "{\"ok\":false,\"error\":\"Lead intake rejected\"}"
+    },
+    {
+      "name": "live contact page returns 200",
+      "passed": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "live contact page contains contact_submit_success wiring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "live contact page exposes the live phone number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "live contact page does not expose the legacy phone number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "live contact status endpoint returns configured",
+      "passed": true,
+      "detail": "{\"ok\":true,\"configured\":true}"
+    },
+    {
+      "name": "live invalid contact payload returns 400 JSON",
+      "passed": true,
+      "detail": "{\"ok\":false,\"error\":\"Name and a phone or email are required\"}"
+    },
+    {
+      "name": "live marked contact submit returns success JSON",
+      "passed": true,
+      "detail": "{\"ok\":true}"
+    },
+    {
+      "name": "live marked contact submit returns in under 2 seconds",
+      "passed": true,
+      "detail": "elapsedMs=480"
+    }
+  ],
+  "failures": [],
+  "artifacts": {
+    "local": {
+      "success": {
+        "status": 200,
+        "headers": {
+          "content-encoding": "br",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked"
+        },
+        "text": "{\"ok\":true}",
+        "json": {
+          "ok": true
+        },
+        "elapsedMs": 4
+      },
+      "timeout": {
+        "status": 504,
+        "headers": {
+          "content-encoding": "br",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked"
+        },
+        "text": "{\"ok\":false,\"error\":\"Lead intake unavailable\"}",
+        "json": {
+          "ok": false,
+          "error": "Lead intake unavailable"
+        },
+        "elapsedMs": 911
+      },
+      "rejected": {
+        "status": 502,
+        "headers": {
+          "content-encoding": "br",
+          "content-type": "application/json; charset=utf-8",
+          "transfer-encoding": "chunked"
+        },
+        "text": "{\"ok\":false,\"error\":\"Lead intake rejected\"}",
+        "json": {
+          "ok": false,
+          "error": "Lead intake rejected"
+        },
+        "elapsedMs": 4
+      }
+    },
+    "live": {
+      "contactPage": {
+        "status": 200,
+        "elapsedMs": 100
+      },
+      "status": {
+        "status": 200,
+        "headers": {
+          "alt-svc": "h3=\":443\"; ma=86400",
+          "cf-ray": "a0fc32ffaa0ef8ab-CMH",
+          "connection": "keep-alive",
+          "content-length": "29",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Mon, 22 Jun 2026 15:13:50 GMT",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=meaxRYgbmKp8l39YXUmDVlRb1wqSDWdkWN6E0q3gdSbKH68OUkaIZx2xH77GKORoBEHrze%2BI8oUjgAyj93oE8itMwjKAtjlmPKUsiQ4j1trgnXWRphQmeAlLrOouEkRj\"}]}",
+          "server": "cloudflare"
+        },
+        "text": "{\"ok\":true,\"configured\":true}",
+        "json": {
+          "ok": true,
+          "configured": true
+        },
+        "elapsedMs": 31
+      },
+      "invalid": {
+        "status": 400,
+        "headers": {
+          "alt-svc": "h3=\":443\"; ma=86400",
+          "cf-ray": "a0fc33002839cdd8-CMH",
+          "connection": "keep-alive",
+          "content-length": "61",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Mon, 22 Jun 2026 15:13:50 GMT",
+          "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+          "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YzEq8ztCdBIqohKwzI1GstDjXBKx7TWtEU1G2otDn1C%2BU0msdYjSC0CSPdDg1auqn6gjTVXL%2FXDR5KjTvOjGHAt0f7Uaqn9332YKLk039r%2BlKa1BKPDH0WQuZu0vArti\"}]}",
+          "server": "cloudflare"
+        },
+        "text": "{\"ok\":false,\"error\":\"Name and a phone or email are required\"}",
+        "json": {
+          "ok": false,
+          "error": "Name and a phone or email are required"
+        },
+        "elapsedMs": 83
+      }
+    },
+    "liveSubmission": {
+      "status": 200,
+      "headers": {
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "cf-ray": "a0fc33006b63f8ab-CMH",
+        "connection": "keep-alive",
+        "content-length": "11",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Mon, 22 Jun 2026 15:13:50 GMT",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MmQes5%2BusD5nnRjx8eFPMRxuS9zb3ppiRzvw1RRIe61%2BjbqvwIBOi0%2Bysq2vYYFp%2BaetMDES5jlJ%2FNhXU1aq6A3Rwm%2FnGJSo4UK17yMr7UE58EKqgC9Owd2szaK%2By4Z2\"}]}",
+        "server": "cloudflare"
+      },
+      "text": "{\"ok\":true}",
+      "json": {
+        "ok": true
+      },
+      "elapsedMs": 480
+    },
+    "browserSuccessProof": {
+      "successText": "Thank you. We'll call or email you within 24 hours.",
+      "formDisplay": "none",
+      "events": [
+        [
+          "event",
+          "contact_submit_attempt",
+          {
+            "event_category": "engagement",
+            "event_label": "other",
+            "has_phone": "no",
+            "has_email": "yes"
+          }
+        ],
+        [
+          "event",
+          "callback_form_submit",
+          {
+            "event_category": "engagement",
+            "event_label": "other",
+            "has_phone": "no",
+            "has_email": "yes"
+          }
+        ],
+        [
+          "event",
+          "contact_submit_success",
+          {
+            "event_category": "engagement",
+            "event_label": "other"
+          }
+        ]
+      ],
+      "screenshot": "reports/seo/2026-06-22/contact-submit-success-ui-proof.png"
+    },
+    "mockRequestCount": 3
+  },
+  "liveTestMarker": "LONGPRO TEST LEAD - IGNORE - contact form proof"
+}

@@ -14545,6 +14545,27 @@ function longproLeadEndpoint(env2 = {}) {
   return env2.PESTPRO_LEADS_URL || env2.PESTPRO_LEAD_ENDPOINT || env2.PESTPRO_INTAKE_URL || "";
 }
 __name(longproLeadEndpoint, "longproLeadEndpoint");
+function longproLeadTimeoutMs(env2 = {}) {
+  const raw = Number.parseInt(env2.PESTPRO_LEAD_TIMEOUT_MS || env2.LONGPRO_LEAD_TIMEOUT_MS || "", 10);
+  if (Number.isFinite(raw) && raw >= 250 && raw <= 1e4) {
+    return raw;
+  }
+  return 1500;
+}
+__name(longproLeadTimeoutMs, "longproLeadTimeoutMs");
+async function longproFetchWithTimeout(input, init = {}, timeoutMs = 1500) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(input, {
+      ...init,
+      signal: controller.signal
+    });
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+__name(longproFetchWithTimeout, "longproFetchWithTimeout");
 function longproIsContactRequest(request) {
   const url = new URL(request.url);
   return url.pathname.replace(/\/+$/, "") === "/api/contact";
@@ -14615,16 +14636,18 @@ async function longproHandleContact(request, env2 = {}) {
   if (env2.PESTPRO_INTAKE_TOKEN) {
     headers.authorization = `Bearer ${env2.PESTPRO_INTAKE_TOKEN}`;
   }
+  const timeoutMs = longproLeadTimeoutMs(env2);
   let response;
   try {
-    response = await fetch(endpoint, {
+    response = await longproFetchWithTimeout(endpoint, {
       method: "POST",
       headers,
       body: JSON.stringify(lead)
-    });
+    }, timeoutMs);
   } catch (error) {
-    console.error("LongPro lead intake request failed", error);
-    return longproJson({ ok: false, error: "Lead intake unavailable" }, { status: 502 });
+    const timedOut = error instanceof Error && error.name === "AbortError";
+    console.error("LongPro lead intake request failed", timedOut ? { timeoutMs } : error);
+    return longproJson({ ok: false, error: "Lead intake unavailable" }, { status: timedOut ? 504 : 502 });
   }
   if (!response.ok) {
     console.error("LongPro lead intake rejected", response.status);
