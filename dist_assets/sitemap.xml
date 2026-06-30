@@ -62,6 +62,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://longpropc.com/services/wdi-va-loan-inspection/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Service Area - City Pages -->
   <url>

@@ -99,6 +99,7 @@ If your location is not explicitly listed, callers are routed through contact in
 - Cockroach Extermination: https://longpropc.com/services/cockroach-extermination/
 - Ant & Spider Control: https://longpropc.com/services/ant-and-spider-control/
 - Flea Extermination: https://longpropc.com/services/flea-extermination/
+- VA & WDI Home Loan Inspection: https://longpropc.com/services/wdi-va-loan-inspection/
 - General Pest Control: https://longpropc.com/services/general-pest-control/
 - Service Area hub: https://longpropc.com/service-area/
 - FAQ: https://longpropc.com/faq/
