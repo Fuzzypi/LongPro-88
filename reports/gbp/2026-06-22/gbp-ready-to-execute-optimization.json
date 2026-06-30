@@ -1,0 +1,99 @@
+{
+  "date": "2026-06-22",
+  "verdict": "GBP_OWNERSHIP_TRANSFER_PACKET_READY",
+  "implemented": false,
+  "blockedOnPrimaryOwnerAccess": true,
+  "ownershipAccess": {
+    "requiredRole": "Primary owner",
+    "targetAccount": "longpropc@gmail.com",
+    "stopIfMissing": true
+  },
+  "categoryPlan": {
+    "primaryCategory": "Pest control service",
+    "defaultSecondaryCategories": [],
+    "candidateSecondaryCategoryToCheck": "Bed Bug exterminator",
+    "candidateRequiresOwnerApproval": true,
+    "disallowedCategories": [
+      "Termite control",
+      "Mosquito control",
+      "Wildlife control",
+      "Animal control service",
+      "Rodent control",
+      "Lawn care"
+    ]
+  },
+  "servicesToPrepare": [
+    "General Pest Control",
+    "Ant Control",
+    "Spider Control",
+    "Cockroach Extermination",
+    "Bed Bug Extermination / Treatment",
+    "Flea Extermination / Treatment",
+    "Pest Inspection",
+    "Silverfish and Earwig Control",
+    "Stink Bug Control"
+  ],
+  "excludedServices": [
+    "Rodent control",
+    "Mice extermination",
+    "Wildlife removal",
+    "Termite treatment",
+    "Mosquito control",
+    "Lawn care"
+  ],
+  "serviceAreas": {
+    "target": [
+      "Cleveland",
+      "Lakewood",
+      "Parma",
+      "Westlake",
+      "Rocky River",
+      "Strongsville",
+      "Beachwood",
+      "Euclid",
+      "Brooklyn",
+      "Berea",
+      "Bay Village",
+      "Brunswick",
+      "Fairview Park",
+      "Independence",
+      "North Olmsted",
+      "North Royalton",
+      "Parma Heights",
+      "Brook Park",
+      "Garfield Heights",
+      "Middleburg Heights"
+    ],
+    "reserve": [
+      "Avon",
+      "Avon Lake",
+      "Brecksville",
+      "Broadview Heights",
+      "North Ridgeville",
+      "Olmsted Falls",
+      "Seven Hills",
+      "Sheffield Lake",
+      "Maple Heights"
+    ],
+    "mustConfirmAutocomplete": true
+  },
+  "hoursToPrepare": {
+    "phoneSupport": "Monday through Saturday, 9 AM to 9 PM",
+    "saturdayServiceHours": "8 AM to 4 PM",
+    "requiresOwnerConfirmationBeforePublish": true
+  },
+  "photoRules": [
+    "Use only approved real assets.",
+    "Use vehicle and service photos that reflect actual operations.",
+    "Do not use fabricated or AI-generated proof photos.",
+    "Do not use customer-home photos unless owner-approved and privacy-safe."
+  ],
+  "reviewWorkflow": {
+    "compliantReplacement": "After every completed service, send every customer the same review request link. The message may also include a private reply option for service concerns, but the Google review link must not be hidden based on customer sentiment or star rating.",
+    "noIncentives": true,
+    "noGating": true,
+    "noSentimentFiltering": true,
+    "noRequiredPositiveWording": true,
+    "noStaffQuotaForSpecificReviewOutput": true
+  }
+}

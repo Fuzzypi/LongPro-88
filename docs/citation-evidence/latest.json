@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T00:07:14.213Z",
+  "generatedAt": "2026-06-20T16:13:18.624Z",
   "engine": "yahoo",
   "inventory": "/Users/fuzzypi/Desktop/LongPro-88/docs/citation-cleanup-inventory.json",
   "targetNumber": {
@@ -20,42 +20,12 @@
         "digits": "2162942843",
         "notes": "Old website/listing number. Live LongPro site was updated on 2026-04-24, but Yahoo cached snippets and external citations may still show this number until recrawl/correction."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "longpro-live-site",
-          "sourceName": "longpropc.com live site",
-          "status": "resolved",
-          "requiresOwnerAccess": true,
-          "updatePath": "Cloudflare Worker deploy via Wrangler.",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "longpropc.comhttps://www.longpropc.comLongpro Pest Control LLC - Bed Bug Exterminator Cleveland OH Cleveland's most discreet bed bug exterminator. Unmarked vehicles, confidential treatment. BBB A+ rated 13+ years. Bed bugs, cockroaches, ants, spiders, fleas. Call (216) 294-2843. Additional result: longpropc.comhttps://www.longpropc.com › contactContact LongPro Pest Control Cleveland | Free Pest Control ... Contact LongPro Pest Control for discreet bed bug and pest control in Cleveland, OH. Call (216) 294-2843 or request a free estimate online. BBB A+ rated, 24-hour response."
-        },
-        {
-          "sourceId": "chamber",
-          "sourceName": "Chamber of Commerce",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "Chamber contact form at chamberofcommerce.com/request-contact?help=Dispute&id=1335288254&name=LongPro%20Pest%20Control%20Co.",
-          "listingUrl": "https://www.chamberofcommerce.com/business-directory/ohio/brooklyn/pest-control-service/1335288254-longpro-pest-control-co",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Chamber of Commercehttps://www.chamberofcommerce.com › business-directoryLongPro Pest Control Co. in Brooklyn, OH 44144 - 216-294... LongPro Pest Control Co. is located at in Brooklyn, Ohio 44144. LongPro Pest Control Co. can be contacted via phone at 216-294-2843 for pricing, hours and directions."
-        },
-        {
-          "sourceId": "bbb",
-          "sourceName": "Better Business Bureau",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "BBB Serving Greater Cleveland Email this BBB contact form.",
-          "listingUrl": "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Better Business Bureauhttps://www.bbb.org › us › ohLongPro Pest Control Company - Better Business Bureau LongPro Pest Control Company provides residential, multi unit and commercial exterminating and pest control services for bed bugs, roaches, spiders, ants and other insects. Location: Cleveland, 44109-5471, OHOccupation: OwnerPhone: (216) 294-2843"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-294-2843%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Search Results longpropc.comhttps://www.longpropc.comLongpro Pest Control LLC - Bed Bug Exterminator Cleveland OH Cleveland's most discreet bed bug exterminator. Unmarked vehicles, confidential treatment. BBB A+ rated 13+ years. Bed bugs, cockroaches, ants, spiders, fleas. Call (216) 294-2843. Chamber of Commercehttps://www.chamberofcommerce.com › business-directoryLongPro Pest Control Co. in Brooklyn, OH 44144 - 216-294... LongPro Pest Control Co. is located at in Brooklyn, Ohio 44144. LongPro Pest Control Co. can be contacted via phone at 216-294-2843 for pricing, hours and directions. Better Business Bureauhttps://www.bbb.org › us › ohLongPro Pest Control Company - Better Business Bureau LongPro Pest Control Company provides residential, multi unit and commercial exterminating and pest control services for bed bugs, roaches, spiders, ants and other insects. Location: Cleveland, 44109-5471, OHOccupation: OwnerPhone: (216) 294-2843A Greater Townhttps://agreatertown.com › cleveland-oh › longpro-pestLongpro Pest Control - Pest Control Services Commercial ... Longpro Pest Control has been serving Cleveland homes since 2011 with exceptional pest control solutions. A family-owned business that treats our customers with the respect you deserve, we are committed to delivering the results you need for a pest-free home. Yellow-Pages.us.comhttps://yellow-pages.us.com › ohio › clevelandPPS Progressive Pest Solutions LLC - yellow-pages.us.com Longpro Pe"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-294-2843%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"216-294-2843\" or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     },
     {
       "id": "old-294-display",
@@ -69,42 +39,12 @@
         "digits": "2162942843",
         "notes": "Old website/listing number. Live LongPro site was updated on 2026-04-24, but Yahoo cached snippets and external citations may still show this number until recrawl/correction."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "longpro-live-site",
-          "sourceName": "longpropc.com live site",
-          "status": "resolved",
-          "requiresOwnerAccess": true,
-          "updatePath": "Cloudflare Worker deploy via Wrangler.",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "longpropc.comhttps://www.longpropc.comLongpro Pest Control LLC - Bed Bug Exterminator Cleveland OH Cleveland's most discreet bed bug exterminator. Unmarked vehicles, confidential treatment. BBB A+ rated 13+ years. Bed bugs, cockroaches, ants, spiders, fleas. Call (216) 294-2843."
-        },
-        {
-          "sourceId": "bbb",
-          "sourceName": "Better Business Bureau",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "BBB Serving Greater Cleveland Email this BBB contact form.",
-          "listingUrl": "https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Better Business Bureauhttps://www.bbb.org › us › ohLongPro Pest Control Company - Better Business Bureau LongPro Pest Control Company provides residential, multi unit and commercial exterminating and pest control services for bed bugs, roaches, spiders, ants and other insects. Location: Cleveland, 44109-5471, OHOccupation: OwnerPhone: (216) 294-2843"
-        },
-        {
-          "sourceId": "chamber",
-          "sourceName": "Chamber of Commerce",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "Chamber contact form at chamberofcommerce.com/request-contact?help=Dispute&id=1335288254&name=LongPro%20Pest%20Control%20Co.",
-          "listingUrl": "https://www.chamberofcommerce.com/business-directory/ohio/brooklyn/pest-control-service/1335288254-longpro-pest-control-co",
-          "supportUrls": [],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Chamber of Commercehttps://www.chamberofcommerce.com › business-directoryLongPro Pest Control Co. in Brooklyn, OH 44144 - 216-294... LongPro Pest Control Co. is located at in Brooklyn, Ohio 44144. LongPro Pest Control Co. can be contacted via phone at 216-294-2843 for pricing, hours and directions. Hotfrog"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22(216)%20294-2843%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Did you mean \"long pro pest control\" \"216 294-2843\" Ads related to: \"long pro Pest Control\" \"(216) 294-2843\"Terminixwww.terminix.comTerminix® Pest Control - Terminix® Official SiteWith Over 95 Years Of Experience, Terminix® Is Ready To Solve Your Pest Problems. Terminix® Is Committed To Protecting Your Home And Preventing Pests From Moving In. Treatment Plans · 10,000+ Team Members · Free Estimates · Follow-Up Visits Included Local Exterminators Find A Terminix® Location Near You Call Now For A Free Estimate Combine Pest Plans + Save Combine Termite + Pest Control Save An Average of $175 New Homeowner Pest Plans Bundle And Save On Pest Prevention Protect Your New Home Today Home Services Protect & Secure Your Home Schedule A Free Inspection Today Bundle & Save Bundle Pest Savings Start From $100 View Our Latest Pest Bundles Termite Control We Offer Reliable Termite Control Services For All Your Needs. Local Pest Proswww.local-pest-pros.comPest Control (Available 24/7) - Free Pest Removal QuotesCleveland Pest Control. We Ensure Safe, Thorough Pest Removal Using Proven Methods. 24/7 Emergency Pest Removal Services. Fast & Affordable Quotes. Call Now! Service catalog: Ants, Cockroaches, Spiders, Flies, Chipmunks, Squirrels, Termites, Wasps Call Now Local Pest Control Pros Get A Quick Quote Exterminator Request Service Book Appointment Search Results longpropc.comhttps://www.longpropc.comLongpro Pest Control LLC - Bed Bug Exterminator Clevela"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22(216)%20294-2843%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"(216) 294-2843\" or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     },
     {
       "id": "old-456-exact",
@@ -118,39 +58,12 @@
         "digits": "2164565452",
         "notes": "Original business/cell line. Not present in local LongPro repo; found in external citations."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "allbiz",
-          "sourceName": "AllBiz",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "AllBiz edit/removal form at user.allbiz.com/edit/?i=US&u=longpro-pest-control-llc_10&l=en.",
-          "listingUrl": "https://www.allbiz.com/business/longpro-pest-control-llc-216-456-5452",
-          "supportUrls": [
-            "https://support.allbiz.com/hc/en-us/articles/13840157310477-How-do-I-Edit-a-Business",
-            "https://support.allbiz.com/hc/en-us/requests/new",
-            "https://www.allbiz.com/contact"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "AllBizhttps://www.allbiz.com › business › longpro-pest-control-llcLongpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz What is the phone number for Longpro Pest Control LLC? The phone number for Longpro Pest Control LLC is (216) 456-5452."
-        },
-        {
-          "sourceId": "yellow-pages",
-          "sourceName": "Yellow Pages",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "Yellow Pages feedback form at yellowpages.com/about/contact-us#contact-form; claim flow is blocked because listing is already claimed.",
-          "listingUrl": "https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control-480720634",
-          "supportUrls": [
-            "https://www.yellowpages.com/claim-your-listing",
-            "https://www.yellowpages.com/about/contact-us"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Yellow Pageshttps://www.yellowpages.com › cleveland-oh › mipLong pro pest control - Cleveland, OH 44109 - The Real Yellow ... Get reviews, hours, directions, coupons and more for Long pro pest control. Search for other Pest Control Services on The Real Yellow Pages®. Location: Cleveland, 44109, OHEmail: mailto:longpropc@gmail.comPhone: (216) 456-5452"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-456-5452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Ad related to: \"long pro Pest Control\" \"216-456-5452\"Local Pest Proswww.local-pest-pros.comPest Control (Available 24/7) - Pest Pros (Cleveland)Cleveland Pest Control. We Ensure Safe, Thorough Pest Removal Using Proven Methods. 24/7 Emergency Pest Removal Services. Fast & Affordable Quotes. Call Now! Pest Control Pros · Call For A Fast Quote · Competitive Quotes · Call 24/7 Call Now Talk With A Local Specialist Get Help Started Right Away Local Pest Control Pros Work With Pros In Your Area Trusted Help For Your Project Search Results AllBizhttps://www.allbiz.com › business › longpro-pest-control-llcLongpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz What is the phone number for Longpro Pest Control LLC? The phone number for Longpro Pest Control LLC is (216) 456-5452. Yellow Pageshttps://www.yellowpages.com › cleveland-oh › mipLong pro pest control - Cleveland, OH 44109 - The Real Yellow ... Get reviews, hours, directions, coupons and more for Long pro pest control. Search for other Pest Control Services on The Real Yellow Pages®. Location: Cleveland, 44109, OHEmail: mailto:longpropc@gmail.comPhone: (216) 456-5452Mantahttps://www.manta.com › c › m1rsy7sLongPro Pest Control Cleveland OH, 44109 – Manta.com Get information, directions, products, services, phone numbers, and reviews on LongPro Pest Control in Cleveland, undefined Discover more Disinfecting and Pest Control Services companies in Cleveland on Manta.com MapQuesthttps://www"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-456-5452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"216-456-5452\" or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     },
     {
       "id": "old-456-display",
@@ -164,39 +77,12 @@
         "digits": "2164565452",
         "notes": "Original business/cell line. Not present in local LongPro repo; found in external citations."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "allbiz",
-          "sourceName": "AllBiz",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "AllBiz edit/removal form at user.allbiz.com/edit/?i=US&u=longpro-pest-control-llc_10&l=en.",
-          "listingUrl": "https://www.allbiz.com/business/longpro-pest-control-llc-216-456-5452",
-          "supportUrls": [
-            "https://support.allbiz.com/hc/en-us/articles/13840157310477-How-do-I-Edit-a-Business",
-            "https://support.allbiz.com/hc/en-us/requests/new",
-            "https://www.allbiz.com/contact"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "AllBizhttps://www.allbiz.com › business › longpro-pest-control-llcLongpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz LongPro Pest Control Co. specializes in bed bug extermination with the best rates in town, guaranteed service, and free inspections. With the nickname \"The Pest Detective,\" the company is dedicated to finding solutions to pest control problems with professional and guaranteed service."
-        },
-        {
-          "sourceId": "yellow-pages",
-          "sourceName": "Yellow Pages",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "Yellow Pages feedback form at yellowpages.com/about/contact-us#contact-form; claim flow is blocked because listing is already claimed.",
-          "listingUrl": "https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control-480720634",
-          "supportUrls": [
-            "https://www.yellowpages.com/claim-your-listing",
-            "https://www.yellowpages.com/about/contact-us"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Yellow Pageshttps://www.yellowpages.com › cleveland-oh › mipLong pro pest control - Cleveland, OH 44109 - The Real Yellow ... Get reviews, hours, directions, coupons and more for Long pro pest control. Search for other Pest Control Services on The Real Yellow Pages®. Location: Cleveland, 44109, OHEmail: mailto:longpropc@gmail.comPhone: (216) 456-5452"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22(216)%20456-5452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Did you mean \"long pro pest control\" \"216 456-5452\" Ads related to: \"long pro Pest Control\" \"(216) 456-5452\"Terminixwww.terminix.comTerminix® Pest Control Service - Terminix® Official SiteWith Over 95 Years Of Experience, Terminix® Is Ready To Solve Your Pest Problems. Terminix® Is Committed To Protecting Your Home And Preventing Pests From Moving In. Terminix Pest Guarantee · 24/7 Call Center · 95+ Years Of Experience · 10,000+ Team Members Types: Pests, Termites, Ants, Ticks, Cockroaches, Mosquitoes, Rodents, Wildlife Local Exterminators Find A Terminix® Location Near You Call Now For A Free Estimate Home Services Protect & Secure Your Home Schedule A Free Inspection Today Free Termite Inspection Termites Are No Match For Terminix® Schedule Today, Online or Via Phone New Homeowner Pest Plans Bundle And Save On Pest Prevention Protect Your New Home Today Bundle & Save Bundle Pest Savings Start From $100 View Our Latest Pest Bundles Combine Pest Plans + Save Combine Termite + Pest Control Save An Average of $175 Local Pest Proswww.local-pest-pros.comPest Control (Available 24/7) - Free Pest Removal QuotesGet Quote Cleveland Pest Control. We Ensure Safe, Thorough Pest Removal Using Proven Methods. 24/7 Emergency Pest Removal Services. Fast & Affordable Quotes. Call Now! Service catalog: Ants•Cockroaches•Spiders•Flies•Chipmunks•Squirrels•Termites•WaspsCall Now Local Pest Control Pros Exterminator Get A Quick Quote Book Appointment Request S"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22(216)%20456-5452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"(216) 456-5452\" or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     },
     {
       "id": "old-456-e164",
@@ -210,39 +96,12 @@
         "digits": "2164565452",
         "notes": "Original business/cell line. Not present in local LongPro repo; found in external citations."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "allbiz",
-          "sourceName": "AllBiz",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "AllBiz edit/removal form at user.allbiz.com/edit/?i=US&u=longpro-pest-control-llc_10&l=en.",
-          "listingUrl": "https://www.allbiz.com/business/longpro-pest-control-llc-216-456-5452",
-          "supportUrls": [
-            "https://support.allbiz.com/hc/en-us/articles/13840157310477-How-do-I-Edit-a-Business",
-            "https://support.allbiz.com/hc/en-us/requests/new",
-            "https://www.allbiz.com/contact"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "AllBizhttps://www.allbiz.com › business › longpro-pest-control-llcLongpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz You can contact Longpro Pest Control LLC by phone using number (216) 456-5452. Longpro Pest Control LLC primary category is Exterminators and pest control."
-        },
-        {
-          "sourceId": "yellow-pages",
-          "sourceName": "Yellow Pages",
-          "status": "requested",
-          "requiresOwnerAccess": true,
-          "updatePath": "Yellow Pages feedback form at yellowpages.com/about/contact-us#contact-form; claim flow is blocked because listing is already claimed.",
-          "listingUrl": "https://www.yellowpages.com/cleveland-oh/mip/long-pro-pest-control-480720634",
-          "supportUrls": [
-            "https://www.yellowpages.com/claim-your-listing",
-            "https://www.yellowpages.com/about/contact-us"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Yellow Pageshttps://www.yellowpages.com › cleveland-oh › mipLong pro pest control - Cleveland, OH 44109 - The Real Yellow ... Get reviews, hours, directions, coupons and more for Long pro pest control. Search for other Pest Control Services on The Real Yellow Pages®. Location: Cleveland, 44109, OHEmail: mailto:longpropc@gmail.comPhone: (216) 456-5452"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22%2B12164565452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Ad related to: \"long pro Pest Control\" \"+12164565452\"Local Pest Proswww.local-pest-pros.comPest Control (Available 24/7) - Free Pest Removal QuotesCleveland Pest Control. We Ensure Safe, Thorough Pest Removal Using Proven Methods. 24/7 Emergency Pest Removal Services. Fast & Affordable Quotes. Call Now! Pest Control Pros · Competitive Quotes · Call 24/7 · Call For A Fast Quote Service catalog: Ants•Cockroaches•Spiders•Flies•Chipmunks•Squirrels•Termites•WaspsLocal Pest Control Pros Work With Pros In Your Area Trusted Help For Your Project Call Now Talk With A Local Specialist Get Help Started Right Away Exterminator Quality Service You Can Count On Nearby Experts Ready To Help Get A Quick Quote Request A Quote For Your Job Clear Pricing From Nearby Experts Book Appointment Schedule A Time That Works Easy Booking With Local Pros Request Service Choose The Help You Need Local Pros Available Near You Search Results AllBizhttps://www.allbiz.com › business › longpro-pest-control-llcLongpro Pest Control LLC | (216) 456-5452 | Cleveland - AllBiz You can contact Longpro Pest Control LLC by phone using number (216) 456-5452. Longpro Pest Control LLC primary category is Exterminators and pest control. Better Business Bureauhttps://www.bbb.org › us › ohLongPro Pest Control Company - Better Business Bureau Pest Control Services in Cleveland, OH. See BBB rating, reviews, complaints, get a quote and more. Location: Cleveland, 44109-5471, OHOccupation: Own"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22%2B12164565452%22 (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"+12164565452\" or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     },
     {
       "id": "manta-old-456-site",
@@ -256,24 +115,12 @@
         "digits": "2164565452",
         "notes": "Original business/cell line. Not present in local LongPro repo; found in external citations."
       },
-      "foundOldNumber": true,
-      "matchedSources": [
-        {
-          "sourceId": "manta",
-          "sourceName": "Manta",
-          "status": "needs_access",
-          "requiresOwnerAccess": true,
-          "updatePath": "Manta listing correction/claim path.",
-          "listingUrl": "https://www.manta.com/c/m1rsy7s/longpro-pest-control-llc",
-          "supportUrls": [
-            "https://www.manta.com/c/mkjjmng/longpro-pest-control",
-            "https://www.manta.com/mb_55_AA15605K_G0V/pest_control_services/cleveland_oh?show_all_cities=1"
-          ],
-          "oldNumberFoundOnPage": true,
-          "evidenceSnippet": "Mantahttps://www.manta.com › mb_55_AA15605K_G0V › pest_controlPest Control | Cleveland, OH - Manta.com Oak park ave Cleveland, OH (216) 456-5452 Visit Website CLAIMED Categorized under Pest control services Additional result: Mantahttps://www.manta.com › c › mwkkb95Certified Pest Control Cleveland OH, 44109 – Manta.com (440) 209-3982 View Insight Pest Solutions Cleveland, OH View LongPro Pest Control LLC Cleveland, OH (216) 456-5452 View LongPro Pest Control llc Cleveland, OH (216) 456-5452 View Epcon Lane Cleveland, OH View Insight Pest Solutions Cleveland, OH View LongPro Pest Control LLC Cleveland, OH View LongPro Pest Control llc Cleveland, OH View ... Additional result: Mantahttps://www.manta.com › mb_54_AA156_G0V › disinfecting_andDisinfecting and Pest Control Services | Cleveland, OH ... Welcome to Dru’s Crew Pest Control, LLC, your trusted partner in pest control services in Cleveland, OH. Founded in 2022, we bring a wealth of 8 years of experience to the table. We take pride i"
-        }
-      ],
-      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-456-5452%22%20site%3Amanta.com (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign InSearch queryYahoo ScoutTry Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Yahoo Scout All Images Videos News Local Shopping MoreAnytime Past day Past week Past month Anytime Ad related to: \"long pro pest control\" \"216-456-5452\" site:manta.comLocal Pest Proswww.local-pest-pros.comPest Control (Available 24/7) - Free Pest Removal QuotesCleveland Pest Control. We Ensure Safe, Thorough Pest Removal Using Proven Methods. 24/7 Emergency Pest Removal Services. Fast & Affordable Quotes. Call Now! Call For A Fast Quote · Competitive Quotes · Pest Control Pros · Call 24/7 Service catalog: Ants•Cockroaches•Spiders•Flies•Chipmunks•Squirrels•Termites•WaspsCall Now Talk With A Local Specialist Get Help Started Right Away Local Pest Control Pros Work With Pros In Your Area Trusted Help For Your Project Get A Quick Quote Request A Quote For Your Job Clear Pricing From Nearby Experts Exterminator Quality Service You Can Count On Nearby Experts Ready To Help Request Service Choose The Help You Need Local Pros Available Near You Book Appointment Schedule A Time That Works Easy Booking With Local Pros Search Results Mantahttps://www.manta.com › c › mkjjmngLongpro Pest Control Brooklyn OH, 44144 – Manta.com Get information, directions, products, services, phone numbers, and reviews on Longpro Pest Control in Brooklyn, undefined Discover more Disinfecting and Pest Control Services companies in Brooklyn on Manta.com Mantahttps://www.manta.com › c › m1rsy7sLongPro Pest Control Cleveland OH, 44109 – Manta.com Get information, directions, products, services, phone numbers, and reviews on LongPro Pest Control in Clevelan"
+      "queryStatus": "search_error",
+      "queryStatusReason": "Yahoo returned a temporary search error page instead of search results.",
+      "resultsUsable": false,
+      "foundOldNumber": null,
+      "matchedSources": [],
+      "textPreview": "[goto] Navigated to https://search.yahoo.com/search?p=%22LongPro%20Pest%20Control%22%20%22216-456-5452%22%20site%3Amanta.com (200) [wait] Page loaded [text] YahooSettings Home Mail News Finance Sports WeatherHelpSettingsSign In Try Yahoo ScoutType a question and get a clear answer with trusted sources. Yahoo Scout helps you understand more, faster. Waiting for permissionAllow microphone access to enable voice search Try saying Search Results We had temporary problems searching for web pages. Search again for \"LongPro Pest Control\" \"216-456-5452\" site:manta.com or type a new query above. HelpSuggestionsTermsPrivacyPrivacy DashboardAdvertiseAbout adsAbout this pagePowered by Bing™"
     }
   ]
 }

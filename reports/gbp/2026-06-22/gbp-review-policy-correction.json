@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-22",
+  "verdict": "GBP_OWNERSHIP_TRANSFER_PACKET_READY",
+  "sourceFile": "longpro-gbp-optimization-brief-2026-06-22.md",
+  "correctionRequired": true,
+  "nonCompliantPatternsRemoved": [
+    "Route only 4-5 star customers to Google.",
+    "Route 1-3 star customers to an internal inbox first.",
+    "Suppress or filter Google review requests based on sentiment."
+  ],
+  "compliantReplacement": "After every completed service, send every customer the same review request link. The message may also include a private reply option for service concerns, but the Google review link must not be hidden based on customer sentiment or star rating.",
+  "approvedWorkflow": [
+    "Trigger the same review request for every completed customer.",
+    "Include the same Google review link for every customer.",
+    "Optionally invite a direct private reply for service concerns.",
+    "Do not hide, suppress, or condition the public review path."
+  ]
+}

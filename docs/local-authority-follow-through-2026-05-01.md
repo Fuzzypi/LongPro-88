@@ -2,6 +2,10 @@
 
 Created: 2026-05-01
 
+## Superseded
+
+For the current state, use `docs/local-authority-follow-through-2026-06-20.md`. This 2026-05-01 note is historical.
+
 ## Purpose
 
 This note reconciles the LongPro local-authority backlog into three buckets:

@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-06-22",
+  "verdict": "LONGPRO_MEASUREMENT_BASELINE_PARTIAL_ACCESS",
+  "repoState": {
+    "branch": "main",
+    "sourceOfTruthCommit": "55615a815b974ef3e8b0d94a5ff4a4093884994a",
+    "preservedDirtyState": true
+  },
+  "accessStatus": {
+    "liveGoogleConnectorAccess": false,
+    "baselineSources": [
+      "longpro-marketing-data-pull-2026-06-22.md",
+      "reports/seo/2026-06-22/seo-live-audit.json",
+      "docs/gbp-gsc-setup.md",
+      "docs/local-authority-follow-through-2026-05-01.md"
+    ]
+  },
+  "measurementWiringProof": {
+    "requiredGates": {
+      "verifySeoFixes": "pass",
+      "verifyConversionFlow": "pass",
+      "seoLiveAudit": "pass"
+    },
+    "supplementalChecks": {
+      "monitorLiveSignals": "pass",
+      "gaMeasurementIdPresent": true,
+      "phoneClickTrackingPresent": true,
+      "quoteClickTrackingPresent": true,
+      "contactSubmitSuccessTrackingPresent": true,
+      "contactStatusConfigured": true,
+      "liveCanonicalUrlsCrawled": 91,
+      "liveAuditFailures": 0
+    }
+  },
+  "searchConsoleBaseline": {
+    "windowCurrent": {
+      "start": "2026-03-21",
+      "end": "2026-06-20"
+    },
+    "windowPrevious": {
+      "start": "2025-12-21",
+      "end": "2026-03-20"
+    },
+    "totals": {
+      "clicksCurrent": 48,
+      "clicksPrevious": 0,
+      "impressionsCurrent": 5020,
+      "impressionsPrevious": 102,
+      "ctrCurrent": 0.01,
+      "ctrPrevious": 0.0,
+      "avgPositionCurrent": 18.8,
+      "avgPositionPrevious": 13.9
+    },
+    "topQueries": [
+      {
+        "query": "longpro pest control",
+        "clicks": 8,
+        "impressions": 332,
+        "ctr": 0.042,
+        "avgPosition": 7.4
+      },
+      {
+        "query": "bed bug exterminator cleveland",
+        "clicks": 0,
+        "impressions": 173,
+        "ctr": 0.0,
+        "avgPosition": 18.3
+      },
+      {
+        "query": "pest control cleveland",
+        "clicks": 0,
+        "impressions": 117,
+        "ctr": 0.0,
+        "avgPosition": 66.0
+      },
+      {
+        "query": "longpro",
+        "clicks": 0,
+        "impressions": 81,
+        "ctr": 0.0,
+        "avgPosition": 4.5
+      }
+    ]
+  },
+  "ga4Baseline": {
+    "window": {
+      "start": "2026-03-24",
+      "end": "2026-06-21"
+    },
+    "totals": {
+      "users": 581,
+      "events": 2155
+    },
+    "events": {
+      "page_view": {
+        "count": 686,
+        "users": 568
+      },
+      "session_start": {
+        "count": 596,
+        "users": 568
+      },
+      "first_visit": {
+        "count": 567,
+        "users": 567
+      },
+      "user_engagement": {
+        "count": 154,
+        "users": 96
+      },
+      "scroll": {
+        "count": 123,
+        "users": 112
+      },
+      "quote_click": {
+        "count": 10,
+        "users": 7
+      },
+      "form_start": {
+        "count": 9,
+        "users": 8
+      },
+      "phone_click": {
+        "count": 5,
+        "users": 4
+      },
+      "CTM_Activity": {
+        "count": 4,
+        "users": 4
+      }
+    },
+    "missingEvents": [
+      "contact_submit_success"
+    ]
+  },
+  "gbpBaseline": {
+    "window": {
+      "start": "2026-01-01",
+      "end": "2026-06-30"
+    },
+    "interactions": {
+      "calls": 8,
+      "websiteClicks": 7,
+      "chatClicks": 1,
+      "bookings": 0,
+      "total": 16
+    },
+    "controlRisk": {
+      "thirdPartyPrimaryOwner": true,
+      "companyGoogleAccountIsOwner": true
+    }
+  },
+  "leadPathDiagnosis": {
+    "primaryProblem": "traffic_and_demand_volume",
+    "secondaryProblem": "weak_cta_progression",
+    "measurementBugProven": false,
+    "evidence": [
+      "site instrumentation and live contact status checks pass",
+      "organic clicks remain low",
+      "GA4 phone_click and quote_click counts remain low",
+      "GBP calls remain low"
+    ]
+  },
+  "nextLane": [
+    "validate one live end-to-end form submission in GA4 Realtime or DebugView",
+    "pull Search Console last-28-days query/page comparisons",
+    "pull current GBP performance snapshot"
+  ]
+}

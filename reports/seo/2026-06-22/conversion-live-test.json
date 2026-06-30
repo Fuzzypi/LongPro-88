@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-06-22",
+  "verdict": "LONGPRO_CONVERSION_TRACKING_BLOCKER_FOUND",
+  "repo": {
+    "path": "/Users/fuzzypi/Desktop/LongPro-88",
+    "branch": "main",
+    "head": "55615a815b974ef3e8b0d94a5ff4a4093884994a"
+  },
+  "gates": {
+    "verifySeoFixes": "pass",
+    "verifyConversionFlow": "pass",
+    "seoLiveAudit": "pass",
+    "monitorLiveSignals": "pass"
+  },
+  "pages": [
+    {
+      "url": "https://longpropc.com/",
+      "status": 200,
+      "gaTagPresent": true,
+      "telLinkCount": 6,
+      "contactLinkCount": 6
+    },
+    {
+      "url": "https://longpropc.com/contact/",
+      "status": 200,
+      "gaTagPresent": true,
+      "telLinkCount": 6,
+      "contactLinkCount": 4,
+      "contactSubmitSuccessCodePresent": true
+    },
+    {
+      "url": "https://longpropc.com/services/bed-bug-extermination/",
+      "status": 200,
+      "gaTagPresent": true,
+      "telLinkCount": 6,
+      "contactLinkCount": 7
+    },
+    {
+      "url": "https://longpropc.com/services/cockroach-extermination/",
+      "status": 200,
+      "gaTagPresent": true,
+      "telLinkCount": 5,
+      "contactLinkCount": 6
+    },
+    {
+      "url": "https://longpropc.com/service-area/",
+      "status": 200,
+      "gaTagPresent": true,
+      "telLinkCount": 10,
+      "contactLinkCount": 9
+    }
+  ],
+  "eventProof": {
+    "phoneClick": {
+      "proven": true,
+      "events": [
+        [
+          "event",
+          "phone_click",
+          {
+            "event_category": "engagement",
+            "event_label": "tel:+12163004121",
+            "page_path": "/",
+            "link_text": "(216) 300-4121",
+            "cta_location": "header"
+          }
+        ],
+        [
+          "event",
+          "phone_click_header",
+          {
+            "event_category": "engagement",
+            "event_label": "tel:+12163004121",
+            "page_path": "/",
+            "link_text": "(216) 300-4121",
+            "cta_location": "header"
+          }
+        ]
+      ]
+    },
+    "quoteClick": {
+      "proven": true,
+      "events": [
+        [
+          "event",
+          "quote_click",
+          {
+            "event_category": "engagement",
+            "event_label": "/contact/?message=Please%20call%20me%20back",
+            "page_path": "/",
+            "link_text": "Request a Callback"
+          }
+        ]
+      ]
+    },
+    "formStartEquivalent": {
+      "proven": true,
+      "type": "ga_form_start_collect_request"
+    },
+    "analyticsFailureSafe": {
+      "proven": true,
+      "result": "no-throw"
+    }
+  },
+  "markedTestSubmission": {
+    "sent": true,
+    "payload": {
+      "name": "LONGPRO TEST LEAD - IGNORE",
+      "email": "noreply+longpro-ga-test@example.com",
+      "service": "other",
+      "message": "LONGPRO TEST LEAD - IGNORE - GA4/CalenCall tracking proof"
+    },
+    "eventsObserved": [
+      [
+        "event",
+        "contact_submit_attempt",
+        {
+          "event_category": "engagement",
+          "event_label": "other",
+          "has_phone": "no",
+          "has_email": "yes"
+        }
+      ],
+      [
+        "event",
+        "callback_form_submit",
+        {
+          "event_category": "engagement",
+          "event_label": "other",
+          "has_phone": "no",
+          "has_email": "yes"
+        }
+      ]
+    ],
+    "contactSubmitSuccessObserved": false,
+    "successUiObserved": false,
+    "apiContactRequestPendingAtEndOfProofWindow": true,
+    "downstreamReceiptConfirmed": false
+  },
+  "diagnosis": {
+    "primaryConcern": "live_submit_did_not_reach_confirmed_success_state",
+    "likelyCauses": [
+      "downstream lead intake latency or hang",
+      "worker waiting on downstream endpoint long enough to suppress success confirmation"
+    ]
+  }
+}

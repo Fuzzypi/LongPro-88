@@ -58,6 +58,15 @@ The owner approved account creation and claim attempts, but explicitly prohibite
 
 No home/street address was submitted during these attempts. Do not use the browser-suggested saved address in any directory flow.
 
+## Headless Recheck Note - 2026-06-20
+
+Current repo-side headless rechecks are blocked on several of these public directories:
+
+- Yelp is returning a DataDome block page.
+- YellowPages is returning a Cloudflare block page.
+
+Treat the 2026-05-13 browser verification as the last clean manual proof for those two listings unless the owner rechecks them in a normal browser. Do not treat today's blocked headless result as proof that the listings regressed.
+
 ## Standard Description
 
 Use this as the starting description, shortening per directory limits:

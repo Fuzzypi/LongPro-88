@@ -15,7 +15,7 @@ Use these packets when submitting corrections or removals. The target public num
   - https://support.allbiz.com/hc/en-us/articles/13840157310477-How-do-I-Edit-a-Business
   - https://support.allbiz.com/hc/en-us/requests/new
   - https://www.allbiz.com/contact
-- Note: AllBiz support was visible in Yahoo results, but the support article showed a Cloudflare verification page in the headless browser. Use a normal owner browser if the automated browser is blocked.
+- Note: Rechecked 2026-06-20. The listing, support article, support request form, and contact page all returned Cloudflare 403 responses from the current environment. Use a normal owner browser if urgent.
 
 ### Yellow Pages
 
@@ -25,7 +25,7 @@ Use these packets when submitting corrections or removals. The target public num
 - Correction paths:
   - https://www.yellowpages.com/claim-your-listing
   - https://www.yellowpages.com/about/contact-us
-- Note: Yellow Pages blocked the headless browser with Cloudflare. Use a normal owner browser and expect listing claim or verification.
+- Note: Rechecked 2026-06-20. The listing page, `https://www.yellowpages.com/about/contact-us`, and `https://www.yellowpages.com/claim-your-listing` all returned Cloudflare 403 responses from the current environment. Use a normal owner browser and expect listing claim or verification.
 
 ### Contractors Up
 
@@ -68,9 +68,27 @@ Thank you.
   - https://www.manta.com/mb_55_AA15605K_G0V/pest_control_services/cleveland_oh?show_all_cities=1
 - Old number shown in Yahoo/Manta result blocks: `(216) 456-5452`
 - Requested action: update to `(216) 300-4121`; if update is unavailable, remove the outdated phone number.
-- Note: Direct Manta pages are blocked by Cloudflare in headless browse. Use a normal owner browser to verify the direct page and correction/claim path before submitting.
+- Note: Direct Manta pages are blocked by Cloudflare in headless browse. Rechecked 2026-06-20: the direct listings, category page, `https://www.manta.com/contact/`, `https://www.manta.com/business-listings/listings-faq`, `https://www.manta.com/howto/manta`, and `https://www.manta.com/business-listings/free-business-listing` all challenge this environment. Use a normal owner browser to verify the direct page and correction/claim path before submitting.
+
+### A Greater Town
+
+- Candidate listing:
+  - https://agreatertown.com/cleveland-oh/longpro-pest-control-0001636885848
+- Old number shown: unconfirmed in current repo-side checks
+- Requested action: first verify whether the listing still exposes a stale phone or private address; then correct to `(216) 300-4121` or remove if the page is unsafe.
+- Note: Rechecked 2026-06-20. The direct listing, homepage, `https://agreatertown.com/contact`, `https://agreatertown.com/about`, `https://agreatertown.com/privacy`, and `https://agreatertown.com/sitemap.xml` all returned Cloudflare challenge responses from the current environment. `https://agreatertown.com/robots.txt` remained reachable, but it does not expose the listing data or a correction path. Use a normal owner browser before attempting any submission.
 
 ## Confirmed Website/Listings For Old Website Number
+
+### Yelp
+
+- Public listing: https://www.yelp.com/biz/long-pro-pest-control-cleveland
+- Historical old number shown: `(216) 294-2843`
+- Requested action: confirm the live public page now shows `(216) 300-4121`; if not, correct it through the owner page.
+- Owner paths:
+  - https://business.yelp.com/
+  - https://biz.yelp.com/claim
+- Note: Rechecked 2026-06-20. The public listing still blocked repo-side verification with DataDome / `Please enable JS and disable any ad blocker`, but the Yelp for Business portal remained reachable and exposed `Verify my free listing`, `Log in`, and support phone `(877) 767-9357`.
 
 ### Chamber of Commerce
 
@@ -78,6 +96,7 @@ Thank you.
 - Old number shown: `(216) 294-2843`
 - Requested action: update to `(216) 300-4121`.
 - Likely requirement: owner claim, listing correction, or support request.
+- Note: Rechecked 2026-06-20. The public listing and prior dispute path `https://www.chamberofcommerce.com/request-contact?help=Dispute&id=1335288254&name=LongPro%20Pest%20Control%20Co.` both returned Cloudflare 403 responses from the current environment. Use a normal owner browser if you need to reopen the correction path.
 
 ### Better Business Bureau
 

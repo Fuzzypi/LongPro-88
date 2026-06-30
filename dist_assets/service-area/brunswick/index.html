@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1EH98YLZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z1EH98YLZ1');
+
+  window.longproTrackEvent = function(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, { event_category: 'engagement', ...params });
+  };
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link || typeof window.longproTrackEvent !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    var normalizedHref = href.replace(/\/+(?=\?|$)/g, '');
+    var location = link.getAttribute('data-track-location') || '';
+    var params = {
+      event_label: href,
+      page_path: window.location.pathname,
+      link_text: (link.textContent || '').trim()
+    };
+    if (location) params.cta_location = location;
+    if (href.indexOf('tel:') === 0) {
+      window.longproTrackEvent('phone_click', params);
+      if (location) window.longproTrackEvent('phone_click_' + location, params);
+      return;
+    }
+    if (
+      normalizedHref === '/contact' ||
+      normalizedHref === '/contact/' ||
+      normalizedHref.indexOf('/contact?') === 0 ||
+      normalizedHref.indexOf('/contact/?') === 0
+    ) {
+      window.longproTrackEvent('quote_click', params);
+      if (location) window.longproTrackEvent('quote_click_' + location, params);
+    }
+  });
+
+  if (window.location.pathname === '/contact/' || window.location.pathname === '/contact') {
+    window.longproTrackEvent('contact_page_view', { page_path: window.location.pathname });
+  }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/images/longpro-logo.webp">
+<title>Pest Control Brunswick OH | LongPro Pest Control</title>
+<meta name="description" content="Professional pest control in Brunswick, OH. LongPro Pest Control offers bed bug extermination, cockroach control, ant &amp; spider removal, and flea treatment. Discreet service, unmarked vehicles. Call (216) 300-4121.">
+<link rel="canonical" href="https://longpropc.com/service-area/brunswick/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pest Control Brunswick OH | LongPro Pest Control">
+<meta property="og:description" content="Professional pest control in Brunswick, OH. Bed bug extermination, cockroach control, and discreet pest elimination. Unmarked vehicles. Free estimates.">
+<meta property="og:url" content="https://longpropc.com/service-area/brunswick/">
+<meta property="og:site_name" content="LongPro Pest Control">
+<meta property="og:image" content="https://longpropc.com/images/og/service-area-preview.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pest Control Brunswick OH | LongPro Pest Control">
+<meta name="twitter:description" content="Professional pest control in Brunswick, OH. Discreet, unmarked vehicles. BBB A+ accredited since 2015. Call (216) 300-4121.">
+<meta name="twitter:image" content="https://longpropc.com/images/og/service-area-preview.png">
+<meta name="geo.region" content="US-OH">
+<meta name="geo.placename" content="Brunswick">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://longpropc.com/#business","name":"LongPro Pest Control LLC","legalName":"LongPro Pest Control LLC","url":"https://longpropc.com/","image":"https://longpropc.com/images/og/home-preview.png","telephone":"+12163004121","email":"info@longpropc.com","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Cleveland","addressRegion":"OH","addressCountry":"US"},"areaServed":[{"@type":"City","name":"Cleveland"},{"@type":"City","name":"Lakewood"},{"@type":"City","name":"Parma"},{"@type":"City","name":"Euclid"},{"@type":"City","name":"Strongsville"},{"@type":"AdministrativeArea","name":"Cuyahoga County"},{"@type":"AdministrativeArea","name":"Greater Cleveland"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"21:00"}],"sameAs":["https://www.bbb.org/us/oh/cleveland/profile/pest-control/longpro-pest-control-company-0312-92014736","https://share.google/GETw9NeHew2eJ5lB2"],"knowsAbout":["bed bug extermination","cockroach extermination","ant control","spider control","flea extermination","general pest control"]},{"@type":"WebSite","@id":"https://longpropc.com/#website","url":"https://longpropc.com/","name":"LongPro Pest Control","publisher":{"@id":"https://longpropc.com/#business"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Pest Control in Brunswick, OH", "provider": {"@type": "LocalBusiness", "@id": "https://longpropc.com/#business", "name": "LongPro Pest Control LLC"}, "areaServed": {"@type": "City", "name": "Brunswick", "containedInPlace": {"@type": "State", "name": "Ohio"}}, "serviceType": "Pest Control", "description": "Comprehensive pest control services in Brunswick, OH including bed bug extermination, cockroach control, ant and spider removal, and flea treatment."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does LongPro Pest Control serve Brunswick, OH?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! LongPro Pest Control serves Brunswick, OH and the surrounding communities. Brunswick is within our regular service area in Medina County. Call (216) 300-4121 for a free inspection."}}, {"@type": "Question", "name": "How soon can you inspect my Brunswick home for pests?", "acceptedAnswer": {"@type": "Answer", "text": "We typically offer same-day or next-day inspections for Brunswick residents. Brunswick is approximately 18 miles from our Cleveland base, so we can respond quickly. Call (216) 300-4121."}}, {"@type": "Question", "name": "What pest problems are common in Brunswick, OH?", "acceptedAnswer": {"@type": "Answer", "text": "Brunswick homeowners commonly encounter bed bugs, cockroaches, ants, and spiders. Seasonal changes in Northeast Ohio drive different pest pressures throughout the year. Call us for a free inspection."}}, {"@type": "Question", "name": "Do you use unmarked vehicles in Brunswick?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, always. Every service call in Brunswick is performed using completely unmarked vehicles. No company name or pest control signage \u2014 your neighbors will have no idea we're treating your home."}}]}</script>
+<link rel="stylesheet" href="/_astro/about.CRmxRFHV.css">
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen flex flex-col">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-red text-white px-4 py-2 z-50 rounded">Skip to content</a>
+<header class="sticky top-0 z-50 bg-brand-dark border-b border-brand-border">
+<nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+<a href="/" class="flex-shrink-0"><img src="/images/longpro-logo.webp" alt="LongPro Pest Control" width="257" height="134" class="h-14 w-auto"></a>
+<div class="hidden md:flex items-center gap-8">
+<div class="relative group"><a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a></div>
+<div class="relative group"><button type="button" aria-haspopup="true" class="services-menu-button text-brand-text hover:text-brand-gold transition">Services</button><div class="services-menu-panel hidden group-hover:block absolute left-0 mt-0 w-56 bg-brand-surface border border-brand-border rounded shadow-lg z-10"><a href="/services/general-pest-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">General Pest Control</a><a href="/services/bed-bug-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Bed Bug Extermination</a><a href="/services/cockroach-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Cockroach Extermination</a><a href="/services/ant-and-spider-control/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Ant &amp; Spider Control</a><a href="/services/flea-extermination/" class="block px-4 py-3 text-brand-text hover:bg-brand-dark hover:text-brand-gold transition first:rounded-t last:rounded-b">Flea Extermination</a></div></div>
+<div class="relative group"><a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a></div>
+<div class="relative group"><a href="/service-area/" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a></div>
+<div class="relative group"><a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a></div>
+<div class="relative group"><a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a></div>
+<div class="relative group"><a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a></div>
+<div class="relative group"><a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a></div>
+</div>
+<a href="tel:+12163004121" data-track-location="header" class="hidden md:inline-block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold">(216) 300-4121</a>
+<button id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex flex-col gap-1.5 cursor-pointer"><span class="block w-6 h-0.5 bg-brand-text transition"></span><span class="block w-6 h-0.5 bg-brand-text transition"></span><span class="block w-6 h-0.5 bg-brand-text transition"></span></button>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden bg-brand-dark-alt border-t border-brand-border max-h-0 overflow-hidden transition-all duration-300">
+<div class="px-4 py-4 flex flex-col gap-4">
+<a href="/" class="text-brand-text hover:text-brand-gold transition">Home</a>
+<span class="text-brand-text font-semibold text-sm uppercase tracking-wider">Services</span>
+<div class="flex flex-col gap-2 ml-4"><a href="/services/general-pest-control/" class="text-brand-text hover:text-brand-gold transition">General Pest Control</a><a href="/services/bed-bug-extermination/" class="text-brand-text hover:text-brand-gold transition">Bed Bug Extermination</a><a href="/services/cockroach-extermination/" class="text-brand-text hover:text-brand-gold transition">Cockroach Extermination</a><a href="/services/ant-and-spider-control/" class="text-brand-text hover:text-brand-gold transition">Ant &amp; Spider Control</a><a href="/services/flea-extermination/" class="text-brand-text hover:text-brand-gold transition">Flea Extermination</a></div>
+<a href="/about/" class="text-brand-text hover:text-brand-gold transition">About</a>
+<a href="/service-area/" class="text-brand-text hover:text-brand-gold transition text-brand-gold font-semibold">Service Area</a>
+<a href="/faq/" class="text-brand-text hover:text-brand-gold transition">FAQ</a>
+<a href="/reviews/" class="text-brand-text hover:text-brand-gold transition">Reviews</a>
+<a href="/blog/" class="text-brand-text hover:text-brand-gold transition">Blog</a>
+<a href="/contact/" class="text-brand-text hover:text-brand-gold transition">Contact</a>
+<div class="mt-4 pt-4 border-t border-brand-border"><a href="tel:+12163004121" data-track-location="mobile_menu" class="block bg-brand-red hover:bg-brand-red-light text-white px-4 py-2 rounded transition font-semibold text-center">(216) 300-4121</a></div>
+</div>
+</div>
+</header>
+<script type="module">const t=document.getElementById("mobile-menu-toggle"),e=document.getElementById("mobile-menu");t&&e&&t.addEventListener("click",()=>{const i=t.getAttribute("aria-expanded")==="true";t.setAttribute("aria-expanded",!i),i?(e.style.maxHeight="0",setTimeout(()=>{e.classList.add("hidden")},300)):(e.classList.remove("hidden"),e.style.maxHeight=e.scrollHeight+"px")});</script>
+<main id="main-content" role="main" class="flex-1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://longpropc.com/"}, {"@type": "ListItem", "position": 2, "name": "Service Area", "item": "https://longpropc.com/service-area/"}, {"@type": "ListItem", "position": 3, "name": "Brunswick", "item": "https://longpropc.com/service-area/brunswick/"}]}</script>
+<nav aria-label="Breadcrumb" class="max-w-7xl mx-auto px-4 py-3">
+<ol class="flex flex-wrap gap-2 text-sm">
+<li class="flex items-center gap-2"><a href="/" class="text-brand-gold hover:text-brand-gold-light transition">Home</a></li>
+<li class="flex items-center gap-2"><span class="text-brand-text-muted">/</span><a href="/service-area/" class="text-brand-gold hover:text-brand-gold-light transition">Service Area</a></li>
+<li class="flex items-center gap-2"><span class="text-brand-text-muted">/</span><span aria-current="page" class="text-brand-text">Brunswick</span></li>
+</ol>
+</nav>
+<div class="max-w-7xl mx-auto px-4 py-12">
+<h1 class="text-2xl md:text-4xl font-bold text-brand-text mb-8">Pest Control &amp; Bed Bug Exterminator in Brunswick, OH</h1>
+<p class="text-lg text-brand-text-muted max-w-3xl mb-12 leading-relaxed">Brunswick is a growing suburb in Medina County where pest control needs range from bed bugs in apartment complexes to ants and spiders in single-family homes. LongPro Pest Control makes the drive to Brunswick regularly and provides the same discreet service as in Cleveland.</p>
+
+<section class="mb-16">
+<h2 class="text-3xl font-bold text-brand-text mb-8">Pest Control Services Available in Brunswick</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<a href="/services/bed-bug-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+<h3 class="text-lg font-bold text-brand-gold mb-3 group-hover:text-brand-gold-light">Bed Bug Extermination</h3>
+<p class="text-brand-text-muted text-sm">Complete bed bug removal for Brunswick homes. Heat treatments and chemical solutions that eliminate every life stage.</p>
+</a>
+<a href="/services/cockroach-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+<h3 class="text-lg font-bold text-brand-gold mb-3 group-hover:text-brand-gold-light">Cockroach Extermination</h3>
+<p class="text-brand-text-muted text-sm">German and American cockroach elimination for Brunswick residences. We target colonies at the source for lasting results.</p>
+</a>
+<a href="/services/ant-and-spider-control/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+<h3 class="text-lg font-bold text-brand-gold mb-3 group-hover:text-brand-gold-light">Ant &amp; Spider Control</h3>
+<p class="text-brand-text-muted text-sm">Ant colony elimination and spider control for Brunswick homes. We find and seal entry points to prevent return.</p>
+</a>
+<a href="/services/flea-extermination/" class="bg-brand-surface border border-brand-border rounded-lg p-6 hover:border-brand-gold transition group">
+<h3 class="text-lg font-bold text-brand-gold mb-3 group-hover:text-brand-gold-light">Flea Extermination</h3>
+<p class="text-brand-text-muted text-sm">Comprehensive flea treatment that breaks the life cycle and prevents reinfestation in your Brunswick home.</p>
+</a>
+<div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+<h3 class="text-lg font-bold text-brand-gold mb-3">WDI Termite Inspections</h3>
+<p class="text-brand-text-muted text-sm">Wood-destroying insect inspections for Brunswick home sales. Official NPMA-33 reports for real estate closings.</p>
+</div>
+<div class="bg-brand-surface border border-brand-border rounded-lg p-6">
+<h3 class="text-lg font-bold text-brand-gold mb-3">VA Loan Termite Inspections</h3>
+<p class="text-brand-text-muted text-sm">VA-compliant termite inspections for Brunswick veterans purchasing homes. Fast turnaround for your closing timeline.</p>
+</div>
+</div>
+</section>
+
+<div class="mt-12 bg-brand-surface border-2 border-brand-gold rounded-lg p-8 text-center">
+<h2 class="text-2xl font-bold text-brand-gold mb-4">Bed Bug Problem in Brunswick?</h2>
+<p class="text-brand-text-muted mb-6">We specialize in discreet bed bug extermination. Unmarked vehicles, free inspection, written estimates.</p>
+<a href="/service-area/brunswick/bed-bugs/" class="inline-block bg-brand-red hover:bg-brand-red-light text-white px-8 py-3 rounded-lg transition font-semibold text-lg">Bed Bug Treatment in Brunswick →</a>
+</div>
+
+<section class="mb-16 mt-12">
+<h2 class="text-2xl font-bold text-brand-text mb-6">Why Brunswick Residents Choose LongPro</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-brand-surface border border-brand-border rounded-lg flex items-center justify-center"><span class="text-brand-gold text-xl">🚐</span></div><div><h3 class="font-bold text-brand-text mb-1">Unmarked Vehicles</h3><p class="text-brand-text-muted text-sm">No logos, no signage. Your Brunswick neighbors won't know we visited.</p></div></div>
+<div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-brand-surface border border-brand-border rounded-lg flex items-center justify-center"><span class="text-brand-gold text-xl">🔍</span></div><div><h3 class="font-bold text-brand-text mb-1">Free Inspection</h3><p class="text-brand-text-muted text-sm">We inspect first, then provide a written estimate. No surprises.</p></div></div>
+<div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-brand-surface border border-brand-border rounded-lg flex items-center justify-center"><span class="text-brand-gold text-xl">⭐</span></div><div><h3 class="font-bold text-brand-text mb-1">BBB A+ Rated</h3><p class="text-brand-text-muted text-sm">BBB A+ accreditation since 2015. Trusted by families across Greater Cleveland.</p></div></div>
+<div class="flex gap-4"><div class="flex-shrink-0 w-12 h-12 bg-brand-surface border border-brand-border rounded-lg flex items-center justify-center"><span class="text-brand-gold text-xl">⏰</span></div><div><h3 class="font-bold text-brand-text mb-1">Fast Response</h3><p class="text-brand-text-muted text-sm">Brunswick is ~18 miles from our base. Same-day inspections often available.</p></div></div>
+</div>
+</section>
+
+<section class="mb-16">
+<h2 class="text-2xl font-bold text-brand-text mb-6">We Also Serve Near Brunswick</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center"><p class="text-brand-text font-semibold">Strongsville</p></div>
+<div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center"><p class="text-brand-text font-semibold">North Royalton</p></div>
+<div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center"><p class="text-brand-text font-semibold">Hinckley</p></div>
+<div class="bg-brand-surface border border-brand-border rounded-lg p-4 text-center"><p class="text-brand-text font-semibold">Medina</p></div>
+</div>
+</section>
+
+<section class="bg-brand-surface border border-brand-border rounded-lg p-8 text-center">
+<h2 class="text-2xl font-bold text-brand-text mb-4">Need Pest Control in Brunswick?</h2>
+<p class="text-brand-text-muted mb-6">Call for a free inspection and written estimate. Same-day service often available.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="tel:+12163004121" class="bg-brand-red hover:bg-brand-red-light text-white px-8 py-3 rounded-lg transition font-semibold text-lg">(216) 300-4121</a>
+<a href="/contact/?area=brunswick" class="bg-brand-surface border-2 border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-dark px-8 py-3 rounded-lg transition font-semibold text-lg">Request Free Estimate</a>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-brand-dark border-t border-brand-border mt-auto">
+<div class="max-w-7xl mx-auto px-4 py-12">
+<div class="grid md:grid-cols-3 gap-8">
+<div><p class="text-brand-gold font-bold text-lg mb-2">LongPro Pest Control LLC</p><p class="text-brand-text-muted text-sm">Cleveland's discreet pest control team. BBB A+ accredited since 2015.</p><p class="text-brand-text-muted text-sm mt-2">Serving Greater Cleveland &amp; Cuyahoga County</p></div>
+<div><p class="text-brand-text font-semibold mb-3">Quick Links</p><div class="flex flex-col gap-2"><a href="/services/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Services</a><a href="/service-area/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Service Area</a><a href="/blog/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Blog</a><a href="/contact/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">Contact</a><a href="/faq/" class="text-brand-text-muted hover:text-brand-gold transition text-sm">FAQ</a></div></div>
+<div><p class="text-brand-text font-semibold mb-3">Contact</p><a href="tel:+12163004121" class="text-brand-gold hover:text-brand-gold-light transition font-semibold text-lg block mb-2">(216) 300-4121</a><p class="text-brand-text-muted text-sm">Mon–Sat: 9 AM – 9 PM</p><a href="mailto:info@longpropc.com" class="text-brand-text-muted hover:text-brand-gold transition text-sm">info@longpropc.com</a></div>
+</div>
+<div class="mt-8 pt-8 border-t border-brand-border text-center"><p class="text-brand-text-muted text-sm">&copy; 2025 LongPro Pest Control LLC. All rights reserved. <a href="/privacy-policy/" class="hover:text-brand-gold transition">Privacy Policy</a></p></div>
+</div>
+</footer>
+ <div class="md:hidden fixed bottom-0 inset-x-0 z-50 border-t border-brand-border bg-brand-dark/95 backdrop-blur"> <div class="mx-auto flex max-w-md gap-3 px-3 py-3"> <a href="tel:+12163004121" data-track-location="mobile_sticky" class="flex-1 rounded bg-brand-red px-4 py-3 text-center font-semibold text-white transition hover:bg-brand-red-light">Call Now</a> <a href="/contact/?message=Please%20call%20me%20back" data-track-location="mobile_sticky" class="flex-1 rounded border border-brand-gold px-4 py-3 text-center font-semibold text-brand-gold transition hover:bg-brand-gold hover:text-brand-dark">Request Callback</a> </div> </div></body>
+</html>

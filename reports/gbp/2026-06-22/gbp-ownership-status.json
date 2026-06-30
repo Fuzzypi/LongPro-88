@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-22",
+  "verdict": "GBP_BLOCKED_GOOGLE_ACCESS_REQUIRED",
+  "currentPrimaryOwnerBlocker": "scorpionhomeservices2020@gmail.com",
+  "officialManagingEmail": "longpropc@gmail.com",
+  "googleDisputeSubmittedDate": "2026-06-22",
+  "newLiveAccessEvidenceAvailable": false,
+  "canViewPeopleAndAccessLiveInSession": false,
+  "currentAccessState": "blocked",
+  "knownRolesFromFreshestRepoEvidence": {
+    "primaryOwner": "scorpionhomeservices2020@gmail.com",
+    "owner": "longpropc@gmail.com",
+    "managers": [
+      "FieldRoutes (myteam@fieldroutes.net)",
+      "Scorpion - Home Services: Pest Control"
+    ]
+  },
+  "longProRoleStatus": {
+    "hasPrimaryOwner": false,
+    "hasOwner": true,
+    "hasManagerOnly": false,
+    "hasUsableLiveDashboardAccessInSession": false
+  },
+  "evidence": [
+    {
+      "source": "longpro-marketing-data-pull-2026-06-22.md",
+      "summary": "Freshest repo evidence lists the vendor email as Primary owner and longpropc@gmail.com as Owner."
+    },
+    {
+      "source": "reports/seo/2026-06-22/gbp-live-control-audit.md",
+      "summary": "No authenticated GBP dashboard access or fresh People and access proof was available in-session."
+    },
+    {
+      "source": "authenticated Gmail search on 2026-06-22",
+      "summary": "No relevant Google Business Profile ownership confirmation, pending-request, approval, rejection, or Scorpion vendor-response email was found from 2026-06-22 forward."
+    }
+  ],
+  "nextAction": [
+    "Preserve the 2026-06-22 dispute trail.",
+    "Treat the status as no new evidence found unless Google or the vendor responds outside this session.",
+    "Use docs/gbp-primary-owner-transfer-request.md for transfer escalation.",
+    "Do not claim any GBP implementation until Primary Owner control is restored and verified."
+  ]
+}

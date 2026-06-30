@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LongPro Pest Control - Review Request Kit</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+  .container { max-width: 800px; margin: 0 auto; }
+  h1 { text-align: center; color: #1a5c2e; margin-bottom: 8px; font-size: 28px; }
+  .subtitle { text-align: center; color: #666; margin-bottom: 30px; font-size: 14px; }
+
+  .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .section h2 { color: #1a5c2e; margin-bottom: 12px; font-size: 20px; }
+  .section h3 { color: #444; margin-bottom: 8px; font-size: 16px; }
+
+  .review-link { background: #e8f5e9; border: 2px solid #1a5c2e; border-radius: 8px; padding: 16px; text-align: center; margin: 16px 0; }
+  .review-link a { color: #1a5c2e; font-weight: bold; font-size: 16px; word-break: break-all; }
+  .review-link .short { font-size: 20px; letter-spacing: 0.5px; }
+
+  .template { background: #f8f9fa; border-left: 4px solid #1a5c2e; padding: 16px; margin: 12px 0; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
+
+  .copy-btn { background: #1a5c2e; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; margin-top: 8px; }
+  .copy-btn:hover { background: #2e7d42; }
+  .copy-btn.copied { background: #666; }
+
+  .qr-section { text-align: center; margin: 20px 0; }
+  .qr-note { color: #888; font-size: 12px; margin-top: 8px; }
+
+  .stars { color: #f4b400; font-size: 24px; letter-spacing: 2px; }
+
+  .tip { background: #fff3cd; border-radius: 8px; padding: 12px 16px; margin-top: 12px; font-size: 13px; color: #856404; }
+  .tip strong { color: #664d03; }
+
+  .print-card { border: 2px dashed #ccc; border-radius: 12px; padding: 24px; margin: 16px 0; text-align: center; }
+  .print-card h3 { color: #1a5c2e; font-size: 22px; margin-bottom: 4px; }
+  .print-card .tagline { color: #666; margin-bottom: 16px; }
+  .print-card .stars { margin-bottom: 12px; }
+  .print-card .cta { font-size: 18px; font-weight: bold; color: #333; margin-bottom: 8px; }
+  .print-card .url { color: #1a5c2e; font-size: 14px; font-weight: bold; }
+  .print-card .phone { color: #555; font-size: 14px; margin-top: 12px; }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .no-print { display: none; }
+    .print-card { border: 2px solid #1a5c2e; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>LongPro Pest Control</h1>
+  <p class="subtitle">Google Review Request Kit</p>
+
+  <!-- DIRECT REVIEW LINK -->
+  <div class="section">
+    <h2>Your Google Review Link</h2>
+    <p>Send this link to any customer. It opens Google Maps directly to your review form.</p>
+    <div class="review-link">
+      <a href="https://g.page/r/CUR5074UtSNEBM/review" class="short">g.page/r/CUR5074UtSNEBM/review</a>
+    </div>
+  </div>
+
+  <!-- TEXT MESSAGE TEMPLATES -->
+  <div class="section">
+    <h2>Text Message Templates</h2>
+    <p style="margin-bottom:16px;">Copy and text these to customers right after a service call.</p>
+
+    <h3>Template 1 — Short & Sweet</h3>
+    <div class="template" id="t1">Hi [NAME], thanks for choosing LongPro Pest Control! If you're happy with the service, a quick Google review would mean a lot to us. Just tap the link: https://g.page/r/CUR5074UtSNEBM/review — Thank you!</div>
+    <button class="copy-btn no-print" onclick="copyText('t1', this)">Copy to clipboard</button>
+
+    <h3 style="margin-top:20px;">Template 2 — After Bed Bug Treatment</h3>
+    <div class="template" id="t2">Hi [NAME], we hope the bed bug treatment went smoothly! Your feedback helps other Cleveland families find reliable pest control. Would you mind leaving us a quick Google review? https://g.page/r/CUR5074UtSNEBM/review — Thanks, LongPro Pest Control (216) 300-4121</div>
+    <button class="copy-btn no-print" onclick="copyText('t2', this)">Copy to clipboard</button>
+
+    <h3 style="margin-top:20px;">Template 3 — Follow-Up (3 days later)</h3>
+    <div class="template" id="t3">Hi [NAME], just checking in — how's everything looking after the treatment? If the pests are gone and you're satisfied, we'd really appreciate a Google review. It only takes 30 seconds: https://g.page/r/CUR5074UtSNEBM/review — LongPro Pest Control</div>
+    <button class="copy-btn no-print" onclick="copyText('t3', this)">Copy to clipboard</button>
+
+    <div class="tip">
+      <strong>Pro tip:</strong> The best time to ask is right after a successful service call when the customer is happiest. Text within 1-2 hours of completing the job. Follow up once after 3 days if they haven't reviewed yet — don't push beyond that.
+    </div>
+  </div>
+
+  <!-- PRINTABLE CARD -->
+  <div class="section">
+    <h2>Printable Review Card</h2>
+    <p style="margin-bottom:8px;">Print this and hand it to customers, or leave it at the job site.</p>
+    <button class="copy-btn no-print" onclick="window.print()" style="margin-bottom:16px;">Print this page</button>
+
+    <div class="print-card">
+      <h3>LongPro Pest Control LLC</h3>
+      <p class="tagline">Cleveland's Trusted Exterminator Since 2011</p>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="cta">Love our service? Leave us a Google review!</p>
+      <p style="color:#666; font-size:13px; margin-bottom:12px;">Scan the QR code on your Google Maps app or visit:</p>
+      <p class="url">g.page/r/CUR5074UtSNEBM/review</p>
+      <p class="phone">(216) 300-4121 | longpropc.com</p>
+    </div>
+  </div>
+
+  <!-- EMAIL TEMPLATE -->
+  <div class="section">
+    <h2>Email Template</h2>
+    <div class="template" id="t4">Subject: Thank you for choosing LongPro Pest Control!
+
+Hi [NAME],
+
+Thank you for trusting LongPro Pest Control with your pest control needs. We've been serving the Cleveland area for over 13 years, and customers like you are the reason we love what we do.
+
+If you have a moment, we'd really appreciate it if you could leave us a quick Google review. It helps other families in Cleveland find reliable pest control:
+
+https://g.page/r/CUR5074UtSNEBM/review
+
+Thank you again for your business!
+
+Best regards,
+LongPro Pest Control LLC
+(216) 300-4121
+longpropc.com</div>
+    <button class="copy-btn no-print" onclick="copyText('t4', this)">Copy to clipboard</button>
+  </div>
+
+  <!-- STRATEGY TIPS -->
+  <div class="section">
+    <h2>Review Strategy Cheat Sheet</h2>
+    <div class="tip" style="background:#e8f5e9; color:#1a5c2e; margin:0;">
+      <strong>Goal: Get to 50+ reviews as fast as possible.</strong><br><br>
+      <strong>1. Ask EVERY customer.</strong> Most won't, but the ones who do add up fast. Even getting 2-3 per week gets you to 50+ in a few months.<br><br>
+      <strong>2. Text immediately after service.</strong> Within 1-2 hours while they're grateful.<br><br>
+      <strong>3. Make it personal.</strong> Use their name. Mention what you treated. "Hi Mike, glad we got those ants handled!"<br><br>
+      <strong>4. Follow up once.</strong> 3 days later if no review. Just once — don't nag.<br><br>
+      <strong>5. Respond to every review.</strong> Go to your GBP and reply to all 17 existing reviews. Google rewards active engagement.<br><br>
+      <strong>6. Never offer incentives.</strong> Google bans reviews earned with discounts or freebies. Just ask honestly.
+    </div>
+  </div>
+</div>
+
+<script>
+function copyText(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy to clipboard';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>

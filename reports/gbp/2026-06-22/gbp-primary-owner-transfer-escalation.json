@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-22",
+  "verdict": "GBP_WAITING_ON_GOOGLE_3_DAY_WINDOW",
+  "currentOwnershipStatus": {
+    "primaryOwner": "scorpionhomeservices2020@gmail.com",
+    "owner": "longpropc@gmail.com",
+    "primaryOwnerSolved": false,
+    "liveDashboardConfirmed": false
+  },
+  "gmailEvidenceCheck": {
+    "mailbox": "longpropc@gmail.com",
+    "dateScope": "from 2026-06-22 forward",
+    "termsChecked": [
+      "Google Business Profile",
+      "Business Profile",
+      "ownership",
+      "Primary owner",
+      "scorpionhomeservices2020@gmail.com",
+      "LongPro Pest Control",
+      "Scorpion"
+    ],
+    "result": "No relevant Google ownership confirmation, pending-request, approval, rejection, or vendor-response email found."
+  },
+  "exactNextAction": {
+    "sendVendorRequestNow": true,
+    "preserveGoogleDisputeTrail": true,
+    "waitThroughGoogleThreeBusinessDayWindow": true,
+    "deadlineIfNoResponse": "2026-06-25"
+  },
+  "vendorTransferRequest": {
+    "subject": "Transfer LongPro GBP Primary Owner to longpropc@gmail.com",
+    "targetPrimaryOwner": "longpropc@gmail.com",
+    "requiresReplyOnFailure": [
+      "Confirm longpropc@gmail.com still has full Owner access.",
+      "State the earliest exact transfer date.",
+      "Confirm no owners or managers will be removed before completion."
+    ]
+  },
+  "googleEscalationPacket": {
+    "requestedOutcome": "Make longpropc@gmail.com the Primary owner of the LongPro Pest Control Google Business Profile.",
+    "businessName": "LongPro Pest Control LLC",
+    "website": "https://longpropc.com/",
+    "publicPhone": "(216) 300-4121",
+    "officialManagingEmail": "longpropc@gmail.com",
+    "currentThirdPartyPrimaryOwner": "scorpionhomeservices2020@gmail.com",
+    "disputeSubmissionDate": "2026-06-22",
+    "proofPoints": [
+      "longpropc@gmail.com is already listed as Owner on the profile in repo evidence.",
+      "The public website matches the business identity.",
+      "The public phone matches the active business number in repo evidence.",
+      "Repo evidence shows an active GBP with review and interaction history.",
+      "Owner-side documents can be attached if Google requests license, registration, BBB, utility, tax, or insurance proof."
+    ]
+  },
+  "nonClaims": [
+    "No live GBP ownership was changed in this session.",
+    "No live Google escalation was submitted in this session.",
+    "No website or source files were modified in this session.",
+    "No GBP optimization work was performed in this session."
+  ]
+}

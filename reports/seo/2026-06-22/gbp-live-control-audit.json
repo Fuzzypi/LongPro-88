@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-06-22",
+  "verdict": "LONGPRO_GBP_CONTROL_BLOCKER_FOUND",
+  "repo": {
+    "path": "/Users/fuzzypi/Desktop/LongPro-88",
+    "branch": "main",
+    "head": "55615a815b974ef3e8b0d94a5ff4a4093884994a"
+  },
+  "accessAttempts": {
+    "dashboard": {
+      "cookieImportBrowser": "chrome",
+      "cookieDomain": "google.com",
+      "cookiesImported": 0,
+      "targetUrl": "https://business.google.com/locations",
+      "finalUrlType": "google_signin",
+      "access": "blocked"
+    },
+    "publicShareLink": {
+      "targetUrl": "https://share.google/GETw9NeHew2eJ5lB2",
+      "finalUrlType": "google_sorry_captcha",
+      "access": "blocked"
+    }
+  },
+  "currentKnownControlState": {
+    "source": "longpro-marketing-data-pull-2026-06-22.md",
+    "thirdPartyPrimaryOwnerRisk": true,
+    "companyOwnedGoogleAccountHasOwnerAccess": true
+  },
+  "freshPublicFieldProofAvailable": false,
+  "mostRecentKnownValues": {
+    "website": "https://longpropc.com/",
+    "phoneVisible": "(216) 300-4121",
+    "phoneMachine": "+12163004121",
+    "primaryCategoryTarget": "Pest control service"
+  },
+  "performanceBaselineFallback": {
+    "windowStart": "2026-01-01",
+    "windowEnd": "2026-06-30",
+    "calls": 8,
+    "websiteClicks": 7,
+    "chatClicks": 1,
+    "bookings": 0
+  },
+  "recommendedImmediateActions": [
+    "transfer primary ownership to the company-controlled Google account",
+    "verify website and phone in the live dashboard",
+    "complete categories, services, service areas, and fresh photos once access is open"
+  ]
+}
