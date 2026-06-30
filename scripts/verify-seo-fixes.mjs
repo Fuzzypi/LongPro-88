@@ -108,9 +108,9 @@ check(
     bedBug.includes('name="twitter:image" content="https://longpropc.com/images/og/bed-bug-extermination-preview.png"')
 );
 check(
-  "priority service-area page keeps its stronger social preview",
-  parmaArea.includes('property="og:image" content="https://longpropc.com/images/house-keys.webp"') &&
-    parmaArea.includes('name="twitter:image" content="https://longpropc.com/images/house-keys.webp"')
+  "priority service-area page uses the normalized page-specific social preview",
+  parmaArea.includes('property="og:image" content="https://longpropc.com/images/og/service-area-preview.png"') &&
+    parmaArea.includes('name="twitter:image" content="https://longpropc.com/images/og/service-area-preview.png"')
 );
 check(
   "service-area pages keep the service-area social preview",
